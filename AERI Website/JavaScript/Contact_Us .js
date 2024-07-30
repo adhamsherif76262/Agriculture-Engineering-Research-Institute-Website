@@ -1,5 +1,5 @@
+console.log(Language)
 setTimeout(()=>{
-    console.log(Language)
     if(Language === "عربي"){
         console.log(" arabbbb")
         const h1 = document.getElementById("7amada");
@@ -10,6 +10,7 @@ setTimeout(()=>{
       const h1 = document.getElementById("7amada");
       h1.textContent = "Agricultural Engineering Research Institute Website";
     }
-},1000)
-// Language = "English"
+},300)
+
 console.log(Language)
+
