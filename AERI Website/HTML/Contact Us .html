@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        The Title tag Should be informative for SEO & should match the H1 tag of the page 
+        should also be limited to about 50-60 characters as not get truncated in the SERPs
+        ==> Use Article tag
+        ==> Use Alt Img attribute
+    -->
+    <title lang="">AERI Contact Us Page</title>
+    <link rel="stylesheet" href="../CSS/NavBar & Footer .css">
+</head>
+<body>
+    <nav id="Arabic_NavBar">
+        <div id="Upper_NavBar_Ar">
+            <img class="NavBar_Logos" width="100" height="100" src="../Images/AERI Logo .jpg" alt="Agriculture Engineering Institute Logo">
+            <p id="NavBar_P">معهد بحوث الهندسة الزراعية</p>
+            <img class="NavBar_Logos" width="150" height="100" src="../Images/ARC Logo .png" alt="Agriculture Research Center Logo">
+        </div>
+        <div id="navbar">
+            <div id="Lower_NavBar">
+              <a class="Nav_Links" href="../HTML/Home.html">الرئيسية</a>
+              <a class="Nav_Links" href="../HTML/Institute Sections .html">الأقسام</a>
+              <a class="Nav_Links" href="../HTML/Helping Units .html">وحدات مساعدة</a>
+              <a class="Nav_Links" href="../HTML/Institute Branches .html">فروع المعهد</a>
+              <a class="Nav_Links" href="../HTML/Permanent Exhibition .html">المعرض الدائم</a>
+              <a class="Nav_Links" href="../HTML/Research Projects.html">مشاريع بحثية</a>
+              <a class="Nav_Links" href="../HTML/Overview.html">نبذة</a>
+              <a class="Nav_Links" href="../HTML/Contact Us .html">الإتصال بنا</a>
+            </div>
+        </div>
+    </nav>
+    <nav id="English_NavBar">
+        <div id="Upper_NavBar_En">
+            <img class="NavBar_Logos" width="100" height="100" src="../Images/AERI_Logo_-removebg-preview.png" alt="Agriculture Engineering Institute Logo">
+            <p id="NavBar_P">Agriculture Engineering Research Institute</p>
+            <img class="NavBar_Logos" width="150" height="100" src="../Images/ARC_Logo_-removebg-preview.png" alt="Agriculture Engineering Institute Logo">
+        </div>
+        <div id="navbar">
+          <div id="Lower_NavBar">
+            <a class="Nav_Links" href="../HTML/Home.html">Home</a>
+            <a class="Nav_Links" href="../HTML/Institute Sections .html">Institute Sections</a>
+            <a class="Nav_Links" href="../HTML/Helping Units .html">Helping Units</a>
+            <a class="Nav_Links" href="../HTML/Institute Branches .html">Institute Branches</a>
+            <a class="Nav_Links" href="../HTML/Permanent Exhibition .html">Permanent Exhibition</a>
+            <a class="Nav_Links" href="../HTML/Research Projects.html">Research Projects</a>
+            <a class="Nav_Links" href="../HTML/Overview.html">Overview</a>
+            <a class="Nav_Links" href="../HTML/Contact Us .html">Contact Us</a>
+          </div>
+        </div>
+    </nav>
+    <button id="Language_Switch" title="Language Button">ُEnglish</button>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus soluta accusamus adipisci inventore a illo mollitia numquam doloribus unde odit voluptatum vel, ducimus recusandae impedit praesentium, nostrum facilis sit laudantium.</h1>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus soluta accusamus adipisci inventore a illo mollitia numquam doloribus unde odit voluptatum vel, ducimus recusandae impedit praesentium, nostrum facilis sit laudantium.</h1>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus soluta accusamus adipisci inventore a illo mollitia numquam doloribus unde odit voluptatum vel, ducimus recusandae impedit praesentium, nostrum facilis sit laudantium.</h1>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus soluta accusamus adipisci inventore a illo mollitia numquam doloribus unde odit voluptatum vel, ducimus recusandae impedit praesentium, nostrum facilis sit laudantium.</h1>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus soluta accusamus adipisci inventore a illo mollitia numquam doloribus unde odit voluptatum vel, ducimus recusandae impedit praesentium, nostrum facilis sit laudantium.</h1>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus soluta accusamus adipisci inventore a illo mollitia numquam doloribus unde odit voluptatum vel, ducimus recusandae impedit praesentium, nostrum facilis sit laudantium.</h1>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus soluta accusamus adipisci inventore a illo mollitia numquam doloribus unde odit voluptatum vel, ducimus recusandae impedit praesentium, nostrum facilis sit laudantium.</h1>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus soluta accusamus adipisci inventore a illo mollitia numquam doloribus unde odit voluptatum vel, ducimus recusandae impedit praesentium, nostrum facilis sit laudantium.</h1>
+<script src="../JavaScript/Language Changer.js"></script>
+<script src="../JavaScript/Get Location.js"></script>
+<script>
+    var PageTitle = document.getElementsByTagName("title");
+    var LangBtn = document.getElementById("Language_Switch");
+    // document.cookie = "Arabic";
+    // let dc = document.cookie;
+    // console.log(document.cookie)
+    // console.log(GetLocation())
+    window.onload = function(){
+        if(LangBtn.innerHTML === "English"){
+            // LangBtn.innerHTML = "عربي"
+            PageTitle[0].innerHTML = "الإتصال بنا"
+            PageTitle[0].setAttribute("lang","ar")
+        }
+        else if(LangBtn.innerHTML === "عربي"){
+            // LangBtn.innerHTML = "English"
+            PageTitle[0].innerHTML = "AERI Contact Us Page"
+            PageTitle[0].setAttribute("lang","en")
+        }
+    }
+    LangBtn.addEventListener(("click") , function(){
+        if(LangBtn.innerHTML === "English"){
+            PageTitle[0].innerHTML = "الإتصال بنا"
+            PageTitle[0].setAttribute("lang","ar")
+        }
+        else if(LangBtn.innerHTML === "عربي"){
+            PageTitle[0].innerHTML = "AERI Contact Us Page"
+            PageTitle[0].setAttribute("lang","en")
+        }
+    })
+</script>
+</body>
+</html>
