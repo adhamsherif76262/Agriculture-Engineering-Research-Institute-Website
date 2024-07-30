@@ -123,12 +123,14 @@ xhr.onload = function(){
     En_Nav.classList.add("D_None");
     Ar_Nav.classList.remove("D_None");
     Language = "عربي";
+    // Language = "English";
     console.log(Language)
   } else {
     En_Nav.innerHTML = En_NavTemplate;
     LangBtn.innerHTML = "عربي";
     Ar_Nav.classList.add("D_None");
-      En_Nav.classList.remove("D_None");
+    En_Nav.classList.remove("D_None");
+    // Language = "عربي";
       Language = "English";
       console.log(Language)
     }
