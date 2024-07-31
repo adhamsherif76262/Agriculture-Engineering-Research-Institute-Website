@@ -13,7 +13,7 @@ setTimeout(()=>{
         h1.textContent = "Agricultural Engineering Research Institute Website";
         Final_Language = "English";
     }
-},300)
+},200)
 
 console.log(Language)
 
