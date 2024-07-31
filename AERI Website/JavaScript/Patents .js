@@ -12,4 +12,4 @@ setTimeout(()=>{
             "Agricultural Engineering Research Institute Website";
           Final_Language = "English";
         }
-},200)
+},250)
