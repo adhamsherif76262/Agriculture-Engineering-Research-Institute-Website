@@ -10,7 +10,7 @@
         ==> Use Article tag
         ==> Use Alt Img attribute
     -->
-    <title id="Patents_Page_Title" lang="" title="Page Title"></title>
+    <title lang="" id="Contact_Us_Page_Title"></title>
     <link rel="stylesheet" href="../CSS/NavBar .css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
@@ -27,9 +27,11 @@
             </filter>
         </defs>
     </svg>
-    <nav id="Arabic_NavBar"></nav>
+    <nav id="Arabic_NavBar">
+        <!-- <button type="button" id="Language_Switch" title="Language Button"></button> -->
+
+    </nav>
     <nav id="English_NavBar"></nav>
-    <button type="button" id="Language_Switch" title="Language Button"></button>
     <h1 id="7amada"></h1>
     <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus soluta accusamus adipisci inventore a
         illo mollitia numquam doloribus unde odit voluptatum vel, ducimus recusandae impedit praesentium, nostrum
@@ -52,32 +54,12 @@
     <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus soluta accusamus adipisci inventore a
         illo mollitia numquam doloribus unde odit voluptatum vel, ducimus recusandae impedit praesentium, nostrum
         facilis sit laudantium.</h1>
-    <script src="../JavaScript/NavBar_Footer_Language Changer.js"></script>
-    <!-- <script src="../JavaScript/Contact_Us .js"></script> -->
-    <script src="../JavaScript/Patents .js"></script>
-    <!-- <script src="../JavaScript/Get Location.js"></script> -->
-    <script>
-        // console.log(Language)
-        var PageTitle = document.getElementById("Patents_Page_Title")
-        LangBtn.addEventListener("click", function () {
-            if (LangBtn.innerHTML === "English") {
-                console.log("666666666666666666");
-                PageTitle.innerHTML = "AERI Patents Page";
-                PageTitle.setAttribute("lang", "ar");
-                LangBtn.innerHTML = "عربي";
-                Ar_Nav.classList.add("D_None");
-                En_Nav.classList.remove("D_None");
-                En_Nav.innerHTML = En_NavTemplate;
-            } else if (LangBtn.innerHTML === "عربي") {
-                PageTitle.innerHTML = "برءات الاختراع";
-                PageTitle.setAttribute("lang", "en");
-                LangBtn.innerHTML = "English";
-                Ar_Nav.innerHTML = Ar_NavTemplate;
-                En_Nav.classList.add("D_None");
-                Ar_Nav.classList.remove("D_None");
-            }
-        });
-    </script>
+
+        <!-- <script src="../JavaScript/Get Location.js"></script> -->
+    <script  src="../JavaScript/NavBar_Footer_Language Changer.js"></script>
+    <script src="../JavaScript/Contact_Us .js"></script>
+    <script src="../JavaScript/Arabic_Lang_Button.js"></script>
+    <script src="../JavaScript/English_Lang_Button.js"></script>
 </body>
 
 </html>

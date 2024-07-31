@@ -1,13 +1,68 @@
 /* @import "compass/css3"; */
+/* .pt-sans-regular {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+.pt-sans-bold {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pt-sans-regular-italic {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pt-sans-bold-italic {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}*/
+@font-face {
+   font-family: PT-Bold-Heading;
+   src: url(../Fonts/PT\ Bold\ Heading.ttf);
+} 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-#NavBar_P{
+
+#LangBtnEn , #LangBtnAr{
     font-weight: bold;
-    font-size: 55px;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 20px;
+    transition: 1s;
+    outline: none;
+    padding: 20px;
+    cursor: pointer;
+    border: double 10px rgb(0, 0, 119);
+}
+#LangBtnEn:hover , #LangBtnAr:hover{
+    color: white;
+    background-color: rgb(0, 0, 119);
+    border: double 10px white;
+    border-radius: 50%;
+}
+
+#NavBar_P_Ar{
+    /* color: rgb(0, 0, 119); */
+    color: black;
+    font-family: PT-Bold-Heading;
+    font-weight: bold;
+    font-size: 50px;
+}
+#NavBar_P_En{
+    font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
 }
 #Arabic_NavBar , #English_NavBar{
     filter: url('#goo');
@@ -16,7 +71,7 @@
     transition: 0.4s;
     width: 100%;
     margin-top: -150px;
-    height: 250px;
+    height: 330px;
     z-index: 99;
 }
 #Lower_NavBar{
@@ -31,12 +86,10 @@
     color: black;
     text-align: center;
     padding: 30px 30px;
-    margin-top: 50px;
     text-decoration: none;
     font-size: 25px;
     position: absolute;
     left: 30%;
-
     transition:0.5s;
     animation: navlink_1 cubic-bezier(0.77, 0, 0.175, 1) 2s;
     animation-iteration-count: 1;
@@ -49,7 +102,7 @@
     left:0;
     width:100%;
     height:100%;
-    background:#ff497c;
+    background:rgb(0, 0, 119);
     transition:0.5s;
     transform-origin:right;
     /* To Apply the reddish background from the very begining*/
@@ -65,6 +118,11 @@
 .Nav_Links_En{
     font-size: 25px;
     width: min-content;
+    font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+}
+.Nav_Links_Ar{
+    font-size: 25px;
+    font-family: PT-Bold-Heading;
 }
 @keyframes navlink_1_Ar {
     0%{
@@ -183,7 +241,7 @@
    }
 
    100%{
-    transform: translate(890px, 0);
+    transform: translate(880px, 0);
    }
 }
 
@@ -291,6 +349,7 @@
     font-size: 35px;
     font-weight: bold;
     transition: 0.4s;
+    margin-top: 20px;
 }
 .D_None{
     display: none;

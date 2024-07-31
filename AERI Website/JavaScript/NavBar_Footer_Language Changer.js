@@ -1,45 +1,47 @@
-var LangBtn = document.getElementById("Language_Switch");
 var En_Nav = document.getElementById("English_NavBar");
 var Ar_Nav = document.getElementById("Arabic_NavBar");
-var Upper_NavBar_En = document.getElementById("Upper_NavBar_En");
-var Upper_NavBar_Ar = document.getElementById("Upper_NavBar_Ar");
 var HomePageTitle = document.getElementsByTagName("title");
-var title = HomePageTitle[0].innerHTML;
-var navItems = document.querySelectorAll(".Nav_Links");
-var Language= "";
-console.log("Hel")
+var LangBtnEn = `<button onclick="LangBtnEnClick()" type="button" id="LangBtnEn" title="Language Button">English</button>`;
+var LangBtnAr = `<button onclick="LangBtnArClick()" type="button" id="LangBtnAr" title="Language Button">عربي</button>`;
 var Ar_NavTemplate = `
-          <div id="Upper_NavBar_Ar" class="Flex_Direction_Ar">
-              <img class="NavBar_Logos" width="100" height="100" src="../Images/AERI Logo .jpg" alt="Agriculture Engineering Institute Logo">
-              <p id="NavBar_P">معهد بحوث الهندسة الزراعية</p>
-              <img class="NavBar_Logos" width="150" height="100" src="../Images/ARC Logo .png" alt="Agriculture Research Center Logo"></img>
-          </div>
-          <div id="navbar">
-              <div id="Lower_NavBar">
-                   <div id = "Nav_Links_Container">
-                      <a onmouseover="Mouse_Over(this); Mouse_Over_Special(this);" onmouseout="Mouse_Leave(this); Mouse_Leave_Special(this);" class="Nav_Links Nav_Links_Ar" href="../HTML/Home.html">الرئيسية</a>
-                      <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="../HTML/Institute Sections .html">الأقسام</a>
-                      <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="../HTML/Helping Units .html">وحدات مساعدة</a>
-                      <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="../HTML/Institute Branches .html">فروع المعهد</a>
-                      <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="../HTML/Patents .html">برءات الاختراع</a>
-                      <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="../HTML/Permanent Exhibition .html">المعرض الدائم</a>
-                      <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="../HTML/Research Projects.html">مشاريع بحثية</a>
-                      <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="../HTML/Overview.html">نبذة</a>
-                      <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="../HTML/Contact Us .html">الإتصال بنا</a>
-                  </div>
-              </div>
-          </div>
-    `;
+  <div id="Upper_NavBar_Ar" class="Flex_Direction_Ar">
+    <img class="NavBar_Logos" width="275" height="175" src="../Images/AERI-ARC-Logo_-removebg .png" alt="Agriculture Engineering Institute Logo">
+    <p id="NavBar_P_Ar">معهد بحوث الهندسة الزراعية</p>
+    ${LangBtnEn}
+    ${LangBtnEn}
+    ${LangBtnEn}
+    ${LangBtnEn}
+  </div>
+  <div id="navbar">
+    <div id="Lower_NavBar">
+      <div id = "Nav_Links_Container">
+          <a onmouseover="Mouse_Over(this); Mouse_Over_Special(this);" onmouseout="Mouse_Leave(this); Mouse_Leave_Special(this);" class="Nav_Links Nav_Links_Ar" href="../HTML/Home.html">الرئيسية</a>
+          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="../HTML/Institute Sections .html">الأقسام</a>
+          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="../HTML/Helping Units .html">وحدات مساعدة</a>
+          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="../HTML/Institute Branches .html">فروع المعهد</a>
+          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="../HTML/Patents .html">برءات الاختراع</a>
+          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="../HTML/Permanent Exhibition .html">المعرض الدائم</a>
+          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="../HTML/Research Projects.html">مشاريع بحثية</a>
+          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="../HTML/Overview.html">نبذة</a>
+          <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_Ar" href="../HTML/Contact Us .html">الإتصال بنا</a>
+      </div>
+    </div>
+  </div>
+`;
 
 var En_NavTemplate = `
-        <div id="Upper_NavBar_En" class="Flex_Direction_En">
-            <img class="NavBar_Logos" width="100" height="100" src="../Images/AERI_Logo_-removebg-preview.png" alt="Agriculture Engineering Institute Logo">
-            <p id="NavBar_P">Agriculture Engineering Research Institute</p>
-            <img class="NavBar_Logos" width="150" height="100" src="../Images/ARC_Logo_-removebg-preview.png" alt="Agriculture Engineering Institute Logo">
-        </div>
-        <div id="navbar">
-          <div id="Lower_NavBar">
-            <div id = "Nav_Links_Container">
+<div id="Upper_NavBar_En" class="Flex_Direction_En">
+<img class="NavBar_Logos" width="275" height="175" src="../Images/AERI-ARC-Logo_-removebg .png" alt="Agriculture Engineering Institute Logo">
+<p id="NavBar_P_En">Agriculture Engineering Research Institute</p>
+${LangBtnAr}
+${LangBtnAr}
+${LangBtnAr}
+${LangBtnAr}
+${LangBtnAr}
+</div>
+<div id="navbar">
+        <div id="Lower_NavBar">
+        <div id = "Nav_Links_Container">
                 <a onmouseover="Mouse_Over(this); Mouse_Over_Special(this);" onmouseout="Mouse_Leave(this); Mouse_Leave_Special(this);" class="Nav_Links Nav_Links_En" href="../HTML/Contact Us .html">Contact Us</a>
                 <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="../HTML/Overview.html">Overview</a>
                 <a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="Nav_Links Nav_Links_En" href="../HTML/Research Projects.html">Research Projects</a>
@@ -54,9 +56,6 @@ var En_NavTemplate = `
         </div>
     `;
 
-    
-    console.log("object");
-
 function Mouse_Over_Special(Special_Anchor){
   $(Special_Anchor).css({
     color: "white",
@@ -70,8 +69,8 @@ function Mouse_Leave_Special(Special_Anchor){
   });
 }
 function Mouse_Over(anchor){
-  En_Nav.style.height = "360px"
-  Ar_Nav.style.height = "300px"
+  En_Nav.style.height = "382px"
+  Ar_Nav.style.height = "345px"
   
   $(anchor)
   .siblings()
@@ -81,12 +80,12 @@ function Mouse_Over(anchor){
     filter:"blur(5px)",
   });
   $(anchor).css({
-    fontSize: "50px",
+    fontSize: "33px",
     color: "white",
   });
 }
 function Mouse_Leave(anchor){
-  En_Nav.style.height = "300px"
+  En_Nav.style.height = "330px"
   Ar_Nav.style.height = "300px"
   $(anchor)
   .siblings()
@@ -108,54 +107,84 @@ function Mouse_Leave(anchor){
     color: "Black",
   });
 }
-const xhr = new XMLHttpRequest();
-xhr.open(
-  "GET",
-  "https://api.geoapify.com/v1/ipinfo?&apiKey=b1eafd427c864fd8ad4009a48be4ec1f"
-);
-xhr.onload = function(){
-  JSON.parse(xhr.responseText);
-  console.log(JSON.parse(xhr.responseText));
-  if (JSON.parse(xhr.responseText).country.languages[0].name_native === "العربية") {
+//       // sessionStorage.setItem("Permenant_Language", "English");
+
+// alert(sessionStorage.getItem("Permenant_Language"));
+// if (sessionStorage.getItem("Permenant_Language") === "English"){
+//   NavIsEn();
+// }
+// if (sessionStorage.getItem("Permenant_Language") === "عربي") {
+//   NavIsAR();
+// }
+// localStorage.setItem("Permenant_Language", " ")
+alert(localStorage.getItem("Permenant_Language"));
+if (localStorage.getItem("Permenant_Language") === "English"){
+  NavIsEn();
+}
+if (localStorage.getItem("Permenant_Language") === "عربي") {
+  NavIsAR();
+}
+  function NavIsAR() {
     Ar_Nav.innerHTML = Ar_NavTemplate;
-    LangBtn.innerHTML = "English";
     En_Nav.classList.add("D_None");
     Ar_Nav.classList.remove("D_None");
-    Language = "عربي";
-    // Language = "English";
-    console.log(Language)
-  } else {
-    En_Nav.innerHTML = En_NavTemplate;
-    LangBtn.innerHTML = "عربي";
-    Ar_Nav.classList.add("D_None");
-    En_Nav.classList.remove("D_None");
-    // Language = "عربي";
-      Language = "English";
-      console.log(Language)
+  }
+function NavIsEn(){
+      En_Nav.innerHTML = En_NavTemplate;
+      Ar_Nav.classList.add("D_None");
+      En_Nav.classList.remove("D_None");
     }
-  }
     
-  xhr.send();
-setTimeout(()=>{
-  
-  if (Language === "عربي") {
-    console.log("new");
-    HomePageTitle[0].innerHTML = "الرئيسية";
-  } else if (Language === "English") {
-    HomePageTitle[0].innerHTML = "AERI Home Page";
+    // GetLocation_XHR()
+    
+    setTimeout(()=>{
+  switch (location.pathname.substring(location.pathname.lastIndexOf("/") + 1)) {
+    case "Home.html":
+      if (localStorage.getItem("Permenant_Language") === "عربي"){
+        HomePageTitle[0].innerHTML = "الرئيسية";
+      }
+      else if (localStorage.getItem("Permenant_Language") === "English") {
+        HomePageTitle[0].innerHTML = "AERI Home Page";
+      }
+      break;
+      
+      case "Institute%20Sections%20.html":
+        if (localStorage.getItem("Permenant_Language") === "عربي"){
+          HomePageTitle[0].innerHTML = "الأقسام";
+        }
+        else if (localStorage.getItem("Permenant_Language") === "English") {
+          HomePageTitle[0].innerHTML = "AERI Institute Sections Page";
+        }
+        break;
+        
+        // case "Contact%20Us%20.html":
+        // break;
+        // case "Contact%20Us%20.html":
+    // break;
+    // case "Contact%20Us%20.html":
+    // break;
+    // case "Contact%20Us%20.html":
+    // break;
+    // case "Contact%20Us%20.html":
+    // break;
+    // case "Contact%20Us%20.html":
+    // break;
+    // case "Contact%20Us%20.html":
+    // break;
+    // case "Contact%20Us%20.html":
+    // break;
+    case "Contact%20Us%20.html":
+      if (localStorage.getItem("Permenant_Language") === "عربي"){
+        HomePageTitle[0].innerHTML = "الإتصال بنا";
+      }
+      else if (localStorage.getItem("Permenant_Language") === "English") {
+        HomePageTitle[0].innerHTML = "AERI Contact Us Page";
+      }
+      break;
+      
+    default:
   }
-  
 },300)
-  document.addEventListener("DOMContentLoaded", function () {
-    
-    if (LangBtn.innerHTML === "ُEnglish") {
-      En_Nav.classList.add("D_None");
-      Ar_Nav.classList.remove("D_None");
-    } else if (LangBtn.innerHTML === "عربي") {
-    Ar_Nav.classList.add("D_None");
-    En_Nav.classList.remove("D_None");
-  }
-});
 
 En_Nav.classList.add("Text_Direction_En");
 Ar_Nav.classList.add("Text_Direction_Ar");
@@ -174,5 +203,3 @@ function scrollFunction() {
     document.getElementById("English_NavBar").style.padding = "30px 10px";
   }
 }
-
-exports = {Language};
