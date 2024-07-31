@@ -10,7 +10,7 @@
         ==> Use Article tag
         ==> Use Alt Img attribute
     -->
-    <title lang="">AERI Patents Page</title>
+    <title id="Patents_Page_Title" lang="" title="Page Title"></title>
     <link rel="stylesheet" href="../CSS/NavBar .css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
@@ -58,18 +58,19 @@
     <!-- <script src="../JavaScript/Get Location.js"></script> -->
     <script>
         // console.log(Language)
+        var PageTitle = document.getElementById("Patents_Page_Title")
         LangBtn.addEventListener("click", function () {
             if (LangBtn.innerHTML === "English") {
                 console.log("666666666666666666");
-                PageTitle[0].innerHTML = "برءات الاختراع";
-                PageTitle[0].setAttribute("lang", "ar");
+                PageTitle.innerHTML = "AERI Patents Page";
+                PageTitle.setAttribute("lang", "ar");
                 LangBtn.innerHTML = "عربي";
                 Ar_Nav.classList.add("D_None");
                 En_Nav.classList.remove("D_None");
                 En_Nav.innerHTML = En_NavTemplate;
             } else if (LangBtn.innerHTML === "عربي") {
-                PageTitle[0].innerHTML = "AERI Patents Page";
-                PageTitle[0].setAttribute("lang", "en");
+                PageTitle.innerHTML = "برءات الاختراع";
+                PageTitle.setAttribute("lang", "en");
                 LangBtn.innerHTML = "English";
                 Ar_Nav.innerHTML = Ar_NavTemplate;
                 En_Nav.classList.add("D_None");

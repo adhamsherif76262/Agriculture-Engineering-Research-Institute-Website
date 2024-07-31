@@ -9,7 +9,7 @@
         ==> Use Article tag
         ==> Use Alt Img attribute
     -->
-    <title lang="">AERI Home Page</title>
+    <title lang="" title="Page Title"></title>
     <link rel="stylesheet" href="../CSS/NavBar .css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
@@ -39,20 +39,22 @@
 <script  src="../JavaScript/NavBar_Footer_Language Changer.js"></script>
 <!-- <script src="../JavaScript/Get Location.js"></script> -->
  <script>
-    
+    setTimeout(()=>{
+        console.log(Language)
+    },300)
      var Hel = "ZZZZZZZZZZZZZZZZZZZZZZZ";
      LangBtn.addEventListener("click", function () {
          if (LangBtn.innerHTML === "English") {
-             console.log("666666666666666666");
-             PageTitle[0].innerHTML = "الرئيسية";
-             PageTitle[0].setAttribute("lang", "ar");
-             LangBtn.innerHTML = "عربي";
-             Ar_Nav.classList.add("D_None");
-    En_Nav.classList.remove("D_None");
-    En_Nav.innerHTML = En_NavTemplate;
-} else if (LangBtn.innerHTML === "عربي") {
-    PageTitle[0].innerHTML = "AERI Home Page";
-    PageTitle[0].setAttribute("lang", "en");
+            console.log("666666666666666666");
+            HomePageTitle[0].innerHTML = "AERI Home Page";
+            HomePageTitle[0].setAttribute("lang", "ar");
+            LangBtn.innerHTML = "عربي";
+            Ar_Nav.classList.add("D_None");
+            En_Nav.classList.remove("D_None");
+            En_Nav.innerHTML = En_NavTemplate;
+        } else if (LangBtn.innerHTML === "عربي") {
+            HomePageTitle[0].innerHTML = "الرئيسية";
+    HomePageTitle[0].setAttribute("lang", "en");
     LangBtn.innerHTML = "English";
     Ar_Nav.innerHTML = Ar_NavTemplate;
     En_Nav.classList.add("D_None");

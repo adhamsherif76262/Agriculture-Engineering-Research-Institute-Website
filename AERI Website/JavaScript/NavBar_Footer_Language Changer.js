@@ -3,8 +3,8 @@ var En_Nav = document.getElementById("English_NavBar");
 var Ar_Nav = document.getElementById("Arabic_NavBar");
 var Upper_NavBar_En = document.getElementById("Upper_NavBar_En");
 var Upper_NavBar_Ar = document.getElementById("Upper_NavBar_Ar");
-var PageTitle = document.getElementsByTagName("title");
-var title = PageTitle[0].innerHTML;
+var HomePageTitle = document.getElementsByTagName("title");
+var title = HomePageTitle[0].innerHTML;
 var navItems = document.querySelectorAll(".Nav_Links");
 var Language= "";
 console.log("Hel")
@@ -54,9 +54,8 @@ var En_NavTemplate = `
         </div>
     `;
 
-title = title.slice(5);
-title = title.substring(0, title.length - 5);
-console.log("object")
+    
+    console.log("object");
 
 function Mouse_Over_Special(Special_Anchor){
   $(Special_Anchor).css({
@@ -137,8 +136,16 @@ xhr.onload = function(){
   }
     
   xhr.send();
-
+setTimeout(()=>{
   
+  if (Language === "عربي") {
+    console.log("new");
+    HomePageTitle[0].innerHTML = "الرئيسية";
+  } else if (Language === "English") {
+    HomePageTitle[0].innerHTML = "AERI Home Page";
+  }
+  
+},300)
   document.addEventListener("DOMContentLoaded", function () {
     
     if (LangBtn.innerHTML === "ُEnglish") {
