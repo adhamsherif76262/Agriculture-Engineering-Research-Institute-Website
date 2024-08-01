@@ -117,7 +117,7 @@ function Mouse_Leave(anchor){
 //   NavIsAR();
 // }
 // localStorage.setItem("Permenant_Language", " ")
-alert(localStorage.getItem("Permenant_Language"));
+console.log(localStorage.getItem("Permenant_Language"));
 if (localStorage.getItem("Permenant_Language") === "English"){
   NavIsEn();
 }
