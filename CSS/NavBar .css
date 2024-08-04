@@ -32,7 +32,7 @@
     color: black;
     font-family: PT-Bold-Heading;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 80px;
 }
 #NavBar_P_En{
     font-family: Arial Black,Arial Bold,Gadget,sans-serif;
@@ -607,6 +607,11 @@
         margin-left: 20px;
         margin-right: 20px;
     }
+    #NavBar_P_Ar{
+        font-size: 65px;
+        /* margin-left: 20px;
+        margin-right: 20px; */
+    }
     #Nav_Links_Container_En{
         transition:0.5s;
         transform: scale(80%);
@@ -640,7 +645,7 @@
 @media screen and (max-width :1200px){
      #LangBtnEn{
         transform: scale(80%);
-        /* margin-right: -40px; */
+        margin-right: -10px;
     }
     #LangBtnAr{
         transform: scale(80%);
@@ -655,6 +660,9 @@
         font-size: 30px;
         margin-left: -80px;
         margin-right: -50px;
+    }
+    #NavBar_P_Ar{
+        font-size: 58px;
     }
     .NavBar_Logos{
         transform: scale(70%);
@@ -671,11 +679,14 @@
     #NavBar_P_En{
         font-size: 26px;
     }
+    #NavBar_P_Ar{
+        font-size: 53px;
+        margin-left: -75px;
+        margin-right: -45px;
+        /* display: none; */
+    }
     #LangBtnAr{
         transform: scale(70%);
-    }
-    #NavBar_P_Ar{
-        font-size: 40px;
     }
 }
 @media screen and (max-width :900px){
@@ -699,9 +710,8 @@
         font-size: 22px;
     }
     #NavBar_P_Ar{
-        font-size: 30px;
-        padding: 0;
-        word-spacing: 0px;
+        font-size: 45px;
+        margin-right: -55px;
     }
 }
 @media screen and (max-width : 800px){
@@ -720,11 +730,9 @@
         font-size: 20px;
     }
     #NavBar_P_Ar{
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: bold;
-        font-size: 35px;
-        padding: 0;
-        word-spacing: 0px;
+        font-size: 38px;
+        margin-left: -100px;
+        margin-right: -95px;
     }
     #Nav_Links_Container_En{
         transition:0.5s;
@@ -810,20 +818,23 @@
     }
 }
 @media screen and (max-width : 700px){
+    #LangBtnEn{
+        margin-right: -20px;
+    }
     #NavBar_P_Ar{
-        font-size: 27px;
+        font-size: 32px;
     }
     #NavBar_P_En{
         font-size: 17px;
     }
     .NavBar_Logos{
-        transform: scale(60%);
-        margin-left: -40px;
+        transform: scale(70%);
+        margin-left: -30px;
     }
 }
 @media screen and (max-width : 620px){
     #NavBar_P_Ar{
-        font-size: 24px;
+        font-size: 30px;
     }
     .Nav_Links_Ar:nth-child(1) {
         animation-name: blob-top-anim_Special_Ar;
@@ -855,18 +866,15 @@
 }
 @media screen and (max-width : 600px ){
     .NavBar_Logos{
-        transform: scale(50%);
+        transform: scale(60%);
         margin-left: -40px;
     }
     #LangBtnEn{
-        transform: scale(40%);
-        margin-right: -30px;
+        transform: scale(50%);
+        margin-right: -35px;
     }
     #NavBar_P_Ar{
-        font-size: 21px;
-        padding: 0;
-        margin: 0;
-        word-spacing: 0px;
+        font-size: 26px;
     }
     #NavBar_P_En{
         font-size: 13px;
@@ -875,7 +883,7 @@
     #Nav_Links_Container_Ar{
         transition:0.5s;
         transform: scale(90%);
-        margin-left: 200px;
+        margin-left: 150px;
     }
     #Nav_Links_Container_En{
         transition:0.5s;
@@ -883,7 +891,7 @@
         margin-left: 150px;
     }
 }
-@media screen and (max-width : 500px){
+/* @media screen and (max-width : 500px){
     #LangBtnEn{
         transform: scale(30%);
         margin-right: -40px;
@@ -899,10 +907,8 @@
     }
     #NavBar_P_En{
         font-size: 10px;
-        /* margin-left: -50px; */
     }
     .NavBar_Logos{
-        /* transform: scale(35%); */
         margin-left: -50px;
     }
     #Nav_Links_Container_Ar{
@@ -915,9 +921,74 @@
         transform: scale(75%);
         margin-left: 125px;
     }
+} */
+
+@media screen and (max-width : 500px){
+    
+    #English_NavBar{
+        height: 529px;
+    }
+    #Arabic_NavBar {
+        height: 494px;
+    }
+    #Nav_Links_Container_En{
+        transition:0.5s;
+        transform: scale(75%);
+        margin-left: 75px;
+        margin-top: 15px;
+    }
+    #Nav_Links_Container_Ar{
+        transition:0.5s;
+        transform: scale(80%);
+        margin-left: 150px;
+        margin-top: -10px;
+        /* font-size: 50px; */
+    }
+    #LangBtnAr{
+        margin: 0;
+        transform: scaleX(100%);
+        transform: scaleY(70%);
+    }
+    #LangBtnEn{
+        margin: 0;
+        transform: scaleX(50%);
+        transform: scaleY(70%);
+        font-size: 21px;
+    }
+    #Upper_NavBar_Ar,#Upper_NavBar_En{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-between; */
+    }
+    #NavBar_P_En{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 25px;
+    }
+    #NavBar_P_Ar{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 30px;
+    }
+    .NavBar_Logos{
+        margin: 0;
+        /* margin-top: -30px; */
+        transform: scale(100%);
+        /* text-align: center; */
+    }
 }
 @media screen and (max-width : 400px){
-    #LangBtnEn{
+    #Nav_Links_Container_Ar{
+        transition:0.5s;
+        transform: scale(80%);
+        margin-left: 100px;
+        margin-top: -10px;
+        /* font-size: 50px; */
+    }
+    /* #LangBtnEn{
         transform: scale(25%);
         margin-right: -50px;
     }
@@ -949,57 +1020,69 @@
         transform: scale(75%);
         margin-left: 75px;
         margin-top: 25px;
-    }
+    } */
 }
-
 @media screen and (max-width : 350px){
-    #Arabic_NavBar , #English_NavBar{
-        height: 525px;
+    #English_NavBar{
+        height: 540px;
+    }
+    #Arabic_NavBar {
+        height: 440px;
     }
     #LangBtnAr{
         margin: 0;
-        /* font-size: 30px;
-        width: 300px;
-        height: 150px; */
         transform: scaleX(100%);
         transform: scaleY(70%);
     }
-    #Upper_NavBar_En{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* justify-content: space-between; */
-    }
-    #NavBar_P_En{
+    #LangBtnEn{
         margin: 0;
-        padding: 0;
-        text-align: center;
-        /* margin-top: -40px; */
-        font-size: 20px;
-        /* text-align: justify; */
-        /* display: none; */
+        transform: scaleX(30%);
+        transform: scaleY(70%);
+        font-size: 18px;
     }
-    .NavBar_Logos{
-        margin: 0;
-        /* margin-top: -30px; */
-        transform: scale(100%);
-        /* text-align: center; */
+    #NavBar_P_Ar{
+        font-size: 25px;
+    }
+    #Nav_Links_Container_Ar{
+        transition:0.5s;
+        transform: scale(65%);
+    }
+    #Nav_Links_Container_En{
+        transition:0.5s;
+        transform: scale(63%);
     }
 }
 @media screen and (max-width : 300px){
+    #English_NavBar{
+        height: 455px;
+    }
+    #Arabic_NavBar {
+        height: 380px;
+    }
+    .NavBar_Logos{
+        transform: scale(90%);
+    }
+    #NavBar_P_Ar{
+        font-size: 20px;
+    }
+    #NavBar_P_En{
+        font-size: 20px;
+    }
     #LangBtnEn{
-        transform: scale(30%);
-        margin-left: -20px;
+        margin: 0;
+        transform: scale(50%);
+        font-size: 20px;
     }
     #LangBtnAr{
-        transform: scale(35%);
-        margin-left: -20px;
+        transform: scale(60%);
     }
     #Nav_Links_Container_Ar{
-        transform: scale(60%);
-        margin-right: 178px;
+        transform: scale(50%);
+        margin-right: 145px;
     }
     #Nav_Links_Container_En{
-        transform: scale(60%);
+        transform: scale(50%);
+        margin-left: 60px;
+        margin-top: 0px;
     }
 }
