@@ -1,0 +1,44 @@
+[[redirects]]
+from = "/Home"
+to = "https://www.youtube.com/"
+status = 200
+
+[[redirects]]
+from = "/Institute_Sections"
+to = "https://www.youtube.com/"
+status = 200
+
+[[redirects]]
+from = "/Helping_Units"
+to = "https://www.youtube.com/"
+status = 200
+
+[[redirects]]
+from = "/Institute_Branches"
+to = "https://www.youtube.com/"
+status = 200
+
+[[redirects]]
+from = "/Patents"
+to = "https://www.youtube.com/"
+status = 200
+
+[[redirects]]
+from = "/Permanent_Exhibition"
+to = "https://www.youtube.com/"
+status = 200
+
+[[redirects]]
+from = "/Research_Projects"
+to = "https://www.youtube.com/"
+status = 200
+
+[[redirects]]
+from = "/Overview"
+to = "https://www.youtube.com/"
+status = 200
+
+[[redirects]]
+from = "/Contact_Us"
+to = "https://www.youtube.com/"
+status = 200
