@@ -18,7 +18,8 @@
     outline: none;
     padding: 20px;
     cursor: pointer;
-    border: double 10px rgb(0, 0, 119);
+    background-color: transparent;
+    border: double 10px rgb(0, 0, 90);
 }
 #LangBtnEn:hover , #LangBtnAr:hover{
     color: white;
@@ -41,14 +42,16 @@
 }
 #Arabic_NavBar , #English_NavBar{
     filter: url('#goo');
-    overflow: hidden;
-    background-color: #f1f1f1;
+    overflow: hidden;    
+    /* background-color: #f1f1f1; */
+    background-color: #feba27;
     transition: 0.4s;
     width: 100%;
-    margin-top: -150px;
+    margin-top: -155px;
     height: 330px;
     /* height: 1000px; */
     z-index: 99;
+    /* border:10px dotted black; */
 }
 #Nav_Links_Container_En, #Nav_Links_Container_Ar{
     transition:0.5s;
@@ -96,6 +99,15 @@
 .Nav_Links_Ar{
     font-size: 25px;
     font-family: PT-Bold-Heading;
+}
+@keyframes ARC_Logo {
+    0%{
+    transform: translate(200px, 0);
+   }
+
+   100%{
+    transform: translate(900px, 0);
+   }
 }
 @keyframes navlink_1_Ar {
     0%{
@@ -329,11 +341,11 @@
 }
 .Text_Direction_En{
     direction: ltr;
-    text-align: justify;
+    /* text-align: justify; */
 }
 .Text_Direction_Ar{
     direction: rtl;
-    text-align: justify;
+    /* text-align: justify; */
 }
 .Flex_Direction_En{
     display: flex;
@@ -591,6 +603,7 @@
 
 @media screen and (max-width : 1485px){
     #NavBar_P_En{
+        font-size: 31px;
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -627,9 +640,11 @@
 @media screen and (max-width :1200px){
      #LangBtnEn{
         transform: scale(80%);
+        /* margin-right: -40px; */
     }
     #LangBtnAr{
         transform: scale(80%);
+        margin-right: -5px;
     }
     #Nav_Links_Container_En, #Nav_Links_Container_Ar{
         transition:0.5s;
@@ -637,10 +652,13 @@
         margin-right: 175px;
     }
     #NavBar_P_En{
-        font-size: 22px;
+        font-size: 30px;
+        margin-left: -80px;
+        margin-right: -50px;
     }
     .NavBar_Logos{
-        transform: scale(80%);
+        transform: scale(70%);
+        margin-left: -45px;
     }
 }
 @media screen and (max-width :1020px){
@@ -651,26 +669,26 @@
         margin-right: 200px;
     }
     #NavBar_P_En{
-        font-size: 19px;
+        font-size: 26px;
     }
     #LangBtnAr{
         transform: scale(70%);
     }
     #NavBar_P_Ar{
         font-size: 40px;
-        padding: 0;
-        word-spacing: 0px;
     }
 }
 @media screen and (max-width :900px){
     #LangBtnAr{
         transform: scale(60%);
+        margin-right: -15px;
     }
     #LangBtnEn{
         transform: scale(60%);
     }
     .NavBar_Logos{
         transform: scale(70%);
+        margin-left: -40px;
     }
     #Nav_Links_Container_En , #Nav_Links_Container_Ar{
         transition:0.5s;
@@ -678,7 +696,7 @@
         margin-right: 200px;
     }
     #NavBar_P_En{
-        font-size: 15px;
+        font-size: 22px;
     }
     #NavBar_P_Ar{
         font-size: 30px;
@@ -698,8 +716,8 @@
         margin: 0;
     }
     #NavBar_P_En{
-        font-size: 17px;
-        margin: 0;
+        margin-right: -70px;
+        font-size: 20px;
     }
     #NavBar_P_Ar{
         font-family: 'Times New Roman', Times, serif;
@@ -721,8 +739,9 @@
     .NavBar_Logos{
         width: 200px;
         height: 125px;
-        padding: 0;
-        margin: 0;
+        margin-left: -30px;
+        /* padding: 0;
+        margin: 0; */
     }
     .Nav_Links:before{
         /* To Apply the reddish background from the very begining*/
@@ -790,7 +809,22 @@
     	animation-name: blob-center-anim_Ar;
     }
 }
+@media screen and (max-width : 700px){
+    #NavBar_P_Ar{
+        font-size: 27px;
+    }
+    #NavBar_P_En{
+        font-size: 17px;
+    }
+    .NavBar_Logos{
+        transform: scale(60%);
+        margin-left: -40px;
+    }
+}
 @media screen and (max-width : 620px){
+    #NavBar_P_Ar{
+        font-size: 24px;
+    }
     .Nav_Links_Ar:nth-child(1) {
         animation-name: blob-top-anim_Special_Ar;
     }
@@ -820,14 +854,23 @@
     }
 }
 @media screen and (max-width : 600px ){
+    .NavBar_Logos{
+        transform: scale(50%);
+        margin-left: -40px;
+    }
     #LangBtnEn{
-        transform: scale(60%);
-        margin: 0;
+        transform: scale(40%);
+        margin-right: -30px;
     }
     #NavBar_P_Ar{
-        font-size: 26px;
+        font-size: 21px;
         padding: 0;
+        margin: 0;
         word-spacing: 0px;
+    }
+    #NavBar_P_En{
+        font-size: 13px;
+        margin-left: -100px;
     }
     #Nav_Links_Container_Ar{
         transition:0.5s;
@@ -842,28 +885,25 @@
 }
 @media screen and (max-width : 500px){
     #LangBtnEn{
-        transform: scale(40%);
-        margin: 0;
+        transform: scale(30%);
         margin-right: -40px;
     }
     #LangBtnAr{
         transform: scale(40%);
-        margin: 0;
-        margin-right: -20px;
+        margin-right: -30px;
     }
     #NavBar_P_Ar{
-        font-size: 20px;
+        font-size: 12px;
         padding: 0;
         word-spacing: 0px;
     }
     #NavBar_P_En{
-        font-size: 11px;
-        padding: 0;
-        word-spacing: 0px;
+        font-size: 10px;
+        /* margin-left: -50px; */
     }
     .NavBar_Logos{
-        transform: scale(50%);
-        margin-left: -45px;
+        /* transform: scale(35%); */
+        margin-left: -50px;
     }
     #Nav_Links_Container_Ar{
         transition:0.5s;
@@ -876,28 +916,28 @@
         margin-left: 125px;
     }
 }
-@media screen and (max-width : 400px){
+/* @media screen and (max-width : 400px){
     #LangBtnEn{
-        transform: scale(30%);
-        margin-right: -40px;
+        transform: scale(25%);
+        margin-right: -50px;
     }
     #LangBtnAr{
         transform: scale(35%);
         margin-right: -30px;
     }
     #NavBar_P_Ar{
-        font-size: 14px;
-        padding: 0;
-        word-spacing: 0px;
-    }
-    #NavBar_P_En{
         font-size: 10px;
         padding: 0;
         word-spacing: 0px;
     }
+    #NavBar_P_En{
+        font-size: 9px;
+        margin-left: -120px;
+        margin-right: -90px;
+    }
     .NavBar_Logos{
-        transform: scale(40%);
-        margin-left: -57px;
+        transform: scale(30%);
+        margin-left: -65px;
     }
     #Nav_Links_Container_Ar{
         transition:0.5s;
@@ -909,6 +949,41 @@
         transform: scale(75%);
         margin-left: 75px;
         margin-top: 25px;
+    }
+} */
+
+@media screen and (max-width : 400px){
+    #Arabic_NavBar , #English_NavBar{
+        height: 525px;
+    }
+    #LangBtnAr{
+        margin: 0;
+        /* font-size: 30px;
+        width: 300px;
+        height: 150px; */
+        transform: scaleX(100%);
+        transform: scaleY(70%);
+    }
+    #Upper_NavBar_En{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-between; */
+    }
+    #NavBar_P_En{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        /* margin-top: -40px; */
+        font-size: 20px;
+        /* text-align: justify; */
+        /* display: none; */
+    }
+    .NavBar_Logos{
+        margin: 0;
+        /* margin-top: -30px; */
+        transform: scale(100%);
+        /* text-align: center; */
     }
 }
 @media screen and (max-width : 300px){
