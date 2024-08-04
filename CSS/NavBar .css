@@ -1,37 +1,13 @@
-/* @import "compass/css3"; */
-/* .pt-sans-regular {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.pt-sans-bold {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.pt-sans-regular-italic {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.pt-sans-bold-italic {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}*/
 @font-face {
    font-family: PT-Bold-Heading;
    src: url(../Fonts/PT\ Bold\ Heading.ttf);
 } 
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 #LangBtnEn , #LangBtnAr{
     font-weight: bold;
     color: black;
@@ -52,21 +28,16 @@
 }
 
 #NavBar_P_Ar{
-    /* color: rgb(0, 0, 119); */
     color: black;
     font-family: PT-Bold-Heading;
     font-weight: bold;
     font-size: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 #NavBar_P_En{
     font-family: Arial Black,Arial Bold,Gadget,sans-serif;
     color: black;
     font-weight: bold;
     font-size: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 #Arabic_NavBar , #English_NavBar{
     filter: url('#goo');
@@ -90,12 +61,6 @@
     padding: 30px 30px;
     text-decoration: none;
     font-size: 25px;
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-shrink:1; */
-    /* display: grid;
-    grid-template-columns: repeat(1fr,9); */
     position: absolute;
     left: 30%;
     transition:0.5s;
@@ -479,6 +444,14 @@
     transform: scale(0.8) translate(-140px, -30px)
    }
 }
+@keyframes blob-top-left-anim_Special_Ar {
+   0%{
+    transform: scale(1.1) translate(0, 0);
+   }
+   100%{
+    transform: scale(0.8) translate(-190px, 0px)
+   }
+}
 
 @keyframes blob-top-right-anim_Ar {
    0%{
@@ -488,8 +461,24 @@
     transform: scale(0.8) translate(235px, -30px)
    }
 }
+@keyframes blob-top-right-anim_Special_Ar {
+   0%{
+    transform: scale(1.1) translate(0, 0);
+   }
+   100%{
+    transform: scale(0.8) translate(210px, 0px)
+   }
+}
 
 @keyframes blob-bottom-left-anim_Ar {
+   0%{
+        transform: scale(1.1) translate(0, 0);
+   }
+   100%{
+    transform: scale(0.8) translate(-210px,165px);
+   }
+}
+@keyframes blob-bottom-left-anim_Special_Ar {
    0%{
         transform: scale(1.1) translate(0, 0);
    }
@@ -506,6 +495,14 @@
     transform: scale(0.8) translate(195px,165px);
    }
 }
+@keyframes blob-bottom-right-anim_Special_Ar {
+  0%{
+    transform: scale(1.1) translate(0, 0);
+   }
+   100%{
+    transform: scale(0.8) translate(195px,165px);
+   }
+}
 
 @keyframes blob-top-anim_Ar {
      0%{
@@ -515,8 +512,24 @@
     transform: scale(0.8) translate(25px,-30px);
    }
 }
+@keyframes blob-top-anim_Special_Ar {
+     0%{
+    transform: scale(1.1) translate(0, 0);
+   }
+   100%{
+    transform: scale(0.8) translate(10px,0px);
+   }
+}
 
 @keyframes blob-center-anim_Ar {
+     0%{
+    transform: scale(1.1) translate(0, 0);
+   }
+   100%{
+    transform: scale(0.8) translate(20px,65px);
+   }
+}
+@keyframes blob-center-anim_Special_Ar {
      0%{
     transform: scale(1.1) translate(0, 0);
    }
@@ -533,6 +546,14 @@
     transform: scale(0.8) translate(210px,65px);
    }
 }
+@keyframes blob-right-anim_Special_Ar {
+     0%{
+    transform: scale(1.1) translate(0, 0);
+   }
+   100%{
+    transform: scale(0.8) translate(210px,65px);
+   }
+}
 
 @keyframes blob-bottom-anim_Ar {
      0%{
@@ -540,6 +561,14 @@
    }
    100%{
     transform: scale(0.8) translate(0px,165px);
+   }
+}
+@keyframes blob-bottom-anim_Special_Ar {
+     0%{
+    transform: scale(1.1) translate(0, 0);
+   }
+   100%{
+    transform: scale(0.8) translate(15px,165px);
    }
 }
 
@@ -551,8 +580,20 @@
     transform: scale(0.8) translate(-205px,65px);
    }
 }
+@keyframes blob-left-anim_Special_Ar {
+     0%{
+    transform: scale(1.1) translate(0, 0);
+   }
+   100%{
+    transform: scale(0.8) translate(-205px,65px);
+   }
+}
 
 @media screen and (max-width : 1485px){
+    #NavBar_P_En{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     #Nav_Links_Container_En{
         transition:0.5s;
         transform: scale(80%);
@@ -646,6 +687,9 @@
     }
 }
 @media screen and (max-width : 800px){
+    #Arabic_NavBar , #English_NavBar{
+        height: 400px;
+    }
     #LangBtnAr{
         transform: scale(50%);
     }
@@ -655,6 +699,7 @@
     }
     #NavBar_P_En{
         font-size: 17px;
+        margin: 0;
     }
     #NavBar_P_Ar{
         font-family: 'Times New Roman', Times, serif;
@@ -679,37 +724,16 @@
         padding: 0;
         margin: 0;
     }
-    #Arabic_NavBar , #English_NavBar{
-        height: 400px;
-    }
-    .Nav_Links{
-        animation: cubic-bezier(0.77, 0, 0.175, 1) 2s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-        transition:0.5s;
-    }
-    /* .Nav_Links:before{ */
-        /* content:'';
-        position:absolute;
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
-        background:rgb(0, 0, 119);
-        transition:0.5s;
-        transform-origin:right; */
+    .Nav_Links:before{
         /* To Apply the reddish background from the very begining*/
-        /* transform:scaleX(0);
-        z-index:-1; */
-    /* } */
-    /* .Nav_Links:hover:before{
-        transition:transform 0.5s;
-        transform-origin:left;
-        transform:scaleX(1);
-    } */
+        transform:scaleX(0);
+        z-index:-1;
+    }
+    .Nav_Links:hover:before{
+        transition:transform 0s;
+    }
 
     /* English Navigation Links For Mobile*/
-
     .Nav_Links_En:nth-child(1) {
     animation-name: blob-center-anim_En;
     }
@@ -766,7 +790,36 @@
     	animation-name: blob-center-anim_Ar;
     }
 }
-@media screen and (max-width : 600px){
+@media screen and (max-width : 620px){
+    .Nav_Links_Ar:nth-child(1) {
+        animation-name: blob-top-anim_Special_Ar;
+    }
+    .Nav_Links_Ar:nth-child(2) {
+        animation-name: blob-top-right-anim_Special_Ar;
+    }
+    .Nav_Links_Ar:nth-child(3) {
+        animation-name: blob-bottom-left-anim_Special_Ar;
+    }
+     .Nav_Links_Ar:nth-child(4) {
+    	animation-name: blob-right-anim_Special_Ar;
+    }
+     .Nav_Links_Ar:nth-child(5) {
+    	animation-name: blob-left-anim_Special_Ar;
+    }
+    .Nav_Links_Ar:nth-child(6) {
+        animation-name: blob-bottom-anim_Special_Ar;
+    }
+         .Nav_Links_Ar:nth-child(7) {
+    	animation-name: blob-bottom-right-anim_Special_Ar;
+    }
+    .Nav_Links_Ar:nth-child(8) {
+        animation-name: blob-top-left-anim_Special_Ar;
+    }
+    .Nav_Links_Ar:nth-child(9) {
+    	animation-name: blob-center-anim_Special_Ar;
+    }
+}
+@media screen and (max-width : 600px ){
     #LangBtnEn{
         transform: scale(60%);
         margin: 0;
@@ -791,14 +844,26 @@
     #LangBtnEn{
         transform: scale(40%);
         margin: 0;
+        margin-right: -40px;
+    }
+    #LangBtnAr{
+        transform: scale(40%);
+        margin: 0;
+        margin-right: -20px;
     }
     #NavBar_P_Ar{
-        font-size: 14px;
+        font-size: 20px;
+        padding: 0;
+        word-spacing: 0px;
+    }
+    #NavBar_P_En{
+        font-size: 11px;
         padding: 0;
         word-spacing: 0px;
     }
     .NavBar_Logos{
-        transform: scale(60%);
+        transform: scale(50%);
+        margin-left: -45px;
     }
     #Nav_Links_Container_Ar{
         transition:0.5s;
@@ -809,5 +874,57 @@
         transition:0.5s;
         transform: scale(75%);
         margin-left: 125px;
+    }
+}
+@media screen and (max-width : 400px){
+    #LangBtnEn{
+        transform: scale(30%);
+        margin-right: -50px;
+    }
+    #LangBtnAr{
+        transform: scale(35%);
+        margin-right: -30px;
+    }
+    #NavBar_P_Ar{
+        font-size: 14px;
+        padding: 0;
+        word-spacing: 0px;
+    }
+    #NavBar_P_En{
+        font-size: 10px;
+        padding: 0;
+        word-spacing: 0px;
+    }
+    .NavBar_Logos{
+        transform: scale(40%);
+        margin-left: -57px;
+    }
+    #Nav_Links_Container_Ar{
+        transition:0.5s;
+        transform: scale(80%);
+        margin-left: 110px;
+    }
+    #Nav_Links_Container_En{
+        transition:0.5s;
+        transform: scale(75%);
+        margin-left: 75px;
+        margin-top: 25px;
+    }
+}
+@media screen and (max-width : 300px){
+    #LangBtnEn{
+        transform: scale(30%);
+        margin-left: -20px;
+    }
+    #LangBtnAr{
+        transform: scale(35%);
+        margin-left: -20px;
+    }
+    #Nav_Links_Container_Ar{
+        transform: scale(60%);
+        margin-right: 178px;
+    }
+    #Nav_Links_Container_En{
+        transform: scale(60%);
     }
 }
