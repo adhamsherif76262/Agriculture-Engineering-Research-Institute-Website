@@ -730,7 +730,7 @@
         z-index:-1;
     }
     .Nav_Links:hover:before{
-        transition:transform 0s;
+        transition:transform 0.3s;
     }
 
     /* English Navigation Links For Mobile*/
@@ -879,7 +879,7 @@
 @media screen and (max-width : 400px){
     #LangBtnEn{
         transform: scale(30%);
-        margin-right: -50px;
+        margin-right: -40px;
     }
     #LangBtnAr{
         transform: scale(35%);
