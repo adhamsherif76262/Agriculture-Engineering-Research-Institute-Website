@@ -1,14 +1,16 @@
 @font-face {
-   font-family: PT-Bold-Heading;
-   src: url(../Fonts/PT\ Bold\ Heading.ttf);
-} 
+    font-family: PT-Bold-Heading;
+    src: url(../Fonts/PT\ Bold\ Heading.ttf);
+}
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-#LangBtnEn , #LangBtnAr{
+
+#LangBtnEn,
+#LangBtnAr {
     font-weight: bold;
     color: black;
     text-decoration: none;
@@ -24,34 +26,41 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-#LangBtnEn:hover , #LangBtnAr:hover{
+
+#LangBtnEn:hover,
+#LangBtnAr:hover {
     color: white;
     background-color: rgb(0, 0, 119);
     border: double 10px white;
     border-radius: 50%;
 }
 
-#NavBar_P_Ar{
+#NavBar_P_Ar {
     color: black;
     font-family: PT-Bold-Heading;
     font-weight: bold;
     font-size: 80px;
 }
-#NavBar_P_En{
-    font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+
+#NavBar_P_En {
+    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
     color: black;
     font-weight: bold;
     font-size: 40px;
 }
-#NavBar_P_Ar , #NavBar_P_En{
-    transition:0.5s;
-    animation: Institute_Title cubic-bezier(0.77, 0, 0.175, 1) 2s ;
+
+#NavBar_P_Ar,
+#NavBar_P_En {
+    transition: 0.5s;
+    animation: Institute_Title cubic-bezier(0.77, 0, 0.175, 1) 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-#Arabic_NavBar , #English_NavBar{
+
+#Arabic_NavBar,
+#English_NavBar {
     filter: url('#goo');
-    overflow: hidden;    
+    overflow: hidden;
     /* background-color: #f1f1f1; */
     /* background-color: #feba27; */
     background-color: rgb(255, 205, 131);
@@ -61,12 +70,15 @@
     height: 330px;
     z-index: 99;
 }
-#Nav_Links_Container_En, #Nav_Links_Container_Ar{
-    transition:0.5s;
+
+#Nav_Links_Container_En,
+#Nav_Links_Container_Ar {
+    transition: 0.5s;
     display: flex;
     justify-content: space-between;
 }
-.Nav_Links{
+
+.Nav_Links {
     color: black;
     text-align: center;
     padding: 30px 30px;
@@ -74,916 +86,1132 @@
     font-size: 25px;
     position: absolute;
     left: 30%;
-    transition:0.5s;
+    transition: 0.5s;
     animation: navlink_1 cubic-bezier(0.77, 0, 0.175, 1) 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-.Nav_Links:before{
-    content:'';
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgb(0, 0, 119);
-    transition:0.5s;
-    transform-origin:right;
+
+.Nav_Links:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 119);
+    transition: 0.5s;
+    transform-origin: right;
     /* To Apply the reddish background from the very begining*/
-    transform:scaleX(0);
-    z-index:-1;
-}
-.Nav_Links:hover:before{
-      transition:transform 0.5s;
-  transform-origin:left;
-  transform:scaleX(1);
+    transform: scaleX(0);
+    z-index: -1;
 }
 
-.Nav_Links_En{
+.Nav_Links:hover:before {
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.Nav_Links_En {
     font-size: 25px;
     width: min-content;
-    font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
 }
-.Nav_Links_Ar{
+
+.Nav_Links_Ar {
     font-size: 25px;
     font-family: PT-Bold-Heading;
 }
+
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
 }
+
 @keyframes Institute_Title {
-    0%{
-    transform: translate(0, -300px);
-   }
+    0% {
+        transform: translate(0, -300px);
+    }
 
-   100%{
-    transform: translate(0, 0);
-   }
+    100% {
+        transform: translate(0, 0);
+    }
 }
+
 @keyframes ARC_Logo {
-    0%{
-    transform: translate(-300px, 0);
-   }
+    0% {
+        transform: translate(-300px, 0);
+    }
 
-   100%{
-    transform: translate(0, 0);
-   }
+    100% {
+        transform: translate(0, 0);
+    }
 }
-@keyframes Language_Button {
-    0%{
-    transform: translate(200px, 0);
-   }
 
-   100%{
-    transform: translate(0, 0);
-   }
+@keyframes Language_Button {
+    0% {
+        transform: translate(200px, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
 }
 
 @keyframes navlink_1_Ar {
-    0%{
-    transform: translate(200px, 0);
-   }
+    0% {
+        transform: translate(200px, 0);
+    }
 
-   100%{
-    transform: translate(900px, 0);
-   }
+    100% {
+        transform: translate(900px, 0);
+    }
 }
 
 @keyframes navlink_2_Ar {
-    0%{
-    transform: translate(200px, 0);
-   }
+    0% {
+        transform: translate(200px, 0);
+    }
 
-   100%{
-    transform: translate(780px, 0);
-   }
+    100% {
+        transform: translate(780px, 0);
+    }
 }
+
 @keyframes navlink_3_Ar {
-    0%{
-    transform: translate(200px, 0);
-   }
+    0% {
+        transform: translate(200px, 0);
+    }
 
-   100%{
-    transform: translate(590px, 0);
-   }
+    100% {
+        transform: translate(590px, 0);
+    }
 }
+
 @keyframes navlink_4_Ar {
-    0%{
-    transform: translate(200px, 0);
-   }
+    0% {
+        transform: translate(200px, 0);
+    }
 
-   100%{
-    transform: translate(410px, 0);
-   }
+    100% {
+        transform: translate(410px, 0);
+    }
 }
+
 @keyframes navlink_5_Ar {
-    0%{
-    transform: translate(200px, 0);
-   }
+    0% {
+        transform: translate(200px, 0);
+    }
 
-   100%{
-    transform: translate(210px, 0);
-   }
+    100% {
+        transform: translate(210px, 0);
+    }
 }
+
 @keyframes navlink_6_Ar {
-    0%{
-    transform: translate(200px, 0);
-   }
+    0% {
+        transform: translate(200px, 0);
+    }
 
-   100%{
-    transform: translate(10px, 0);
-   }
+    100% {
+        transform: translate(10px, 0);
+    }
 }
+
 @keyframes navlink_7_Ar {
-    0%{
-    transform: translate(200px, 0);
-   }
+    0% {
+        transform: translate(200px, 0);
+    }
 
-   100%{
-    transform: translate(-180px, 0);
-   }
+    100% {
+        transform: translate(-180px, 0);
+    }
 }
+
 @keyframes navlink_8_Ar {
-    0%{
-    transform: translate(200px, 0);
-   }
+    0% {
+        transform: translate(200px, 0);
+    }
 
-   100%{
-    transform: translate(-280px, 0);
-   }
+    100% {
+        transform: translate(-280px, 0);
+    }
 }
+
 @keyframes navlink_9_Ar {
-    0%{
-    transform: translate(200px, 0);
-   }
+    0% {
+        transform: translate(200px, 0);
+    }
 
-   100%{
-    transform: translate(-440px, 0);
-   }
+    100% {
+        transform: translate(-440px, 0);
+    }
 }
 
- .Nav_Links_Ar:nth-child(1) {
-	 animation-name: navlink_1_Ar;
-     /* display: none; */
+.Nav_Links_Ar:nth-child(1) {
+    animation-name: navlink_1_Ar;
+    /* display: none; */
 }
- .Nav_Links_Ar:nth-child(2) {
-	 animation-name: navlink_2_Ar;
-    }
-    .Nav_Links_Ar:nth-child(3) {
-        animation-name:navlink_3_Ar;
-    }
-    .Nav_Links_Ar:nth-child(4) {
-        animation-name: navlink_4_Ar;
-        /* display: none; */
+
+.Nav_Links_Ar:nth-child(2) {
+    animation-name: navlink_2_Ar;
 }
- .Nav_Links_Ar:nth-child(5) {
-	 animation-name: navlink_5_Ar;
-    }
-    .Nav_Links_Ar:nth-child(6) {
-        animation-name: navlink_6_Ar;
-    }
-    .Nav_Links_Ar:nth-child(7) {
-        animation-name: navlink_7_Ar;
-    }
-    .Nav_Links_Ar:nth-child(8) {
-        animation-name:navlink_8_Ar;
+
+.Nav_Links_Ar:nth-child(3) {
+    animation-name: navlink_3_Ar;
 }
- .Nav_Links_Ar:nth-child(9) {
-	 animation-name:navlink_9_Ar;
+
+.Nav_Links_Ar:nth-child(4) {
+    animation-name: navlink_4_Ar;
+    /* display: none; */
+}
+
+.Nav_Links_Ar:nth-child(5) {
+    animation-name: navlink_5_Ar;
+}
+
+.Nav_Links_Ar:nth-child(6) {
+    animation-name: navlink_6_Ar;
+}
+
+.Nav_Links_Ar:nth-child(7) {
+    animation-name: navlink_7_Ar;
+}
+
+.Nav_Links_Ar:nth-child(8) {
+    animation-name: navlink_8_Ar;
+}
+
+.Nav_Links_Ar:nth-child(9) {
+    animation-name: navlink_9_Ar;
 }
 
 @keyframes navlink_1_En {
-   0%{
-    transform: translate(200px, 0);
-   }
+    0% {
+        transform: translate(200px, 0);
+    }
 
-   100%{
-    transform: translate(880px, 0);
-   }
+    100% {
+        transform: translate(880px, 0);
+    }
 }
+
 @keyframes navlink_2_En {
-    0%{
-    transform: translate(200px, 0);
-   }
+    0% {
+        transform: translate(200px, 0);
+    }
 
-   100%{
-    transform: translate(725px, 0);
-   }
+    100% {
+        transform: translate(725px, 0);
+    }
 }
+
 @keyframes navlink_3_En {
-    0%{
-    transform: translate(200px, 0);
-   }
+    0% {
+        transform: translate(200px, 0);
+    }
 
-   100%{
-    transform: translate(550px, 0);
-   }
+    100% {
+        transform: translate(550px, 0);
+    }
 }
+
 @keyframes navlink_4_En {
-    0%{
-    transform: translate(200px, 0);
-   }
+    0% {
+        transform: translate(200px, 0);
+    }
 
-   100%{
-    transform: translate(360px, 0);
-   }
+    100% {
+        transform: translate(360px, 0);
+    }
 }
+
 @keyframes navlink_5_En {
-    0%{
-    transform: translate(200px, 0);
-   }
+    0% {
+        transform: translate(200px, 0);
+    }
 
-   100%{
-    transform: translate(200px, 0);
-   }
+    100% {
+        transform: translate(200px, 0);
+    }
 }
+
 @keyframes navlink_6_En {
-    0%{
-    transform: translate(200px, 0);
-   }
+    0% {
+        transform: translate(200px, 0);
+    }
 
-   100%{
-    transform: translate(20px, 0);
-   }
+    100% {
+        transform: translate(20px, 0);
+    }
 }
+
 @keyframes navlink_7_En {
-    0%{
-    transform: translate(200px, 0);
-   }
+    0% {
+        transform: translate(200px, 0);
+    }
 
-   100%{
-    transform: translate(-150px, 0);
-   }
+    100% {
+        transform: translate(-150px, 0);
+    }
 }
+
 @keyframes navlink_8_En {
-    0%{
-    transform: translate(200px, 0);
-   }
+    0% {
+        transform: translate(200px, 0);
+    }
 
-   100%{
-    transform: translate(-310px, 0);
-   }
+    100% {
+        transform: translate(-310px, 0);
+    }
 }
+
 @keyframes navlink_9_En {
-    0%{
-    transform: translate(200px, 0);
-   }
+    0% {
+        transform: translate(200px, 0);
+    }
 
-   100%{
-    transform: translate(-440px, 0);
-   }
-}
-.Nav_Links_En:nth-child(1){
-	 animation-name:navlink_1_En;
-}
-.Nav_Links_En:nth-child(2){
-	 animation-name:navlink_2_En;
-}
-.Nav_Links_En:nth-child(3){
-	 animation-name:navlink_3_En;
-}
-.Nav_Links_En:nth-child(4){
-	 animation-name:navlink_4_En;
-}
-.Nav_Links_En:nth-child(5){
-	 animation-name:navlink_5_En;
-}
-.Nav_Links_En:nth-child(6){
-	 animation-name:navlink_6_En;
-}
-.Nav_Links_En:nth-child(7){
-	 animation-name:navlink_7_En;
-}
-.Nav_Links_En:nth-child(8){
-	 animation-name:navlink_8_En;
-}
-.Nav_Links_En:nth-child(9){
-	 animation-name:navlink_9_En;
+    100% {
+        transform: translate(-440px, 0);
+    }
 }
 
-.ARC_Logo{
-    transition:0.5s;
-    animation: ARC_Logo cubic-bezier(0.77, 0, 0.175, 1) 2s ;
+.Nav_Links_En:nth-child(1) {
+    animation-name: navlink_1_En;
+}
+
+.Nav_Links_En:nth-child(2) {
+    animation-name: navlink_2_En;
+}
+
+.Nav_Links_En:nth-child(3) {
+    animation-name: navlink_3_En;
+}
+
+.Nav_Links_En:nth-child(4) {
+    animation-name: navlink_4_En;
+}
+
+.Nav_Links_En:nth-child(5) {
+    animation-name: navlink_5_En;
+}
+
+.Nav_Links_En:nth-child(6) {
+    animation-name: navlink_6_En;
+}
+
+.Nav_Links_En:nth-child(7) {
+    animation-name: navlink_7_En;
+}
+
+.Nav_Links_En:nth-child(8) {
+    animation-name: navlink_8_En;
+}
+
+.Nav_Links_En:nth-child(9) {
+    animation-name: navlink_9_En;
+}
+
+.ARC_Logo {
+    transition: 0.5s;
+    animation: ARC_Logo cubic-bezier(0.77, 0, 0.175, 1) 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
-.NavBar_Logos{
+.NavBar_Logos {
     margin-top: 20px;
-    width:275px ;
-    height:175px;
-    transition:0.5s;
+    width: 275px;
+    height: 175px;
+    transition: 0.5s;
 }
-.NavBar_Logos:hover{
+
+.NavBar_Logos:hover {
     animation: shake 0.1s;
     animation-iteration-count: infinite;
 }
-.D_None{
+
+.D_None {
     display: none;
 }
-.Text_Direction_En{
+
+.Text_Direction_En {
     direction: ltr;
 }
-.Text_Direction_Ar{
+
+.Text_Direction_Ar {
     direction: rtl;
 }
-.Flex_Direction_En{
+
+.Flex_Direction_En {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.Flex_Direction_Ar{
+
+.Flex_Direction_Ar {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
 }
-#Upper_NavBar_Ar,#Upper_NavBar_En{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+
+#Upper_NavBar_Ar,
+#Upper_NavBar_En {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* English Keyframes animation for Arabic Navigation Links In Mobile*/
 
 @keyframes blob-top-left-anim_En {
-   0%{
-    transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(-170px, -30px)
-   }
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(0.8) translate(-170px, -30px)
+    }
 }
 
 @keyframes blob-top-right-anim_En {
-   0%{
-    transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(175px, -30px)
-   }
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(0.8) translate(175px, -30px)
+    }
 }
 
 @keyframes blob-bottom-left-anim_En {
-   0%{
+    0% {
         transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(-175px,200px);
-   }
+    }
+
+    100% {
+        transform: scale(0.8) translate(-175px, 200px);
+    }
 }
 
 @keyframes blob-bottom-right-anim_En {
-  0%{
-    transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(175px,200px);
-   }
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(0.8) translate(175px, 200px);
+    }
 }
 
 @keyframes blob-top-anim_En {
-     0%{
-    transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.9) translate(25px,-30px);
-   }
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(0.9) translate(25px, -30px);
+    }
 }
 
 @keyframes blob-center-anim_En {
-     0%{
-    transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(10px,65px);
-   }
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(0.8) translate(10px, 65px);
+    }
 }
 
 @keyframes blob-right-anim_En {
-     0%{
-    transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(195px,65px);
-   }
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(0.8) translate(195px, 65px);
+    }
 }
 
 @keyframes blob-bottom-anim_En {
-     0%{
-    transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(0px,200px);
-   }
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(0.8) translate(0px, 200px);
+    }
 }
 
 @keyframes blob-left-anim_En {
-     0%{
-    transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.78) translate(-180px,65px);
-   }
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(0.78) translate(-180px, 65px);
+    }
 }
+
 /* Arabic Keyframes animation for Arabic Navigation Links In Mobile*/
 
 @keyframes blob-top-left-anim_Ar {
-   0%{
-    transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(-140px, -30px)
-   }
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(0.8) translate(-140px, -30px)
+    }
 }
+
 @keyframes blob-top-left-anim_Special_Ar {
-   0%{
-    transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(-190px, 0px)
-   }
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(0.8) translate(-190px, 0px)
+    }
 }
+
 @keyframes blob-top-right-anim_Ar {
-   0%{
-    transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(235px, -30px)
-   }
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(0.8) translate(235px, -30px)
+    }
 }
+
 @keyframes blob-top-right-anim_Special_Ar {
-   0%{
-    transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(210px, 0px)
-   }
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(0.8) translate(210px, 0px)
+    }
 }
+
 @keyframes blob-bottom-left-anim_Ar {
-   0%{
+    0% {
         transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(-210px,165px);
-   }
+    }
+
+    100% {
+        transform: scale(0.8) translate(-210px, 165px);
+    }
 }
+
 @keyframes blob-bottom-left-anim_Special_Ar {
-   0%{
+    0% {
         transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(-210px,165px);
-   }
+    }
+
+    100% {
+        transform: scale(0.8) translate(-210px, 165px);
+    }
 }
+
 @keyframes blob-bottom-right-anim_Ar {
-  0%{
-    transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(195px,165px);
-   }
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(0.8) translate(195px, 165px);
+    }
 }
+
 @keyframes blob-bottom-right-anim_Special_Ar {
-  0%{
-    transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(195px,165px);
-   }
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(0.8) translate(195px, 165px);
+    }
 }
+
 @keyframes blob-top-anim_Ar {
-     0%{
-    transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(25px,-30px);
-   }
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(0.8) translate(25px, -30px);
+    }
 }
+
 @keyframes blob-top-anim_Special_Ar {
-     0%{
-    transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(10px,0px);
-   }
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(0.8) translate(10px, 0px);
+    }
 }
+
 @keyframes blob-center-anim_Ar {
-     0%{
-    transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(20px,65px);
-   }
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(0.8) translate(20px, 65px);
+    }
 }
+
 @keyframes blob-center-anim_Special_Ar {
-     0%{
-    transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(20px,65px);
-   }
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(0.8) translate(20px, 65px);
+    }
 }
+
 @keyframes blob-right-anim_Ar {
-     0%{
-    transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(210px,65px);
-   }
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(0.8) translate(210px, 65px);
+    }
 }
+
 @keyframes blob-right-anim_Special_Ar {
-     0%{
-    transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(210px,65px);
-   }
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(0.8) translate(210px, 65px);
+    }
 }
+
 @keyframes blob-bottom-anim_Ar {
-     0%{
-    transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(0px,165px);
-   }
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(0.8) translate(0px, 165px);
+    }
 }
+
 @keyframes blob-bottom-anim_Special_Ar {
-     0%{
-    transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(15px,165px);
-   }
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(0.8) translate(15px, 165px);
+    }
 }
+
 @keyframes blob-left-anim_Ar {
-     0%{
-    transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(-205px,65px);
-   }
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(0.8) translate(-205px, 65px);
+    }
 }
+
 @keyframes blob-left-anim_Special_Ar {
-     0%{
-    transform: scale(1.1) translate(0, 0);
-   }
-   100%{
-    transform: scale(0.8) translate(-205px,65px);
-   }
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+
+    100% {
+        transform: scale(0.8) translate(-205px, 65px);
+    }
 }
-@media screen and (max-width : 1485px){
-    #NavBar_P_En{
+
+@media screen and (max-width : 1485px) {
+    #NavBar_P_En {
         font-size: 31px;
         margin-left: 20px;
         margin-right: 20px;
     }
-    #NavBar_P_Ar{
+
+    #NavBar_P_Ar {
         font-size: 65px;
     }
-    #Nav_Links_Container_En{
-        transition:0.5s;
+
+    #Nav_Links_Container_En {
+        transition: 0.5s;
         transform: scale(80%);
         margin-right: 125px;
     }
-    #Nav_Links_Container_Ar{
-        transition:0.5s;
+
+    #Nav_Links_Container_Ar {
+        transition: 0.5s;
         transform: scale(80%);
         margin-right: 150px;
     }
-    .Nav_Links:before{
-        content:'';
-        position:absolute;
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
-        background:rgb(0, 0, 119);
-        transition:0.5s;
-        transform-origin:right;
+
+    .Nav_Links:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(0, 0, 119);
+        transition: 0.5s;
+        transform-origin: right;
         /* To Apply the reddish background from the very begining*/
-        transform:scaleX(0);
-        z-index:-1;
+        transform: scaleX(0);
+        z-index: -1;
     }
-    .Nav_Links:hover:before{
-        transition:transform 0.5s;
-        transform-origin:left;
-        transform:scaleX(1);
+
+    .Nav_Links:hover:before {
+        transition: transform 0.5s;
+        transform-origin: left;
+        transform: scaleX(1);
     }
 }
-@media screen and (max-width :1200px){
-     #LangBtnEn{
+
+@media screen and (max-width :1200px) {
+    #LangBtnEn {
         transform: scale(80%);
         margin-right: 5px;
     }
-    #LangBtnAr{
+
+    #LangBtnAr {
         transform: scale(80%);
         margin-right: 5px;
     }
-    #Nav_Links_Container_En, #Nav_Links_Container_Ar{
-        transition:0.5s;
+
+    #Nav_Links_Container_En,
+    #Nav_Links_Container_Ar {
+        transition: 0.5s;
         transform: scale(68%);
         margin-right: 175px;
     }
-    #NavBar_P_En{
+
+    #NavBar_P_En {
         font-size: 25px;
         margin-left: -80px;
         margin-right: -50px;
     }
-    #NavBar_P_Ar{
+
+    #NavBar_P_Ar {
         font-size: 52px;
     }
-    .NavBar_Logos{
+
+    .NavBar_Logos {
         transform: scale(70%);
-        /* margin-left: -45px; */
     }
 }
-@media screen and (max-width :1020px){
-    
-    #Nav_Links_Container_En , #Nav_Links_Container_Ar{
-        transition:0.5s;
+
+@media screen and (max-width :1020px) {
+
+    #Nav_Links_Container_En,
+    #Nav_Links_Container_Ar {
+        transition: 0.5s;
         transform: scale(60%);
         margin-right: 200px;
     }
-    #NavBar_P_En{
-        font-size: 23px;
-        margin-right: -25px;
+
+    #NavBar_P_En {
+        font-size: 21px;
+        margin-right: -55px;
     }
-    #NavBar_P_Ar{
+
+    #NavBar_P_Ar {
         font-size: 38px;
         margin-left: -50px;
         margin-right: -45px;
     }
-    #LangBtnAr{
-        transform: scale(70%);
+
+    #LangBtnAr {
+        margin: 0;
+        padding: 0;
+        margin-right: 10px;
+        width: 100px;
+        height: 60px;
+    }
+
+    #LangBtnEn {
+        margin: 0;
+        padding: 0;
+        margin-right: 10px;
+        width: 130px;
+        height: 60px;
     }
 }
-@media screen and (max-width :900px){
-    #LangBtnAr{
+
+@media screen and (max-width :900px) {
+    #LangBtnAr {
         margin: 0;
         padding: 0;
         width: 70px;
-        /* transform: scale(50%); */
         margin-right: 5px;
     }
-    #LangBtnEn{
+
+    #LangBtnEn {
         margin: 0;
         padding: 0;
         width: 120px;
-        height: 70px;
+        height: 60px;
         margin-right: 5px;
-        /* transform: scale(60%); */
     }
-    .NavBar_Logos{
+
+    .NavBar_Logos {
         transform: scale(70%);
         margin-right: 40px;
     }
-    #Nav_Links_Container_En , #Nav_Links_Container_Ar{
-        transition:0.5s;
+
+    #Nav_Links_Container_En,
+    #Nav_Links_Container_Ar {
+        transition: 0.5s;
         transform: scale(54%);
         margin-right: 200px;
     }
-    #NavBar_P_En{
+
+    #NavBar_P_En {
         font-size: 19px;
     }
-    #NavBar_P_Ar{
+
+    #NavBar_P_Ar {
         font-size: 35px;
         margin-right: 10px;
     }
 }
-@media screen and (max-width : 800px){
-    #Arabic_NavBar , #English_NavBar{
+
+@media screen and (max-width : 800px) {
+
+    #Arabic_NavBar,
+    #English_NavBar {
         height: 400px;
     }
-    #LangBtnAr{
+
+    #LangBtnAr {
         padding: 0;
         width: 80px;
         height: 60px;
     }
-    #LangBtnEn{
-        padding: 0 ;
+
+    #LangBtnEn {
+        padding: 0;
         margin-right: 10px;
         width: 115px;
         height: 50px;
     }
-    #NavBar_P_En{
+
+    #NavBar_P_En {
         margin-right: -25px;
         font-size: 17px;
     }
-    #NavBar_P_Ar{
+
+    #NavBar_P_Ar {
         font-size: 33px;
         margin-left: -125px;
         margin-right: -75px;
     }
-    #Nav_Links_Container_En{
-        transition:0.5s;
+
+    #Nav_Links_Container_En {
+        transition: 0.5s;
         transform: scale(85%);
         margin-left: 220px;
     }
-    #Nav_Links_Container_Ar{
-        transition:0.5s;
+
+    #Nav_Links_Container_Ar {
+        transition: 0.5s;
         transform: scale(100%);
         margin-left: 200px;
     }
-    .NavBar_Logos{
+
+    .NavBar_Logos {
         width: 200px;
         height: 125px;
     }
-    .Nav_Links:before{
+
+    .Nav_Links:before {
         /* To Apply the reddish background from the very begining*/
-        transform:scaleX(0);
-        z-index:-1;
+        transform: scaleX(0);
+        z-index: -1;
     }
-    .Nav_Links:hover:before{
-        transition:transform 0.3s;
+
+    .Nav_Links:hover:before {
+        transition: transform 0.3s;
     }
 
     /* English Navigation Links For Mobile*/
     .Nav_Links_En:nth-child(1) {
-    animation-name: blob-center-anim_En;
+        animation-name: blob-center-anim_En;
     }
+
     .Nav_Links_En:nth-child(2) {
-    animation-name: blob-top-right-anim_En;
+        animation-name: blob-top-right-anim_En;
     }
+
     .Nav_Links_En:nth-child(3) {
         animation-name: blob-left-anim_En;
     }
-     .Nav_Links_En:nth-child(4) {
-    	 animation-name: blob-bottom-right-anim_En;
+
+    .Nav_Links_En:nth-child(4) {
+        animation-name: blob-bottom-right-anim_En;
     }
-     .Nav_Links_En:nth-child(5) {
-    	 animation-name: blob-top-left-anim_En;
+
+    .Nav_Links_En:nth-child(5) {
+        animation-name: blob-top-left-anim_En;
     }
-     .Nav_Links_En:nth-child(6) {
-    	 animation-name: blob-bottom-anim_En;
+
+    .Nav_Links_En:nth-child(6) {
+        animation-name: blob-bottom-anim_En;
     }
-     .Nav_Links_En:nth-child(7) {
-    	 animation-name: blob-right-anim_En;
+
+    .Nav_Links_En:nth-child(7) {
+        animation-name: blob-right-anim_En;
     }
-     .Nav_Links_En:nth-child(8) {
-    	 animation-name: blob-bottom-left-anim_En;
+
+    .Nav_Links_En:nth-child(8) {
+        animation-name: blob-bottom-left-anim_En;
     }
-     .Nav_Links_En:nth-child(9) {
-    	 animation-name: blob-top-anim_En;
+
+    .Nav_Links_En:nth-child(9) {
+        animation-name: blob-top-anim_En;
     }
-/* Arabic Navigation Links For Mobile*/
+
+    /* Arabic Navigation Links For Mobile*/
     .Nav_Links_Ar:nth-child(1) {
         animation-name: blob-top-anim_Ar;
     }
+
     .Nav_Links_Ar:nth-child(2) {
         animation-name: blob-top-right-anim_Ar;
     }
+
     .Nav_Links_Ar:nth-child(3) {
         animation-name: blob-bottom-left-anim_Ar;
     }
-     .Nav_Links_Ar:nth-child(4) {
-    	animation-name: blob-right-anim_Ar;
+
+    .Nav_Links_Ar:nth-child(4) {
+        animation-name: blob-right-anim_Ar;
     }
-     .Nav_Links_Ar:nth-child(5) {
-    	animation-name: blob-left-anim_Ar;
+
+    .Nav_Links_Ar:nth-child(5) {
+        animation-name: blob-left-anim_Ar;
     }
-     .Nav_Links_Ar:nth-child(6) {
-    	animation-name: blob-bottom-anim_Ar;
+
+    .Nav_Links_Ar:nth-child(6) {
+        animation-name: blob-bottom-anim_Ar;
     }
-     .Nav_Links_Ar:nth-child(7) {
-    	animation-name: blob-bottom-right-anim_Ar;
+
+    .Nav_Links_Ar:nth-child(7) {
+        animation-name: blob-bottom-right-anim_Ar;
     }
-     .Nav_Links_Ar:nth-child(8) {
-    	animation-name: blob-top-left-anim_Ar;
+
+    .Nav_Links_Ar:nth-child(8) {
+        animation-name: blob-top-left-anim_Ar;
     }
-     .Nav_Links_Ar:nth-child(9) {
-    	animation-name: blob-center-anim_Ar;
+
+    .Nav_Links_Ar:nth-child(9) {
+        animation-name: blob-center-anim_Ar;
     }
 }
-@media screen and (max-width : 700px){
-    #LangBtnEn{
+
+@media screen and (max-width : 700px) {
+    #LangBtnEn {
         margin-right: 10px;
         width: 100px;
         height: 50px;
         font-size: 19px;
     }
-    #LangBtnAr{
+
+    #LangBtnAr {
         margin: 0;
         padding: 0;
         margin-right: 10px;
-        width : 70px;
+        width: 70px;
         height: 50px;
     }
-    #NavBar_P_Ar{
+
+    #NavBar_P_Ar {
         font-size: 25px;
     }
-    #NavBar_P_En{
+
+    #NavBar_P_En {
         font-size: 14px;
     }
-    .NavBar_Logos{
+
+    .NavBar_Logos {
         transform: scale(70%);
     }
 }
-@media screen and (max-width : 620px){
-    #NavBar_P_Ar{
+
+@media screen and (max-width : 620px) {
+    #NavBar_P_Ar {
         font-size: 26px;
     }
-        #NavBar_P_En{
+
+    #NavBar_P_En {
         font-size: 13px;
     }
+
     .Nav_Links_Ar:nth-child(1) {
         animation-name: blob-top-anim_Special_Ar;
     }
+
     .Nav_Links_Ar:nth-child(2) {
         animation-name: blob-top-right-anim_Special_Ar;
     }
+
     .Nav_Links_Ar:nth-child(3) {
         animation-name: blob-bottom-left-anim_Special_Ar;
     }
-     .Nav_Links_Ar:nth-child(4) {
-    	animation-name: blob-right-anim_Special_Ar;
+
+    .Nav_Links_Ar:nth-child(4) {
+        animation-name: blob-right-anim_Special_Ar;
     }
-     .Nav_Links_Ar:nth-child(5) {
-    	animation-name: blob-left-anim_Special_Ar;
+
+    .Nav_Links_Ar:nth-child(5) {
+        animation-name: blob-left-anim_Special_Ar;
     }
+
     .Nav_Links_Ar:nth-child(6) {
         animation-name: blob-bottom-anim_Special_Ar;
     }
-         .Nav_Links_Ar:nth-child(7) {
-    	animation-name: blob-bottom-right-anim_Special_Ar;
+
+    .Nav_Links_Ar:nth-child(7) {
+        animation-name: blob-bottom-right-anim_Special_Ar;
     }
+
     .Nav_Links_Ar:nth-child(8) {
         animation-name: blob-top-left-anim_Special_Ar;
     }
+
     .Nav_Links_Ar:nth-child(9) {
-    	animation-name: blob-center-anim_Special_Ar;
+        animation-name: blob-center-anim_Special_Ar;
     }
 }
-@media screen and (max-width : 600px ){
-    .NavBar_Logos{
+
+@media screen and (max-width : 600px) {
+    .NavBar_Logos {
         transform: scale(60%);
     }
-    #LangBtnEn{
+
+    #LangBtnEn {
         width: 90px;
         height: 50px;
-        font-size:small;
+        font-size: small;
     }
-    #LangBtnAr{
+
+    #LangBtnAr {
         width: 60px;
         height: 40px;
         font-size: 17px;
     }
-    #NavBar_P_Ar{
+
+    #NavBar_P_Ar {
         font-size: 17px;
     }
-    #NavBar_P_En{
+
+    #NavBar_P_En {
         font-size: 9px;
         margin-left: -75px;
     }
-    #Nav_Links_Container_Ar{
-        transition:0.5s;
+
+    #Nav_Links_Container_Ar {
+        transition: 0.5s;
         transform: scale(90%);
         margin-left: 150px;
     }
-    #Nav_Links_Container_En{
-        transition:0.5s;
+
+    #Nav_Links_Container_En {
+        transition: 0.5s;
         transform: scale(85%);
         margin-left: 150px;
     }
 }
-@media screen and (max-width : 500px){
-    
-    #English_NavBar{
+
+@media screen and (max-width : 500px) {
+
+    #English_NavBar {
         height: 545px;
     }
+
     #Arabic_NavBar {
         height: 510px;
     }
-    #Nav_Links_Container_En{
-        transition:0.5s;
+
+    #Nav_Links_Container_En {
+        transition: 0.5s;
         transform: scale(75%);
         margin-left: 75px;
         margin-top: 30px;
     }
-    #Nav_Links_Container_Ar{
-        transition:0.5s;
+
+    #Nav_Links_Container_Ar {
+        transition: 0.5s;
         transform: scale(80%);
         margin-left: 150px;
         margin-top: 0px;
     }
-    #LangBtnAr{
+
+    #LangBtnAr {
         margin: 0;
         padding: 0;
         width: 100px;
         height: 70px;
         margin-top: 25px;
     }
-    #LangBtnEn{
+
+    #LangBtnEn {
         margin: 0;
         padding: 0;
         width: 130px;
@@ -991,96 +1219,117 @@
         margin-top: 25px;
         font-size: 25px;
     }
-    #Upper_NavBar_Ar,#Upper_NavBar_En{
+
+    #Upper_NavBar_Ar,
+    #Upper_NavBar_En {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    #NavBar_P_En{
+
+    #NavBar_P_En {
         margin: 0;
         padding: 0;
         text-align: center;
         font-size: 25px;
     }
-    #NavBar_P_Ar{
+
+    #NavBar_P_Ar {
         margin: 0;
         padding: 0;
         text-align: center;
         font-size: 30px;
     }
-    .NavBar_Logos{
+
+    .NavBar_Logos {
         margin: 0;
         transform: scale(100%);
     }
 }
-@media screen and (max-width : 400px){
-    #Nav_Links_Container_Ar{
-        transition:0.5s;
+
+@media screen and (max-width : 400px) {
+    #Nav_Links_Container_Ar {
+        transition: 0.5s;
         transform: scale(80%);
         margin-left: 100px;
         margin-top: 0px;
     }
-    #LangBtnAr{
+
+    #LangBtnAr {
         margin: 0;
         padding: 0;
         width: 80px;
         margin-top: 25px !important;
     }
-    #Nav_Links_Container_En{
-        transition:0.5s;
+
+    #Nav_Links_Container_En {
+        transition: 0.5s;
         transform: scale(65%);
         margin-left: 75px;
         margin-top: 30px;
     }
 }
-@media screen and (max-width : 350px){
-    #English_NavBar{
+
+@media screen and (max-width : 350px) {
+    #English_NavBar {
         height: 540px;
     }
+
     #Arabic_NavBar {
         height: 440px;
     }
-    #LangBtnAr{
+
+    #LangBtnAr {
         margin: 0;
         transform: scaleX(100%);
         transform: scaleY(70%);
     }
-    #LangBtnEn{
+
+    #LangBtnEn {
         margin: 0;
         margin-top: 15px;
         width: 120px;
         height: 60px;
     }
-    #NavBar_P_Ar{
+
+    #NavBar_P_Ar {
         font-size: 25px;
     }
-    #Nav_Links_Container_Ar{
-        transition:0.5s;
+
+    #Nav_Links_Container_Ar {
+        transition: 0.5s;
         transform: scale(70%);
         margin-right: 190px;
     }
-    #Nav_Links_Container_En{
-        transition:0.5s;
+
+    #Nav_Links_Container_En {
+        transition: 0.5s;
         transform: scale(63%);
     }
 }
-@media screen and (max-width : 300px){
-    #English_NavBar{
+
+@media screen and (max-width : 300px) {
+    #English_NavBar {
         height: 455px;
     }
+
     #Arabic_NavBar {
         height: 422px;
     }
-    .NavBar_Logos{
+
+    .NavBar_Logos {
         transform: scale(90%);
     }
-    #NavBar_P_Ar{
+
+    #NavBar_P_Ar {
         font-size: 22px;
     }
-    #NavBar_P_En{
+
+    #NavBar_P_En {
         font-size: 20px;
     }
-    #LangBtnEn{
+
+    #LangBtnEn {
         margin: 0;
         padding: 0;
         font-size: 20px;
@@ -1088,17 +1337,20 @@
         width: 100px;
         height: 50px;
     }
-    #LangBtnAr{
+
+    #LangBtnAr {
         margin: 0;
         padding: 0;
         width: 90px;
         height: 65px;
     }
-    #Nav_Links_Container_Ar{
+
+    #Nav_Links_Container_Ar {
         transform: scale(65%);
         margin-right: 175px;
     }
-    #Nav_Links_Container_En{
+
+    #Nav_Links_Container_En {
         transform: scale(50%);
         margin-left: 85px;
         margin-top: 25px;
