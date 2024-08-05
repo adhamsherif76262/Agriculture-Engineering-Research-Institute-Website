@@ -1264,7 +1264,7 @@
 
     #Nav_Links_Container_En {
         transition: 0.5s;
-        transform: scale(65%);
+        transform: scale(68%);
         margin-left: 75px;
         margin-top: 30px;
     }
@@ -1272,11 +1272,11 @@
 
 @media screen and (max-width : 350px) {
     #English_NavBar {
-        height: 540px;
+        height: 520px;
     }
 
     #Arabic_NavBar {
-        height: 440px;
+        height: 460px;
     }
 
     #LangBtnAr {
