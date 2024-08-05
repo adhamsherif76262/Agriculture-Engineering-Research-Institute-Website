@@ -59,9 +59,7 @@
     width: 100%;
     margin-top: -155px;
     height: 330px;
-    /* height: 1000px; */
     z-index: 99;
-    /* border:10px dotted black; */
 }
 #Nav_Links_Container_En, #Nav_Links_Container_Ar{
     transition:0.5s;
@@ -233,6 +231,7 @@
     transform: translate(-440px, 0);
    }
 }
+
  .Nav_Links_Ar:nth-child(1) {
 	 animation-name: navlink_1_Ar;
      /* display: none; */
@@ -262,6 +261,7 @@
  .Nav_Links_Ar:nth-child(9) {
 	 animation-name:navlink_9_Ar;
 }
+
 @keyframes navlink_1_En {
    0%{
     transform: translate(200px, 0);
@@ -271,7 +271,6 @@
     transform: translate(880px, 0);
    }
 }
-
 @keyframes navlink_2_En {
     0%{
     transform: translate(200px, 0);
@@ -394,11 +393,9 @@
 }
 .Text_Direction_En{
     direction: ltr;
-    /* text-align: justify; */
 }
 .Text_Direction_Ar{
     direction: rtl;
-    /* text-align: justify; */
 }
 .Flex_Direction_En{
     display: flex;
@@ -517,7 +514,6 @@
     transform: scale(0.8) translate(-190px, 0px)
    }
 }
-
 @keyframes blob-top-right-anim_Ar {
    0%{
     transform: scale(1.1) translate(0, 0);
@@ -534,7 +530,6 @@
     transform: scale(0.8) translate(210px, 0px)
    }
 }
-
 @keyframes blob-bottom-left-anim_Ar {
    0%{
         transform: scale(1.1) translate(0, 0);
@@ -551,7 +546,6 @@
     transform: scale(0.8) translate(-210px,165px);
    }
 }
-
 @keyframes blob-bottom-right-anim_Ar {
   0%{
     transform: scale(1.1) translate(0, 0);
@@ -568,7 +562,6 @@
     transform: scale(0.8) translate(195px,165px);
    }
 }
-
 @keyframes blob-top-anim_Ar {
      0%{
     transform: scale(1.1) translate(0, 0);
@@ -585,7 +578,6 @@
     transform: scale(0.8) translate(10px,0px);
    }
 }
-
 @keyframes blob-center-anim_Ar {
      0%{
     transform: scale(1.1) translate(0, 0);
@@ -602,7 +594,6 @@
     transform: scale(0.8) translate(20px,65px);
    }
 }
-
 @keyframes blob-right-anim_Ar {
      0%{
     transform: scale(1.1) translate(0, 0);
@@ -619,7 +610,6 @@
     transform: scale(0.8) translate(210px,65px);
    }
 }
-
 @keyframes blob-bottom-anim_Ar {
      0%{
     transform: scale(1.1) translate(0, 0);
@@ -636,7 +626,6 @@
     transform: scale(0.8) translate(15px,165px);
    }
 }
-
 @keyframes blob-left-anim_Ar {
      0%{
     transform: scale(1.1) translate(0, 0);
@@ -653,7 +642,6 @@
     transform: scale(0.8) translate(-205px,65px);
    }
 }
-
 @media screen and (max-width : 1485px){
     #NavBar_P_En{
         font-size: 31px;
@@ -662,8 +650,6 @@
     }
     #NavBar_P_Ar{
         font-size: 65px;
-        /* margin-left: 20px;
-        margin-right: 20px; */
     }
     #Nav_Links_Container_En{
         transition:0.5s;
@@ -698,11 +684,11 @@
 @media screen and (max-width :1200px){
      #LangBtnEn{
         transform: scale(80%);
-        margin-right: -10px;
+        margin-right: 5px;
     }
     #LangBtnAr{
         transform: scale(80%);
-        margin-right: -5px;
+        margin-right: 5px;
     }
     #Nav_Links_Container_En, #Nav_Links_Container_Ar{
         transition:0.5s;
@@ -710,12 +696,12 @@
         margin-right: 175px;
     }
     #NavBar_P_En{
-        font-size: 30px;
+        font-size: 25px;
         margin-left: -80px;
         margin-right: -50px;
     }
     #NavBar_P_Ar{
-        font-size: 58px;
+        font-size: 56px;
     }
     .NavBar_Logos{
         transform: scale(70%);
@@ -730,13 +716,13 @@
         margin-right: 200px;
     }
     #NavBar_P_En{
-        font-size: 26px;
+        font-size: 25px;
+        margin-right: -25px;
     }
     #NavBar_P_Ar{
-        font-size: 53px;
+        font-size: 49px;
         margin-left: -75px;
         margin-right: -45px;
-        /* display: none; */
     }
     #LangBtnAr{
         transform: scale(70%);
@@ -745,7 +731,7 @@
 @media screen and (max-width :900px){
     #LangBtnAr{
         transform: scale(60%);
-        margin-right: -15px;
+        margin-right: 5px;
     }
     #LangBtnEn{
         transform: scale(60%);
@@ -760,11 +746,11 @@
         margin-right: 200px;
     }
     #NavBar_P_En{
-        font-size: 22px;
+        font-size: 21px;
     }
     #NavBar_P_Ar{
-        font-size: 45px;
-        margin-right: -55px;
+        font-size: 40px;
+        margin-right: -35px;
     }
 }
 @media screen and (max-width : 800px){
@@ -772,20 +758,25 @@
         height: 400px;
     }
     #LangBtnAr{
-        transform: scale(50%);
+        padding: 0;
+        width: 80px;
+        height: 60px;
+        /* transform: scale(50%); */
     }
     #LangBtnEn{
-        transform: scale(70%);
-        margin: 0;
+        padding: 0 ;
+        margin-right: 10px;
+        width: 125px;
+        height: 60px;
     }
     #NavBar_P_En{
-        margin-right: -70px;
-        font-size: 20px;
+        margin-right: -50px;
+        font-size: 18px;
     }
     #NavBar_P_Ar{
-        font-size: 38px;
+        font-size: 36px;
         margin-left: -100px;
-        margin-right: -95px;
+        margin-right: -75px;
     }
     #Nav_Links_Container_En{
         transition:0.5s;
@@ -801,8 +792,6 @@
         width: 200px;
         height: 125px;
         margin-left: -30px;
-        /* padding: 0;
-        margin: 0; */
     }
     .Nav_Links:before{
         /* To Apply the reddish background from the very begining*/
@@ -872,13 +861,13 @@
 }
 @media screen and (max-width : 700px){
     #LangBtnEn{
-        margin-right: -20px;
+        margin-right: 10px;
     }
     #NavBar_P_Ar{
-        font-size: 32px;
+        font-size: 30px;
     }
     #NavBar_P_En{
-        font-size: 17px;
+        font-size: 15px;
     }
     .NavBar_Logos{
         transform: scale(70%);
@@ -887,7 +876,10 @@
 }
 @media screen and (max-width : 620px){
     #NavBar_P_Ar{
-        font-size: 30px;
+        font-size: 28px;
+    }
+        #NavBar_P_En{
+        font-size: 12px;
     }
     .Nav_Links_Ar:nth-child(1) {
         animation-name: blob-top-anim_Special_Ar;
@@ -923,14 +915,18 @@
         margin-left: -40px;
     }
     #LangBtnEn{
-        transform: scale(50%);
-        margin-right: -35px;
+        width: 90px;
+        height: 50px;
+        font-size:small;
+    }
+    #LangBtnAr{
+        width: 70px;
+        height: 50px;
     }
     #NavBar_P_Ar{
-        font-size: 26px;
+        font-size: 20px;
     }
     #NavBar_P_En{
-        font-size: 13px;
         margin-left: -100px;
     }
     #Nav_Links_Container_Ar{
@@ -944,75 +940,45 @@
         margin-left: 150px;
     }
 }
-/* @media screen and (max-width : 500px){
-    #LangBtnEn{
-        transform: scale(30%);
-        margin-right: -40px;
-    }
-    #LangBtnAr{
-        transform: scale(40%);
-        margin-right: -30px;
-    }
-    #NavBar_P_Ar{
-        font-size: 12px;
-        padding: 0;
-        word-spacing: 0px;
-    }
-    #NavBar_P_En{
-        font-size: 10px;
-    }
-    .NavBar_Logos{
-        margin-left: -50px;
-    }
-    #Nav_Links_Container_Ar{
-        transition:0.5s;
-        transform: scale(80%);
-        margin-left: 125px;
-    }
-    #Nav_Links_Container_En{
-        transition:0.5s;
-        transform: scale(75%);
-        margin-left: 125px;
-    }
-} */
-
 @media screen and (max-width : 500px){
     
     #English_NavBar{
-        height: 529px;
+        height: 545px;
     }
     #Arabic_NavBar {
-        height: 494px;
+        height: 510px;
     }
     #Nav_Links_Container_En{
         transition:0.5s;
         transform: scale(75%);
         margin-left: 75px;
-        margin-top: 15px;
+        margin-top: 30px;
     }
     #Nav_Links_Container_Ar{
         transition:0.5s;
         transform: scale(80%);
         margin-left: 150px;
-        margin-top: -10px;
-        /* font-size: 50px; */
+        margin-top: 0px;
     }
     #LangBtnAr{
         margin: 0;
-        transform: scaleX(100%);
-        transform: scaleY(70%);
+        padding: 0;
+        width: 100px;
+        height: 70px;
+        margin-top: 25px;
     }
     #LangBtnEn{
         margin: 0;
-        transform: scaleX(50%);
-        transform: scaleY(70%);
-        font-size: 21px;
+        padding: 0;
+        width: 130px;
+        height: 70px;
+        margin-top: 25px;
+        font-size: 25px;
     }
     #Upper_NavBar_Ar,#Upper_NavBar_En{
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* justify-content: space-between; */
     }
     #NavBar_P_En{
         margin: 0;
@@ -1036,42 +1002,20 @@
         transition:0.5s;
         transform: scale(80%);
         margin-left: 100px;
-        margin-top: -10px;
-        /* font-size: 50px; */
-    }
-    /* #LangBtnEn{
-        transform: scale(25%);
-        margin-right: -50px;
+        margin-top: 0px;
     }
     #LangBtnAr{
-        transform: scale(35%);
-        margin-right: -30px;
-    }
-    #NavBar_P_Ar{
-        font-size: 10px;
+        margin: 0;
         padding: 0;
-        word-spacing: 0px;
-    }
-    #NavBar_P_En{
-        font-size: 9px;
-        margin-left: -120px;
-        margin-right: -90px;
-    }
-    .NavBar_Logos{
-        transform: scale(30%);
-        margin-left: -65px;
-    }
-    #Nav_Links_Container_Ar{
-        transition:0.5s;
-        transform: scale(80%);
-        margin-left: 110px;
+        width: 80px;
+        margin-top: 25px !important;
     }
     #Nav_Links_Container_En{
         transition:0.5s;
-        transform: scale(75%);
+        transform: scale(65%);
         margin-left: 75px;
-        margin-top: 25px;
-    } */
+        margin-top: 30px;
+    }
 }
 @media screen and (max-width : 350px){
     #English_NavBar{
@@ -1087,16 +1031,17 @@
     }
     #LangBtnEn{
         margin: 0;
-        transform: scaleX(30%);
-        transform: scaleY(70%);
-        font-size: 18px;
+        margin-top: 15px;
+        width: 120px;
+        height: 60px;
     }
     #NavBar_P_Ar{
         font-size: 25px;
     }
     #Nav_Links_Container_Ar{
         transition:0.5s;
-        transform: scale(65%);
+        transform: scale(70%);
+        margin-right: 190px;
     }
     #Nav_Links_Container_En{
         transition:0.5s;
@@ -1108,32 +1053,38 @@
         height: 455px;
     }
     #Arabic_NavBar {
-        height: 380px;
+        height: 422px;
     }
     .NavBar_Logos{
         transform: scale(90%);
     }
     #NavBar_P_Ar{
-        font-size: 20px;
+        font-size: 22px;
     }
     #NavBar_P_En{
         font-size: 20px;
     }
     #LangBtnEn{
         margin: 0;
-        transform: scale(50%);
+        padding: 0;
         font-size: 20px;
+        margin-top: 15px;
+        width: 100px;
+        height: 50px;
     }
     #LangBtnAr{
-        transform: scale(60%);
+        margin: 0;
+        padding: 0;
+        width: 90px;
+        height: 65px;
     }
     #Nav_Links_Container_Ar{
-        transform: scale(50%);
-        margin-right: 145px;
+        transform: scale(65%);
+        margin-right: 175px;
     }
     #Nav_Links_Container_En{
         transform: scale(50%);
-        margin-left: 60px;
-        margin-top: 0px;
+        margin-left: 85px;
+        margin-top: 25px;
     }
 }
