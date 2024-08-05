@@ -52,6 +52,14 @@
 </script>
 <script>
     // localStorage.setItem("Permenant_Language", "HALAAAA");
+    if (!(location.href.includes("/Home") || location.href.includes("/home"))){
+        alert("The Page URL Before Modifications  " + location.href)
+        location.href += "/Home";
+        alert("The Page URL After Modifications  " + location.href)
+    }
+    else{
+        alert("The URL Is On Home Page")
+    }
     console.log("Lang From Home :: " + localStorage.getItem("Permenant_Language"));
     if(
     (localStorage.getItem("Permenant_Language") != "English" && localStorage.getItem("Permenant_Language") != "عربي"))
