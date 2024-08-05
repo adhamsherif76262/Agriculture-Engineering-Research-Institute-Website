@@ -1,9 +1,4 @@
 [[redirects]]
-from = "/"
-to = "/Home"
-status = 200
-
-[[redirects]]
 from = "/Home"
 to = "https://www.youtube.com/"
 status = 200
