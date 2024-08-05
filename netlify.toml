@@ -4,41 +4,41 @@ to = "https://www.youtube.com/"
 status = 200
 
 [[redirects]]
-from = "/Institute_Sections"
+from = "/HTML/Institute_Sections"
 to = "https://www.youtube.com/"
 status = 200
 
 [[redirects]]
-from = "/Helping_Units"
+from = "/HTML/Helping_Units"
 to = "https://www.youtube.com/"
 status = 200
 
 [[redirects]]
-from = "/Institute_Branches"
+from = "/HTML/Institute_Branches"
 to = "https://www.youtube.com/"
 status = 200
 
 [[redirects]]
-from = "/Patents"
+from = "/HTML/Patents"
 to = "https://www.youtube.com/"
 status = 200
 
 [[redirects]]
-from = "/Permanent_Exhibition"
+from = "/HTML/Permanent_Exhibition"
 to = "https://www.youtube.com/"
 status = 200
 
 [[redirects]]
-from = "/Research_Projects"
+from = "/HTML/Research_Projects"
 to = "https://www.youtube.com/"
 status = 200
 
 [[redirects]]
-from = "/Overview"
+from = "/HTML/Overview"
 to = "https://www.youtube.com/"
 status = 200
 
 [[redirects]]
-from = "/Contact_Us"
+from = "/HTML/Contact_Us"
 to = "https://www.youtube.com/"
 status = 200
