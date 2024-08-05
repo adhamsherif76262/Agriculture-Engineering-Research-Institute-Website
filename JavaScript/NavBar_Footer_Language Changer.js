@@ -42,7 +42,7 @@ var Ar_NavTemplate = `
 // ${LangBtnAr}
 var En_NavTemplate = `
 <div id="Upper_NavBar_En" class="Flex_Direction_En">
-<a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="" href=".${IMAGESpath}/Home.html"><img class="NavBar_Logos" src=".${IMAGESpath}/Images/AERI-ARC-Logo_-removebg .png" alt="Agriculture Engineering Institute Logo"></a>
+<a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="ARC_Logo" href=".${IMAGESpath}/Home.html"><img class="NavBar_Logos" src=".${IMAGESpath}/Images/AERI-ARC-Logo_-removebg .png" alt="Agriculture Engineering Institute Logo"></a>
 
 <p id="NavBar_P_En">Agriculture Engineering Research Institute</p>
 ${LangBtnAr}
