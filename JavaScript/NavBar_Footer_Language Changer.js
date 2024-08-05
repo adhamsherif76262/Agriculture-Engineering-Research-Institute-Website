@@ -15,7 +15,7 @@ if (location.href.includes("/Home") || location.href.includes("/home")){
 // ${LangBtnEn}
 var Ar_NavTemplate = `
   <div id="Upper_NavBar_Ar" class="Flex_Direction_Ar">
-<a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="ARC_Logo" href=".${IMAGESpath}/Home.html"><img class="NavBar_Logos" src=".${IMAGESpath}/Images/AERI-ARC-Logo_-removebg .png" alt="Agriculture Engineering Institute Logo"></a>
+<a class="ARC_Logo" href=".${IMAGESpath}/Home.html"><img class="NavBar_Logos" src=".${IMAGESpath}/Images/AERI-ARC-Logo_-removebg .png" alt="Agriculture Engineering Institute Logo"></a>
     <p id="NavBar_P_Ar">معهد بحوث الهندسة الزراعية</p>
     ${LangBtnEn}
   </div>
@@ -36,13 +36,9 @@ var Ar_NavTemplate = `
   </div>
 `;
 
-// ${LangBtnAr}
-// ${LangBtnAr}
-// ${LangBtnAr}
-// ${LangBtnAr}
 var En_NavTemplate = `
 <div id="Upper_NavBar_En" class="Flex_Direction_En">
-<a onmouseover="Mouse_Over(this);" onmouseout="Mouse_Leave(this);" class="ARC_Logo" href=".${IMAGESpath}/Home.html"><img class="NavBar_Logos" src=".${IMAGESpath}/Images/AERI-ARC-Logo_-removebg .png" alt="Agriculture Engineering Institute Logo"></a>
+<a class="ARC_Logo" href=".${IMAGESpath}/Home.html"><img class="NavBar_Logos" src=".${IMAGESpath}/Images/AERI-ARC-Logo_-removebg .png" alt="Agriculture Engineering Institute Logo"></a>
 
 <p id="NavBar_P_En">Agriculture Engineering Research Institute</p>
 ${LangBtnAr}

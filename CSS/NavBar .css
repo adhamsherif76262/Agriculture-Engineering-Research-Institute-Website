@@ -20,7 +20,6 @@
     cursor: pointer;
     background-color: transparent;
     border: double 10px rgb(0, 0, 90);
-    /* transition:0.1s; */
     animation: Language_Button cubic-bezier(0.77, 0, 0.175, 1) 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -54,7 +53,8 @@
     filter: url('#goo');
     overflow: hidden;    
     /* background-color: #f1f1f1; */
-    background-color: #feba27;
+    /* background-color: #feba27; */
+    background-color: rgb(255, 205, 131);
     transition: 0.4s;
     width: 100%;
     margin-top: -155px;
@@ -701,11 +701,11 @@
         margin-right: -50px;
     }
     #NavBar_P_Ar{
-        font-size: 56px;
+        font-size: 52px;
     }
     .NavBar_Logos{
         transform: scale(70%);
-        margin-left: -45px;
+        /* margin-left: -45px; */
     }
 }
 @media screen and (max-width :1020px){
@@ -716,12 +716,12 @@
         margin-right: 200px;
     }
     #NavBar_P_En{
-        font-size: 25px;
+        font-size: 23px;
         margin-right: -25px;
     }
     #NavBar_P_Ar{
-        font-size: 49px;
-        margin-left: -75px;
+        font-size: 38px;
+        margin-left: -50px;
         margin-right: -45px;
     }
     #LangBtnAr{
@@ -730,15 +730,23 @@
 }
 @media screen and (max-width :900px){
     #LangBtnAr{
-        transform: scale(60%);
+        margin: 0;
+        padding: 0;
+        width: 70px;
+        /* transform: scale(50%); */
         margin-right: 5px;
     }
     #LangBtnEn{
-        transform: scale(60%);
+        margin: 0;
+        padding: 0;
+        width: 120px;
+        height: 70px;
+        margin-right: 5px;
+        /* transform: scale(60%); */
     }
     .NavBar_Logos{
         transform: scale(70%);
-        margin-left: -40px;
+        margin-right: 40px;
     }
     #Nav_Links_Container_En , #Nav_Links_Container_Ar{
         transition:0.5s;
@@ -746,11 +754,11 @@
         margin-right: 200px;
     }
     #NavBar_P_En{
-        font-size: 21px;
+        font-size: 19px;
     }
     #NavBar_P_Ar{
-        font-size: 40px;
-        margin-right: -35px;
+        font-size: 35px;
+        margin-right: 10px;
     }
 }
 @media screen and (max-width : 800px){
@@ -761,21 +769,20 @@
         padding: 0;
         width: 80px;
         height: 60px;
-        /* transform: scale(50%); */
     }
     #LangBtnEn{
         padding: 0 ;
         margin-right: 10px;
-        width: 125px;
-        height: 60px;
+        width: 115px;
+        height: 50px;
     }
     #NavBar_P_En{
-        margin-right: -50px;
-        font-size: 18px;
+        margin-right: -25px;
+        font-size: 17px;
     }
     #NavBar_P_Ar{
-        font-size: 36px;
-        margin-left: -100px;
+        font-size: 33px;
+        margin-left: -125px;
         margin-right: -75px;
     }
     #Nav_Links_Container_En{
@@ -791,7 +798,6 @@
     .NavBar_Logos{
         width: 200px;
         height: 125px;
-        margin-left: -30px;
     }
     .Nav_Links:before{
         /* To Apply the reddish background from the very begining*/
@@ -862,24 +868,33 @@
 @media screen and (max-width : 700px){
     #LangBtnEn{
         margin-right: 10px;
+        width: 100px;
+        height: 50px;
+        font-size: 19px;
+    }
+    #LangBtnAr{
+        margin: 0;
+        padding: 0;
+        margin-right: 10px;
+        width : 70px;
+        height: 50px;
     }
     #NavBar_P_Ar{
-        font-size: 30px;
+        font-size: 25px;
     }
     #NavBar_P_En{
-        font-size: 15px;
+        font-size: 14px;
     }
     .NavBar_Logos{
         transform: scale(70%);
-        margin-left: -30px;
     }
 }
 @media screen and (max-width : 620px){
     #NavBar_P_Ar{
-        font-size: 28px;
+        font-size: 26px;
     }
         #NavBar_P_En{
-        font-size: 12px;
+        font-size: 13px;
     }
     .Nav_Links_Ar:nth-child(1) {
         animation-name: blob-top-anim_Special_Ar;
@@ -912,7 +927,6 @@
 @media screen and (max-width : 600px ){
     .NavBar_Logos{
         transform: scale(60%);
-        margin-left: -40px;
     }
     #LangBtnEn{
         width: 90px;
@@ -920,14 +934,16 @@
         font-size:small;
     }
     #LangBtnAr{
-        width: 70px;
-        height: 50px;
+        width: 60px;
+        height: 40px;
+        font-size: 17px;
     }
     #NavBar_P_Ar{
-        font-size: 20px;
+        font-size: 17px;
     }
     #NavBar_P_En{
-        margin-left: -100px;
+        font-size: 9px;
+        margin-left: -75px;
     }
     #Nav_Links_Container_Ar{
         transition:0.5s;
