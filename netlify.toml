@@ -1,4 +1,9 @@
 [[redirects]]
+from = "/"
+to = "https://www.youtube.com/"
+status = 200
+
+[[redirects]]
 from = "/Home"
 to = "https://www.youtube.com/"
 status = 200
