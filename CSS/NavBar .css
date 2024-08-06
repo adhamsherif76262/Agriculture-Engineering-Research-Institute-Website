@@ -9,8 +9,47 @@
     box-sizing: border-box;
 }
 
+#TopBtnAr {
+    font-family: PT-Bold-Heading;
+    font-size: 40px !important;
+}
+
+#TopBtnEn {
+    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+    font-size: 30px !important;
+}
+
+#TopBtnEn,
+#TopBtnAr {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 20px;
+    transition: 0.7s;
+    outline: none;
+    padding: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: double 10px rgb(0, 0, 90);
+    min-width: 120px;
+
+}
+
+#Footer_LangBtnEn {
+    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+
+}
+
+#Footer_LangBtnAr {
+    font-family: PT-Bold-Heading;
+    font-size: 30px !important;
+}
+
 #LangBtnEn,
-#LangBtnAr {
+#LangBtnAr,
+#Footer_LangBtnAr,
+#Footer_LangBtnEn {
     font-weight: bold;
     color: black;
     text-decoration: none;
@@ -25,10 +64,33 @@
     animation: Language_Button cubic-bezier(0.77, 0, 0.175, 1) 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    /* animation: none; */
+}
+
+@keyframes Rotate {
+    to {
+        transform: rotate(3600deg);
+    }
+}
+
+#TopBtnEn:hover,
+#TopBtnAr:hover,
+#Footer_LangBtnAr:hover,
+#Footer_LangBtnEn:hover {
+    animation-name: Rotate;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 #LangBtnEn:hover,
-#LangBtnAr:hover {
+#TopBtnEn:hover,
+#Footer_LangBtnEn:hover,
+#Footer_LangBtnAr:hover,
+#LangBtnAr:hover,
+#TopBtnAr:hover {
     color: white;
     background-color: rgb(0, 0, 119);
     border: double 10px white;
@@ -63,7 +125,8 @@
     overflow: hidden;
     /* background-color: #f1f1f1; */
     /* background-color: #feba27; */
-    background-color: rgb(255, 205, 131);
+    /* background-color: rgb(255, 205, 131); */
+    background-color: rgb(255, 223, 174);
     transition: 0.4s;
     width: 100%;
     margin-top: -155px;
@@ -825,11 +888,14 @@
 }
 
 @media screen and (max-width :1200px) {
+
+    /* #TopBtnAr, */
     #LangBtnEn {
         transform: scale(80%);
         margin-right: 5px;
     }
 
+    /* #TopBtnEn , */
     #LangBtnAr {
         transform: scale(80%);
         margin-right: 5px;
@@ -877,7 +943,9 @@
         margin-right: -45px;
     }
 
-    #LangBtnAr {
+    #Footer_LangBtnAr,
+    #LangBtnAr,
+    #TopBtnEn {
         margin: 0;
         padding: 0;
         margin-right: 10px;
@@ -885,7 +953,9 @@
         height: 60px;
     }
 
-    #LangBtnEn {
+    #Footer_LangBtnEn,
+    #LangBtnEn,
+    #TopBtnAr {
         margin: 0;
         padding: 0;
         margin-right: 10px;
@@ -895,14 +965,19 @@
 }
 
 @media screen and (max-width :900px) {
-    #LangBtnAr {
+
+    #Footer_LangBtnAr,
+    #LangBtnAr,
+    #TopBtnEn {
         margin: 0;
         padding: 0;
         width: 70px;
         margin-right: 5px;
     }
 
-    #LangBtnEn {
+    #Footer_LangBtnEn,
+    #LangBtnEn,
+    #TopBtnAr {
         margin: 0;
         padding: 0;
         width: 120px;
@@ -939,13 +1014,17 @@
         height: 400px;
     }
 
-    #LangBtnAr {
+    #Footer_LangBtnAr,
+    #LangBtnAr,
+    #TopBtnEn {
         padding: 0;
         width: 80px;
         height: 60px;
     }
 
-    #LangBtnEn {
+    #Footer_LangBtnEn,
+    #LangBtnEn,
+    #TopBtnAr {
         padding: 0;
         margin-right: 10px;
         width: 115px;
@@ -1066,14 +1145,19 @@
 }
 
 @media screen and (max-width : 700px) {
-    #LangBtnEn {
+
+    #Footer_LangBtnEn,
+    #LangBtnEn,
+    #TopBtnAr {
         margin-right: 10px;
         width: 100px;
         height: 50px;
         font-size: 19px;
     }
 
-    #LangBtnAr {
+    #Footer_LangBtnAr,
+    #LangBtnAr,
+    #TopBtnEn {
         margin: 0;
         padding: 0;
         margin-right: 10px;
@@ -1145,13 +1229,17 @@
         transform: scale(60%);
     }
 
-    #LangBtnEn {
+    #Footer_LangBtnEn,
+    #LangBtnEn,
+    #TopBtnAr {
         width: 90px;
         height: 50px;
         font-size: small;
     }
 
-    #LangBtnAr {
+    #Footer_LangBtnAr,
+    #LangBtnAr,
+    #TopBtnEn {
         width: 60px;
         height: 40px;
         font-size: 17px;
@@ -1203,7 +1291,9 @@
         margin-top: 0px;
     }
 
-    #LangBtnAr {
+    #Footer_LangBtnAr,
+    #LangBtnAr,
+    #TopBtnEn {
         margin: 0;
         padding: 0;
         width: 100px;
@@ -1211,7 +1301,9 @@
         margin-top: 25px;
     }
 
-    #LangBtnEn {
+    #Footer_LangBtnEn,
+    #LangBtnEn,
+    #TopBtnAr {
         margin: 0;
         padding: 0;
         width: 130px;
@@ -1255,7 +1347,9 @@
         margin-top: 0px;
     }
 
-    #LangBtnAr {
+    #Footer_LangBtnEn,
+    #LangBtnAr,
+    #TopBtnAr {
         margin: 0;
         padding: 0;
         width: 80px;
@@ -1279,13 +1373,17 @@
         height: 460px;
     }
 
-    #LangBtnAr {
+    #Footer_LangBtnAr,
+    #LangBtnAr,
+    #TopBtnEn {
         margin: 0;
         transform: scaleX(100%);
         transform: scaleY(70%);
     }
 
-    #LangBtnEn {
+    #Footer_LangBtnEn,
+    #LangBtnEn,
+    #TopBtnAr {
         margin: 0;
         margin-top: 15px;
         width: 120px;
@@ -1329,7 +1427,9 @@
         font-size: 20px;
     }
 
-    #LangBtnEn {
+    #Footer_LangBtnEn,
+    #LangBtnEn,
+    #TopBtnAr {
         margin: 0;
         padding: 0;
         font-size: 20px;
@@ -1338,7 +1438,9 @@
         height: 50px;
     }
 
-    #LangBtnAr {
+    #Footer_LangBtnAr,
+    #LangBtnAr,
+    #TopBtnEn {
         margin: 0;
         padding: 0;
         width: 90px;

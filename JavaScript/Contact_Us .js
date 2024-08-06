@@ -1,5 +1,6 @@
 var Contact_PageTitle = document.getElementById("Contact_Us_Page_Title");
 var Contact_H1 = document.getElementById("7amada");
+var Test = "Contaact Done"
 function Contact_Load_Content_Ar() {
   Contact_H1.textContent = "ىىىىىىىىىىىىىىىىىىىىىىىىىىىى";
   HomePageTitle[0].innerHTML = "الإتصال بنا";
