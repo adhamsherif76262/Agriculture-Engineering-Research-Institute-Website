@@ -4,9 +4,6 @@
 }
 
 #Upper_Footer_Left {
-    /* background-color: rebeccapurple; */
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
@@ -58,9 +55,6 @@
 #Contact_Email {
     font-family: Arial Black, Arial Bold, Gadget, sans-serif !important;
     font-size: 20px !important;
-    /* background-color: rebeccapurple; */
-    /* width: 100px; */
-    /* height: 50px; */
 }
 
 #Contact_Email:hover {
@@ -70,15 +64,6 @@
     background-color: var(--footer-background);
     margin-right: -70px !important;
     margin-top: -15px !important;
-    /* text-underline-position: below !important; */
-    /* animation-name: Rotate;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    margin-right: -100px;
-    width: 200px; */
 }
 
 #Footer_Section {
@@ -174,16 +159,11 @@
     flex-direction: row;
     align-content: center;
     justify-content: space-between;
-    /* padding: 0; */
-    /* font-size: 40px !important; */
-    /* min-height: min-content; */
 }
 
 #Footer_Section .footer .content>div {
     display: flex;
     flex-direction: column;
-    /* justify-content: start;
-    align-items: flex-start; */
 }
 
 #Footer_Section .footer .content>div>div {
