@@ -3,18 +3,52 @@
     src: url(../Fonts/PT\ Bold\ Heading.ttf);
 }
 
-#Upper_Footer_Left {
+/* #Upper_Footer_Left_Ar{
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-end !important;
+    justify-content: space-between !important;
+} */
+#Upper_Footer_Left_En {
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
-    justify-content: space-between !important;
+    justify-content: flex-start !important;
+    /* font-size: 15px !important; */
 }
 
-#Footer_ContactInfo {
+#Navigation_Links_Footer_Div_Ar {
+
+    font-family: PT-Bold-Heading;
+    font-size: 20px !important;
+}
+
+#Navigation_Links_Footer_Div_En {
+    font-family: Arial Black, Arial Bold, Gadget, sans-serif !important;
+}
+
+#Navigation_Links_Footer_Div_Ar,
+#Navigation_Links_Footer_Div_En {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    /* display: none; */
+}
+
+#Footer_ContactInfo_Ar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100% !important;
+    margin-top: -25px !important;
+}
+
+#Footer_ContactInfo_En {
     /* background-color: chartreuse; */
+    margin-top: -30px !important;
     display: flex !important;
     flex-direction: column !important;
-    align-items: center !important;
+    /* align-items: center !important; */
+    align-items: flex-start !important;
     justify-content: space-between !important;
 }
 
@@ -23,16 +57,39 @@
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
-    justify-content: space-between !important;
+    justify-content: flex-start;
     width: 100% !important;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .Single_Contact_Info_Ar,
 #Land_Line_Span_Ar,
-#Fax_Span,
+#Fax_Span_Ar,
 #Footer_Contact_Us_Heading_Ar {
     font-family: PT-Bold-Heading !important;
+}
+
+.Single_Contact_Info_En {
+    font-family: Arial Black, Arial Bold, Gadget, sans-serif !important;
+    font-size: 17px;
+}
+
+.Single_Contact_Info_Ar {
+    font-size: 15px;
+    justify-content: flex-end !important;
+}
+
+#Address_Div_En {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+    margin-right: 20px;
+}
+
+#Address_Div_Ar {
+    margin-right: 65px;
+    margin-left: 20px;
+    font-size: 18.5px;
 }
 
 #Footer_Contact_Us_Heading_Ar {
@@ -41,29 +98,71 @@
 
 #Footer_Logo {
     margin-top: -20px !important;
+    margin-left: -30px !important;
 }
 
 #Land_Line_Span_Ar {
-    font-size: 25px;
+    font-size: 25px !important;
+    margin-left: 50px;
+    margin-right: 60px;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
-#Fax_Span {
-    font-size: 25px !important;
+#Land_Line_Span_En {
+    font-size: 20px;
+    /* margin-left :20px; */
+    /* margin-right :40px; */
+    margin-right: 6px;
+}
+
+#Fax_Span_Ar {
+    font-size: 30px !important;
     margin-right: 50px !important;
+    margin-left: 155px;
+    margin-right: 75px !important;
 }
 
 #Contact_Email {
     font-family: Arial Black, Arial Bold, Gadget, sans-serif !important;
     font-size: 20px !important;
+    transition: 0.4s;
+    margin-right: 17px;
+    margin-left: 160px;
 }
 
-#Contact_Email:hover {
-    transform: scale(2.25);
+#Contact_Email_En {
+    font-size: 25px;
+    transition: 0.5s;
+    margin-left: 60px;
+    margin-right: 62px;
+}
+
+#Contact_Email_En:hover {
+    transform: scale(2);
     text-decoration: underline !important;
     color: rgb(0, 0, 119) !important;
     background-color: var(--footer-background);
-    margin-right: -70px !important;
-    margin-top: -15px !important;
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+    margin-left: 48px;
+}
+
+#Fax_Span_En {
+    font-size: 22px;
+    margin-right: 100px;
+    margin-left: 72px;
+}
+
+#Contact_Email:hover {
+    transform: scale(2.95);
+    text-decoration: underline !important;
+    color: rgb(0, 0, 119) !important;
+    background-color: var(--footer-background);
+    margin-right: 60px !important;
+    margin-left: 0px !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
 }
 
 #Footer_Section {
@@ -73,6 +172,12 @@
     grid-template-areas: "main"".""footer";
     overflow: hidden;
     width: 100%;
+}
+
+#Footer_Container {
+    /* display: none; */
+    --footer-background: rgb(255, 223, 174) !important;
+    width: 100% !important;
 }
 
 #Footer_Section .footer {
@@ -112,7 +217,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* grid-gap: 4rem; */
-    padding: 2rem;
+    /* padding: 2rem; */
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     background: var(--footer-background);
 }
 
@@ -134,31 +242,54 @@
 
 }
 
+#Footer_P_En {
+    font-size: 1rem !important;
+    align-self: flex-end !important;
+    /* margin: 0 !important; */
+}
+
 #Footer_P_Ar {
     font-family: PT-Bold-Heading !important;
-    margin: 0;
-    font-size: 3rem !important;
+    margin-top: -25px !important;
+    font-size: 2.2rem !important;
     /* font-size: 60px !important; */
-    padding: 1rem;
+    /* padding: 1rem; */
     font-weight: bold;
+    align-self: flex-start !important;
+    text-align: end;
+    /* display: none; */
     /* margin-right: 200px !important; */
     /* display: none; */
 
 }
 
-#Lower_Footer {
+#Lower_Footer_Ar {
+    background-color: var(--footer-background);
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 20px;
+    /* margin-top: -50px; */
+    /* display: none; */
+}
+
+#Lower_Footer_En {
     background-color: var(--footer-background);
     display: grid;
     grid-template-columns: 5fr 1fr;
     grid-template-rows: 1fr;
     padding-bottom: 20px;
+    /* margin-bottom: 50px; */
+    /* margin-top: -50px; */
+    /* display: none; */
 }
 
 #Footer_Btns_Div {
     display: flex;
     flex-direction: row;
-    align-content: center;
+    align-content: center !important;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 #Footer_Section .footer .content>div {
