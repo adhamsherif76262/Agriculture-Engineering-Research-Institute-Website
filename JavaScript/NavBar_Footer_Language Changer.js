@@ -10,11 +10,18 @@ var TopBtnAr = `<button onclick="To_Top()" type="button" id="TopBtnAr" title="To
 var TopBtnEn = `<button onclick="To_Top()" type="button" id="TopBtnEn" title="To Top Button">Top</button>`;
 var HTMLpath = "";
 var IMAGESpath = ".";
+
 if (location.href.includes("/Home") || location.href.includes("/home")){
   alert(`I${HTMLpath}am${HTMLpath}Home`);
   HTMLpath = "./HTML/";
   IMAGESpath = ""
 }
+else if (location.href.includes("/Departements") || location.href.includes("/departements")){
+  alert(`I ${HTMLpath} am ${location.href}  Departement`);
+  HTMLpath = "../";
+  IMAGESpath = "./..";
+}
+
 var Bubbles = `<div class="bubbles">
     <div class="bubble" style="--size:5.0135313648835025rem; --distance:9.416550778957694rem; --position:19.903269440715132%; --time:3.254147592799995s; --delay:-2.7348329494573114s;"></div>
     <div class="bubble" style="--size:4.137121420921593rem; --distance:7.675318118080081rem; --position:94.55828450308567%; --time:2.4472531580422068s; --delay:-3.5833354183932897s;"></div>
