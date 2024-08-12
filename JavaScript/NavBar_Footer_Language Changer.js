@@ -264,12 +264,13 @@ var Ar_FooterTemplate = `
       <div id = "Footer_Btns_Div">
         ${Footer_LangBtnEn}
         ${TopBtnAr}
-      </div>
-      <p id = "Footer_P_Ar">معهد بحوث الهندسة الزراعية ٢٠٢٤ ©</p>
-  </div>
-  `;
-  // <a id = "Footer_Logo" class="ARC_Logo image" href=".${IMAGESpath}/Home.html" ><img class="NavBar_Logos" src=".${IMAGESpath}/Images/AERI-ARC-Logo_-removebg .png" alt="Agriculture Engineering Institute Logo"></a>
-var En_FooterTemplate = `
+        </div>
+        <p id = "Footer_P_Ar">معهد بحوث الهندسة الزراعية ٢٠٢٤ ©</p>
+        </div>
+        `;
+        // <a id = "Contact_Email_En" href="mailto:adhamsherif7261@gmail.com?&subject=Mail from xyz.com&body=Dear AENRI.org" target="_blank">aenri@aenri.org</a>
+        // <a id = "Footer_Logo" class="ARC_Logo image" href=".${IMAGESpath}/Home.html" ><img class="NavBar_Logos" src=".${IMAGESpath}/Images/AERI-ARC-Logo_-removebg .png" alt="Agriculture Engineering Institute Logo"></a>
+        var En_FooterTemplate = `
       ${Bubbles}
   <div class="content">
       <div id = "Upper_Footer_Left_En">
@@ -293,7 +294,7 @@ var En_FooterTemplate = `
                 <img width = "50px" src = ".${IMAGESpath}/Images/noun-phone-2632790.png" alt = "Email Address Icon">
             </div>
             <div class = "Single_Contact_Info Single_Contact_Info_En">
-                <span>Email:</span>
+            <span>Email:</span>
                 <a id = "Contact_Email_En" href="mailto:aenri@aenri.org?&subject=Mail from xyz.com&body=Dear AENRI.org" target="_blank">aenri@aenri.org</a>
                 <img width = "45px" src = ".${IMAGESpath}/Images/noun-email-6924545.png" alt = "Email Address Icon">
             </div>

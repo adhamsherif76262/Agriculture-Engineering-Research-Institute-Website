@@ -3,6 +3,7 @@ function Switch_NavBar_Lang_Ar(){
     Ar_Nav.innerHTML = Ar_NavTemplate;
     En_Nav.classList.add("D_None");
     Ar_Nav.classList.remove("D_None");
+
 }
 function Switch_Footer_Lang_Ar() {
   Main_Footer[0].innerHTML = Ar_FooterTemplate;

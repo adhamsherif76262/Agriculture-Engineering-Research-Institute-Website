@@ -17,8 +17,21 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-</head>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/simple-crypto-js@2.5.0/dist/SimpleCrypto.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/sha256/4.0.0/crypto-js.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/scrypt-js@1.1.1/dist/scrypt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/scrypt-js@3.0.1/dist/scrypt.min.js"></script>  -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/scrypt-js/3.0.1/scrypt.js"
+        integrity="sha512-7mrlNKqsLpZvXY+CpmlAkZ8iNw7GptKUumjFI8N2xvgwWvmbZEeNmntWADkNoqSWJlWg2FMxKGQKy9mCHKlfbw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+        <!-- <script type="module">
+            import scrypt from 'https://cdn.jsdelivr.net/npm/scrypt@6.0.3/+esm'
+        </script> -->
+    <script>
+        console.log('Scrypt library loaded:', typeof window.Scrypt !== 'undefined');
+    </script>
+    </head>
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
         <defs>
@@ -52,11 +65,941 @@
 <script  src="./JavaScript/Footer_Bubbles.js"></script>
 <script  src="./JavaScript/Arabic_Lang_Button.js"></script>
 <script  src="./JavaScript/English_Lang_Button.js"></script>
+<script src="./JavaScript/Storage_Data_Encryption.js"></script>
  <script>
      var Hel = "ZZZZZZZZZZZZZZZZZZZZZZZ";
 </script>
+
+    <!-- <script>
+        async function encryptData(password, data) {
+            const passwordEncoder = new TextEncoder();
+            const passwordBytes = passwordEncoder.encode(password);
+
+            const salt = crypto.getRandomValues(new Uint8Array(16));
+            const passwordKey = await crypto.subtle.importKey(
+                "raw",
+                passwordBytes, {
+                    name: "PBKDF2"
+                },
+                false,
+                ["deriveKey"]
+            );
+
+            const key = await crypto.subtle.deriveKey({
+                    name: "PBKDF2",
+                    salt: salt,
+                    iterations: 1000,
+                    hash: "SHA-256"
+                },
+                passwordKey, {
+                    name: "AES-CBC",
+                    length: 256
+                },
+                true,
+                ["encrypt"]
+            );
+
+            const iv = crypto.getRandomValues(new Uint8Array(16));
+            const encryptedData = await crypto.subtle.encrypt({
+                    name: "AES-CBC",
+                    iv: iv
+                },
+                key,
+                passwordEncoder.encode(data)
+            );
+
+            const encryptedBytes = new Uint8Array(encryptedData);
+            const encryptedString = Array.prototype.map.call(encryptedBytes, x =>
+                (`00${x.toString(16)}`).slice(-2)).join('');
+
+            return {
+                iv: iv,
+                salt: salt,
+                encryptedData: encryptedString
+            };
+        }
+
+        async function decryptData(password, encryptedData) {
+            const passwordEncoder = new TextEncoder();
+            const passwordBytes = passwordEncoder.encode(password);
+
+            const passwordKey = await crypto.subtle.importKey(
+                "raw",
+                passwordBytes, {
+                    name: "PBKDF2"
+                },
+                false,
+                ["deriveKey"]
+            );
+
+            const {
+                iv,
+                salt,
+                encryptedData: encryptedString
+            } = encryptedData;
+            const encryptedBytes = Array.prototype.map.call(encryptedString.match(/.{2}/g), x => parseInt(x, 16));
+            const encryptedDataBuffer = new Uint8Array(encryptedBytes);
+
+            const key = await crypto.subtle.deriveKey({
+                    name: "PBKDF2",
+                    salt: salt,
+                    iterations: 1000,
+                    hash: "SHA-256"
+                },
+                passwordKey, {
+                    name: "AES-CBC",
+                    length: 256
+                },
+                true,
+                ["decrypt"]
+            );
+
+            const decryptedData = await crypto.subtle.decrypt({
+                    name: "AES-CBC",
+                    iv: iv
+                },
+                key,
+                encryptedDataBuffer
+            );
+
+            const decryptedString = new TextDecoder().decode(decryptedData);
+            return decryptedString;
+        }
+
+        const password = 'mysecretpassword';
+        const data = 'Hello, World!';
+        encryptData(password, data).then(async encrypted => {
+            console.log('Encrypted data:', JSON.stringify(encrypted.encryptedData));
+            const decrypted = await decryptData(password, encrypted);
+            console.log('Decrypted data:', decrypted);
+        });
+    </script> -->
+
+    <!-- <script>
+        async function encryptData(password, data) {
+            const passwordEncoder = new TextEncoder();
+            const passwordBytes = passwordEncoder.encode(password);
+
+            const salt = crypto.getRandomValues(new Uint8Array(16));
+            const passwordKey = await crypto.subtle.importKey(
+                "raw",
+                passwordBytes, {
+                    name: "PBKDF2"
+                },
+                false,
+                ["deriveKey"]
+            );
+
+            const key = await crypto.subtle.deriveKey({
+                    name: "PBKDF2",
+                    salt: salt,
+                    iterations: 1000,
+                    hash: "SHA-256"
+                },
+                passwordKey, {
+                    name: "AES-CBC",
+                    length: 256
+                },
+                true,
+                ["encrypt"]
+            );
+
+            const iv = crypto.getRandomValues(new Uint8Array(16));
+            const encryptedData = await crypto.subtle.encrypt({
+                    name: "AES-CBC",
+                    iv: iv
+                },
+                key,
+                passwordEncoder.encode(data)
+            );
+
+            const encryptedBytes = new Uint8Array(encryptedData);
+            const encryptedString = Array.prototype.map.call(encryptedBytes, x =>
+                (`00${x.toString(16)}`).slice(-2)).join('');
+
+            // Padding to double the size
+            const padding = crypto.getRandomValues(new Uint8Array(encryptedBytes.length));
+            const paddingString = Array.prototype.map.call(padding, x =>
+                (`00${x.toString(16)}`).slice(-2)).join('');
+
+            const paddedEncryptedString = encryptedString + paddingString;
+
+            return {
+                iv: iv,
+                salt: salt,
+                encryptedData: paddedEncryptedString
+            };
+        }
+
+        async function decryptData(password, encryptedData) {
+            const passwordEncoder = new TextEncoder();
+            const passwordBytes = passwordEncoder.encode(password);
+
+            const passwordKey = await crypto.subtle.importKey(
+                "raw",
+                passwordBytes, {
+                    name: "PBKDF2"
+                },
+                false,
+                ["deriveKey"]
+            );
+
+            const {
+                iv,
+                salt,
+                encryptedData: paddedEncryptedString
+            } = encryptedData;
+
+            // Remove the padding
+            const encryptedString = paddedEncryptedString.slice(0, paddedEncryptedString.length / 2);
+
+            const encryptedBytes = Array.prototype.map.call(encryptedString.match(/.{2}/g), x => parseInt(x, 16));
+            const encryptedDataBuffer = new Uint8Array(encryptedBytes);
+
+            const key = await crypto.subtle.deriveKey({
+                    name: "PBKDF2",
+                    salt: salt,
+                    iterations: 1000,
+                    hash: "SHA-256"
+                },
+                passwordKey, {
+                    name: "AES-CBC",
+                    length: 256
+                },
+                true,
+                ["decrypt"]
+            );
+
+            const decryptedData = await crypto.subtle.decrypt({
+                    name: "AES-CBC",
+                    iv: iv
+                },
+                key,
+                encryptedDataBuffer
+            );
+
+            const decryptedString = new TextDecoder().decode(decryptedData);
+            return decryptedString;
+        }
+
+        const password = 'mysecretpassword';
+        const data = 'Hello, World!';
+        encryptData(password, data).then(async encrypted => {
+            console.log('Encrypted data:', JSON.stringify(encrypted.encryptedData));
+            const decrypted = await decryptData(password, encrypted);
+            console.log('Decrypted data:', decrypted);
+        });
+    </script> -->
+
+    <!-- <script>
+        async function encryptData(password, data) {
+            const passwordEncoder = new TextEncoder();
+            const passwordBytes = passwordEncoder.encode(password);
+
+            const salt = crypto.getRandomValues(new Uint8Array(16));
+            const passwordKey = await crypto.subtle.importKey(
+                "raw",
+                passwordBytes, {
+                    name: "PBKDF2"
+                },
+                false,
+                ["deriveKey"]
+            );
+
+            const key = await crypto.subtle.deriveKey({
+                    name: "PBKDF2",
+                    salt: salt,
+                    iterations: 1000,
+                    hash: "SHA-256"
+                },
+                passwordKey, {
+                    name: "AES-CBC",
+                    length: 256
+                },
+                true,
+                ["encrypt"]
+            );
+
+            const iv = crypto.getRandomValues(new Uint8Array(16));
+            const encryptedData = await crypto.subtle.encrypt({
+                    name: "AES-CBC",
+                    iv: iv
+                },
+                key,
+                passwordEncoder.encode(data)
+            );
+
+            const encryptedBytes = new Uint8Array(encryptedData);
+            const encryptedString = Array.prototype.map.call(encryptedBytes, x =>
+                (`00${x.toString(16)}`).slice(-2)).join('');
+
+            // Generate two unique padding strings
+            const padding1 = crypto.getRandomValues(new Uint8Array(encryptedBytes.length));
+            const paddingString1 = Array.prototype.map.call(padding1, x =>
+                (`00${x.toString(16)}`).slice(-2)).join('');
+
+            const padding2 = crypto.getRandomValues(new Uint8Array(encryptedBytes.length));
+            const paddingString2 = Array.prototype.map.call(padding2, x =>
+                (`00${x.toString(16)}`).slice(-2)).join('');
+
+            // Concatenate the original encrypted string with the two padding strings
+            const paddedEncryptedString = encryptedString + paddingString1 + paddingString2;
+
+            return {
+                iv: iv,
+                salt: salt,
+                encryptedData: paddedEncryptedString
+            };
+        }
+
+        async function decryptData(password, encryptedData) {
+            const passwordEncoder = new TextEncoder();
+            const passwordBytes = passwordEncoder.encode(password);
+
+            const passwordKey = await crypto.subtle.importKey(
+                "raw",
+                passwordBytes, {
+                    name: "PBKDF2"
+                },
+                false,
+                ["deriveKey"]
+            );
+
+            const {
+                iv,
+                salt,
+                encryptedData: paddedEncryptedString
+            } = encryptedData;
+
+            // Remove the two padding strings
+            const thirdLength = paddedEncryptedString.length / 3;
+            const encryptedString = paddedEncryptedString.slice(0, thirdLength);
+
+            const encryptedBytes = Array.prototype.map.call(encryptedString.match(/.{2}/g), x => parseInt(x, 16));
+            const encryptedDataBuffer = new Uint8Array(encryptedBytes);
+
+            const key = await crypto.subtle.deriveKey({
+                    name: "PBKDF2",
+                    salt: salt,
+                    iterations: 1000,
+                    hash: "SHA-256"
+                },
+                passwordKey, {
+                    name: "AES-CBC",
+                    length: 256
+                },
+                true,
+                ["decrypt"]
+            );
+
+            const decryptedData = await crypto.subtle.decrypt({
+                    name: "AES-CBC",
+                    iv: iv
+                },
+                key,
+                encryptedDataBuffer
+            );
+
+            const decryptedString = new TextDecoder().decode(decryptedData);
+            return decryptedString;
+        }
+
+        const password = 'mysecretpassword';
+        const data = 'Hello, World!';
+        encryptData(password, data).then(async encrypted => {
+            console.log('Encrypted data:', JSON.stringify(encrypted.encryptedData));
+            const decrypted = await decryptData(password, encrypted);
+            console.log('Decrypted data:', decrypted);
+        });
+        // localStorage.clear();
+    </script> -->
+
+<!-- <script>
+    async function encryptData(password, data) {
+        const passwordEncoder = new TextEncoder();
+        const passwordBytes = passwordEncoder.encode(password);
+
+        const salt = crypto.getRandomValues(new Uint8Array(16));
+        const passwordKey = await crypto.subtle.importKey(
+            "raw",
+            passwordBytes, {
+                name: "PBKDF2"
+            },
+            false,
+            ["deriveKey"]
+        );
+
+        const key = await crypto.subtle.deriveKey({
+                name: "PBKDF2",
+                salt: salt,
+                iterations: 1000,
+                hash: "SHA-256"
+            },
+            passwordKey, {
+                name: "AES-CBC",
+                length: 256
+            },
+            true,
+            ["encrypt"]
+        );
+
+        const iv = crypto.getRandomValues(new Uint8Array(16));
+        const encryptedData = await crypto.subtle.encrypt({
+                name: "AES-CBC",
+                iv: iv
+            },
+            key,
+            passwordEncoder.encode(data)
+        );
+
+        const encryptedBytes = new Uint8Array(encryptedData);
+        const encryptedString = Array.prototype.map.call(encryptedBytes, x =>
+            (`00${x.toString(16)}`).slice(-2)).join('');
+
+        // Generate two unique padding strings
+        const padding1 = crypto.getRandomValues(new Uint8Array(encryptedBytes.length));
+        const paddingString1 = Array.prototype.map.call(padding1, x =>
+            (`00${x.toString(16)}`).slice(-2)).join('');
+
+        const padding2 = crypto.getRandomValues(new Uint8Array(encryptedBytes.length));
+        const paddingString2 = Array.prototype.map.call(padding2, x =>
+            (`00${x.toString(16)}`).slice(-2)).join('');
+
+        // Concatenate the original encrypted string with the two padding strings
+        const paddedEncryptedString = encryptedString + paddingString1 + paddingString2;
+
+        // Store the triple-sized encrypted data in localStorage with the key name "Berwetta"
+        localStorage.setItem("Berwetta", JSON.stringify({
+            iv: Array.from(iv),
+            salt: Array.from(salt),
+            encryptedData: paddedEncryptedString
+        }));
+        console.log(`Data Before Encryption :: \n\n ${data}`)
+        console.log(`Padded Encrypted Data :: \t\n ${paddedEncryptedString}`)
+    }
+
+    async function decryptData(password) {
+        const passwordEncoder = new TextEncoder();
+        const passwordBytes = passwordEncoder.encode(password);
+
+        const encryptedDataString = localStorage.getItem("Berwetta");
+        if (!encryptedDataString) {
+            console.error('No data found in localStorage with key "Berwetta".');
+            return;
+        }
+
+        const encryptedData = JSON.parse(encryptedDataString);
+        const iv = new Uint8Array(encryptedData.iv);
+        const salt = new Uint8Array(encryptedData.salt);
+        const paddedEncryptedString = encryptedData.encryptedData;
+
+        const passwordKey = await crypto.subtle.importKey(
+            "raw",
+            passwordBytes, {
+                name: "PBKDF2"
+            },
+            false,
+            ["deriveKey"]
+        );
+
+        // Remove the two padding strings
+        const thirdLength = paddedEncryptedString.length / 3;
+        const encryptedString = paddedEncryptedString.slice(0, thirdLength);
+
+        const encryptedBytes = Array.prototype.map.call(encryptedString.match(/.{2}/g), x => parseInt(x, 16));
+        const encryptedDataBuffer = new Uint8Array(encryptedBytes);
+
+        const key = await crypto.subtle.deriveKey({
+                name: "PBKDF2",
+                salt: salt,
+                iterations: 1000,
+                hash: "SHA-256"
+            },
+            passwordKey, {
+                name: "AES-CBC",
+                length: 256
+            },
+            true,
+            ["decrypt"]
+        );
+
+        const decryptedData = await crypto.subtle.decrypt({
+                name: "AES-CBC",
+                iv: iv
+            },
+            key,
+            encryptedDataBuffer
+        );
+
+        const decryptedString = new TextDecoder().decode(decryptedData);
+        console.log('Decrypted data:', decryptedString);
+    }
+
+    const password = 'mysecretpassword';
+    // const data = 'Hello, World!';
+    const data = localStorage.getItem("Permenant_Language")
+    encryptData(password, data).then(async () => {
+        // After encryption, retrieve the data from localStorage and decrypt it
+        await decryptData(password);
+    });
+    // localStorage.clear()
+</script> -->
+
+<!-- <script>
+    async function encryptData(password, data) {
+        const passwordEncoder = new TextEncoder();
+        const passwordBytes = passwordEncoder.encode(password);
+
+        const salt = crypto.getRandomValues(new Uint8Array(16));
+        const passwordKey = await crypto.subtle.importKey(
+            "raw",
+            passwordBytes, {
+                name: "PBKDF2"
+            },
+            false,
+            ["deriveKey"]
+        );
+
+        const key = await crypto.subtle.deriveKey({
+                name: "PBKDF2",
+                salt: salt,
+                iterations: 1000,
+                hash: "SHA-256"
+            },
+            passwordKey, {
+                name: "AES-CBC",
+                length: 256
+            },
+            true,
+            ["encrypt"]
+        );
+
+        const iv = crypto.getRandomValues(new Uint8Array(16));
+        const encryptedData = await crypto.subtle.encrypt({
+                name: "AES-CBC",
+                iv: iv
+            },
+            key,
+            passwordEncoder.encode(data)
+        );
+
+        const encryptedBytes = new Uint8Array(encryptedData);
+        const encryptedString = Array.prototype.map.call(encryptedBytes, x =>
+            (`00${x.toString(16)}`).slice(-2)).join('');
+
+        // Generate two unique padding strings
+        const padding1 = crypto.getRandomValues(new Uint8Array(encryptedBytes.length));
+        const paddingString1 = Array.prototype.map.call(padding1, x =>
+            (`00${x.toString(16)}`).slice(-2)).join('');
+
+        const padding2 = crypto.getRandomValues(new Uint8Array(encryptedBytes.length));
+        const paddingString2 = Array.prototype.map.call(padding2, x =>
+            (`00${x.toString(16)}`).slice(-2)).join('');
+
+        // Concatenate the original encrypted string with the two padding strings
+        const paddedEncryptedString = encryptedString + paddingString1 + paddingString2;
+
+        // Store the triple-sized encrypted data in localStorage with the key name "Berwetta"
+        localStorage.setItem("Berwetta", JSON.stringify({
+            iv: Array.from(iv),
+            salt: Array.from(salt),
+            encryptedData: paddedEncryptedString
+        }));
+        console.log(`Data Before Encryption :: \n\n ${data}`)
+        console.log(`Padded Encrypted Data :: \t\n ${paddedEncryptedString}`)
+    }
+
+    async function decryptData(password) {
+        const passwordEncoder = new TextEncoder();
+        const passwordBytes = passwordEncoder.encode(password);
+
+        const encryptedDataString = localStorage.getItem("Berwetta");
+        if (!encryptedDataString) {
+            console.error('No data found in localStorage with key "Berwetta".');
+            return;
+        }
+
+        const encryptedData = JSON.parse(encryptedDataString);
+        const iv = new Uint8Array(encryptedData.iv);
+        const salt = new Uint8Array(encryptedData.salt);
+        const paddedEncryptedString = encryptedData.encryptedData;
+
+        const passwordKey = await crypto.subtle.importKey(
+            "raw",
+            passwordBytes, {
+                name: "PBKDF2"
+            },
+            false,
+            ["deriveKey"]
+        );
+
+        // Remove the two padding strings
+        const thirdLength = paddedEncryptedString.length / 3;
+        const encryptedString = paddedEncryptedString.slice(0, thirdLength);
+
+        const encryptedBytes = Array.prototype.map.call(encryptedString.match(/.{2}/g), x => parseInt(x, 16));
+        const encryptedDataBuffer = new Uint8Array(encryptedBytes);
+
+        const key = await crypto.subtle.deriveKey({
+                name: "PBKDF2",
+                salt: salt,
+                iterations: 1000,
+                hash: "SHA-256"
+            },
+            passwordKey, {
+                name: "AES-CBC",
+                length: 256
+            },
+            true,
+            ["decrypt"]
+        );
+
+        const decryptedData = await crypto.subtle.decrypt({
+                name: "AES-CBC",
+                iv: iv
+            },
+            key,
+            encryptedDataBuffer
+        );
+
+        const decryptedString = new TextDecoder().decode(decryptedData);
+        console.log('Decrypted data:', decryptedString);
+    }
+
+    function handleLocalStorageChange() {
+        const password = 'mysecretpassword';
+        const data = localStorage.getItem("Permenant_Language");
+        if (data) {
+            encryptData(password, data).then(() => {
+                decryptData(password);
+            });
+        } else {
+            console.log('No data found in localStorage with key "Permenant_Language".');
+        }
+    }
+
+    // Monitor localStorage changes
+    window.addEventListener('storage', (event) => {
+        if (event.key === 'Permenant_Language') {
+            handleLocalStorageChange();
+        }
+    });
+
+    // Initial check
+    handleLocalStorageChange();
+</script> -->
+
+<!-- <script>
+
+    let lastValue = localStorage.getItem("Permenant_Language");
+
+    async function encryptData(password, data) {
+        const passwordEncoder = new TextEncoder();
+        const passwordBytes = passwordEncoder.encode(password);
+
+        const salt = crypto.getRandomValues(new Uint8Array(16));
+        const passwordKey = await crypto.subtle.importKey(
+            "raw",
+            passwordBytes, {
+                name: "PBKDF2"
+            },
+            false,
+            ["deriveKey"]
+        );
+
+        const key = await crypto.subtle.deriveKey({
+                name: "PBKDF2",
+                salt: salt,
+                iterations: 1000,
+                hash: "SHA-256"
+            },
+            passwordKey, {
+                name: "AES-CBC",
+                length: 256
+            },
+            true,
+            ["encrypt"]
+        );
+
+        const iv = crypto.getRandomValues(new Uint8Array(16));
+        const encryptedData = await crypto.subtle.encrypt({
+                name: "AES-CBC",
+                iv: iv
+            },
+            key,
+            passwordEncoder.encode(data)
+        );
+
+        const encryptedBytes = new Uint8Array(encryptedData);
+        const encryptedString = Array.prototype.map.call(encryptedBytes, x =>
+            (`00${x.toString(16)}`).slice(-2)).join('');
+
+        // Generate two unique padding strings
+        const padding1 = crypto.getRandomValues(new Uint8Array(encryptedBytes.length));
+        const paddingString1 = Array.prototype.map.call(padding1, x =>
+            (`00${x.toString(16)}`).slice(-2)).join('');
+
+        const padding2 = crypto.getRandomValues(new Uint8Array(encryptedBytes.length));
+        const paddingString2 = Array.prototype.map.call(padding2, x =>
+            (`00${x.toString(16)}`).slice(-2)).join('');
+
+        // Concatenate the original encrypted string with the two padding strings
+        const paddedEncryptedString = encryptedString + paddingString1 + paddingString2;
+
+        // Store the triple-sized encrypted data in localStorage with the key name "Berwetta"
+        localStorage.setItem("Berwetta", JSON.stringify({
+            iv: Array.from(iv),
+            salt: Array.from(salt),
+            encryptedData: paddedEncryptedString
+        }));
+        console.log(`Data Before Encryption :: \n\n ${data}`);
+        console.log(`Padded Encrypted Data :: \t\n ${paddedEncryptedString}`);
+    }
+
+    async function decryptData(password) {
+        const passwordEncoder = new TextEncoder();
+        const passwordBytes = passwordEncoder.encode(password);
+
+        const encryptedDataString = localStorage.getItem("Berwetta");
+        if (!encryptedDataString) {
+            console.error('No data found in localStorage with key "Berwetta".');
+            return;
+        }
+
+        const encryptedData = JSON.parse(encryptedDataString);
+        const iv = new Uint8Array(encryptedData.iv);
+        const salt = new Uint8Array(encryptedData.salt);
+        const paddedEncryptedString = encryptedData.encryptedData;
+
+        const passwordKey = await crypto.subtle.importKey(
+            "raw",
+            passwordBytes, {
+                name: "PBKDF2"
+            },
+            false,
+            ["deriveKey"]
+        );
+
+        // Remove the two padding strings
+        const thirdLength = paddedEncryptedString.length / 3;
+        const encryptedString = paddedEncryptedString.slice(0, thirdLength);
+
+        const encryptedBytes = Array.prototype.map.call(encryptedString.match(/.{2}/g), x => parseInt(x, 16));
+        const encryptedDataBuffer = new Uint8Array(encryptedBytes);
+
+        const key = await crypto.subtle.deriveKey({
+                name: "PBKDF2",
+                salt: salt,
+                iterations: 1000,
+                hash: "SHA-256"
+            },
+            passwordKey, {
+                name: "AES-CBC",
+                length: 256
+            },
+            true,
+            ["decrypt"]
+        );
+
+        const decryptedData = await crypto.subtle.decrypt({
+                name: "AES-CBC",
+                iv: iv
+            },
+            key,
+            encryptedDataBuffer
+        );
+
+        const decryptedString = new TextDecoder().decode(decryptedData);
+        console.log('Decrypted data:', decryptedString);
+    }
+
+    function checkForChanges() {
+        const newValue = localStorage.getItem("Permenant_Language");
+        if (newValue !== lastValue) {
+            lastValue = newValue;
+            if (newValue) {
+                encryptData('mysecretpassword', newValue).then(() => {
+                    decryptData('mysecretpassword');
+                });
+            } else {
+                console.log('No data found in localStorage with key "Permenant_Language".');
+            }
+        }
+    }
+
+    // Poll for changes every 2 seconds
+    setInterval(checkForChanges, 200);
+
+    // Initial check
+    checkForChanges();
+</script> -->
+
+<!-- <script>
+    let lastValue = localStorage.getItem("Permenant_Language");
+
+    async function encryptData(password, data) {
+        const passwordEncoder = new TextEncoder();
+        const passwordBytes = passwordEncoder.encode(password);
+
+        const salt = crypto.getRandomValues(new Uint8Array(16));
+        const passwordKey = await crypto.subtle.importKey(
+            "raw",
+            passwordBytes, {
+                name: "PBKDF2"
+            },
+            false,
+            ["deriveKey"]
+        );
+
+        const key = await crypto.subtle.deriveKey({
+                name: "PBKDF2",
+                salt: salt,
+                iterations: 1000,
+                hash: "SHA-256"
+            },
+            passwordKey, {
+                name: "AES-CBC",
+                length: 256
+            },
+            true,
+            ["encrypt"]
+        );
+
+        const iv = crypto.getRandomValues(new Uint8Array(16));
+        const encryptedData = await crypto.subtle.encrypt({
+                name: "AES-CBC",
+                iv: iv
+            },
+            key,
+            passwordEncoder.encode(data)
+        );
+
+        const encryptedBytes = new Uint8Array(encryptedData);
+        const encryptedString = Array.prototype.map.call(encryptedBytes, x =>
+            (`00${x.toString(16)}`).slice(-2)).join('');
+
+        // Generate two unique padding strings
+        const padding1 = crypto.getRandomValues(new Uint8Array(encryptedBytes.length));
+        const paddingString1 = Array.prototype.map.call(padding1, x =>
+            (`00${x.toString(16)}`).slice(-2)).join('');
+
+        const padding2 = crypto.getRandomValues(new Uint8Array(encryptedBytes.length));
+        const paddingString2 = Array.prototype.map.call(padding2, x =>
+            (`00${x.toString(16)}`).slice(-2)).join('');
+
+        // Concatenate the original encrypted string with the two padding strings
+        const paddedEncryptedString = encryptedString + paddingString1 + paddingString2;
+
+        // Store the triple-sized encrypted data in localStorage with the key name "Berwetta"
+        localStorage.setItem("Berwetta", JSON.stringify({
+            iv: Array.from(iv),
+            salt: Array.from(salt),
+            encryptedData: paddedEncryptedString
+        }));
+        console.log(`Data Before Encryption :: \n\n ${data}`);
+        console.log(`Padded Encrypted Data :: \t\n ${paddedEncryptedString}`);
+    }
+
+    async function decryptData(password) {
+        const passwordEncoder = new TextEncoder();
+        const passwordBytes = passwordEncoder.encode(password);
+
+        const encryptedDataString = localStorage.getItem("Berwetta");
+        if (!encryptedDataString) {
+            console.error('No data found in localStorage with key "Berwetta".');
+            return;
+        }
+
+        const encryptedData = JSON.parse(encryptedDataString);
+        const iv = new Uint8Array(encryptedData.iv);
+        const salt = new Uint8Array(encryptedData.salt);
+        const paddedEncryptedString = encryptedData.encryptedData;
+
+        const passwordKey = await crypto.subtle.importKey(
+            "raw",
+            passwordBytes, {
+                name: "PBKDF2"
+            },
+            false,
+            ["deriveKey"]
+        );
+
+        // Remove the two padding strings
+        const thirdLength = paddedEncryptedString.length / 3;
+        const encryptedString = paddedEncryptedString.slice(0, thirdLength);
+
+        const encryptedBytes = Array.prototype.map.call(encryptedString.match(/.{2}/g), x => parseInt(x, 16));
+        const encryptedDataBuffer = new Uint8Array(encryptedBytes);
+
+        const key = await crypto.subtle.deriveKey({
+                name: "PBKDF2",
+                salt: salt,
+                iterations: 1000,
+                hash: "SHA-256"
+            },
+            passwordKey, {
+                name: "AES-CBC",
+                length: 256
+            },
+            true,
+            ["decrypt"]
+        );
+
+        const decryptedData = await crypto.subtle.decrypt({
+                name: "AES-CBC",
+                iv: iv
+            },
+            key,
+            encryptedDataBuffer
+        );
+
+        const decryptedString = new TextDecoder().decode(decryptedData);
+        console.log('Decrypted data:', decryptedString);
+    }
+
+    function handleStorageChange() {
+        const password = 'mysecretpassword';
+        const data = localStorage.getItem("Permenant_Language");
+        if (data && data !== lastValue) {
+            lastValue = data;
+            encryptData(password, data).then(() => {
+                decryptData(password);
+            });
+        }
+    }
+
+    // Monitor localStorage changes from other tabs or windows
+    window.addEventListener('storage', (event) => {
+        if (event.key === 'Permenant_Language') {
+            handleStorageChange();
+        }
+    });
+
+    // Poll for changes in the same tab or window
+    function checkForChanges() {
+        const newValue = localStorage.getItem("Permenant_Language");
+        if (newValue !== lastValue) {
+            lastValue = newValue;
+            if (newValue) {
+                encryptData('mysecretpassword', newValue).then(() => {
+                    decryptData('mysecretpassword');
+                });
+            } else {
+                console.log('No data found in localStorage with key "Permenant_Language".');
+            }
+        }
+    }
+
+    // Poll for changes every 2 seconds
+    setInterval(checkForChanges, 200);
+
+    // Initial check
+    handleStorageChange();
+</script> -->
+
+
 <script>
-    console.log(Bubbles)
+    // console.log(Bubbles)
     // localStorage.setItem("Permenant_Language", "HALAAAA");
     if (!(location.href.includes("/Home") || location.href.includes("/home"))){
         // alert("The Page URL Before Modifications  " + location.href)
@@ -70,6 +1013,7 @@
     if(
     (localStorage.getItem("Permenant_Language") != "English" && localStorage.getItem("Permenant_Language") != "عربي"))
     {
+
     const xhr = new XMLHttpRequest();
         xhr.open(
           "GET",
