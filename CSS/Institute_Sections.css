@@ -105,111 +105,82 @@ li+li {
     font-family: Arial Black, Arial Bold, Gadget, sans-serif;
 }
 
-
-@media screen and (max-width :1200px) {
-    ::marker {
-        font-size: 1.7rem;
-    }
+@media screen and (max-width :1300px) {
     .Departements_Links_En {
-        font-size: 15.5px;
+        font-size: 20.5px !important;
     }
 }
-@media screen and (max-width :900px) {
+@media screen and (max-width : 1150px) {
     ::marker {
-        font-size: 1.5rem;
-    }
-    .Departements_Links_Ar {
-        font-size: 26px;
+        font-size: 0rem !important;
     }
     .Departements_Links_En {
-        font-size: 14px;
+        font-size: 17.5px !important;
+    }
+}
+@media screen and (max-width : 900px) {
+    .Departements_Links_Ar {
+        font-size: 30px !important;
+    }
+    .Departements_Links_En {
+        font-size: 15.5px !important;
+    }
+}
+@media screen and (max-width : 800px) {
+    .Departements_Links_Ar {
+        font-size: 26px !important;
+    }
+    #OL_En{
+        margin-right: 7%;
+        margin-left: 7%;
     }
     #Institute_Sections_H1{
-        font-size: 25px !important;
+        font-size: 36px !important;
     }
 }
-
-@media screen and (max-width :800px) {
-    /* #Institute_Sections_H1{
+@media screen and (max-width : 700px) {
+    .Departements_Links_Ar {
+        font-size: 22px !important;
+    }
+   #OL_En{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    #Institute_Sections_H1{
         font-size: 35px !important;
-        } */
-    ::marker {
-            font-size: 1.2rem;
-        }
-        .Departements_Links_Ar {
-            font-size: 22px;
-        }
-        .Departements_Links_En {
-            font-size: 11.5px;
+    }
+}
+@media screen and (max-width : 600px) {
+    .Departements_Links_Ar {
+        font-size: 18px !important;
     }
 }
 
-@media screen and (max-width :700px) {
-    ::marker {
-            font-size: 1rem;
-        }
-        .Departements_Links_Ar {
-            font-size: 18px;
-        }
-        .Departements_Links_En {
-            font-size: 10px;
-        }
+@media screen and (max-width : 500px) {
+
+    #Institute_Sections_H1{
+        font-size: 30px !important;
     }
-    
-    @media screen and (max-width :600px) {
-    /* ::marker {
-            font-size: 1rem;
-        } */
-    .Departements_Links_Ar {
-        font-size: 15px;
+    #OL_Ar{
+            margin-right: 10%;
+            margin-left: 10%;
     }
-    .Departements_Links_En {
-        font-size: 7.5px;
-    }
+}
+@media screen and (max-width : 400px) {
+
     #Institute_Sections_H1{
         font-size: 25px !important;
     }
-    ::marker {
-        font-size: 1.2rem;
-    }
 }
+@media screen and (max-width : 350px) {
 
-@media screen and (max-width :500px) {
-    .Departements_Links_Ar {
-        font-size: 12px;
-    }
-    .Departements_Links_En {
-        font-size: 6px;
-    }
-    ::marker {
-        font-size: 1rem;
-    }
-}
-
-@media screen and (max-width :400px) {
     #Institute_Sections_H1{
-        font-size: 20px !important;
-    }
-    .Departements_Links_En {
-        font-size: 5px;
-    }
-    .Departements_Links_Ar {
-        font-size: 10px;
-    }
-    
-    ::marker {
-        font-size: 0.6rem;
+        font-size: 22px !important;
     }
 }
+@media screen and (max-width : 300px) {
 
-@media screen and (max-width :350px) {
-    .Departements_Links_Ar {
-        font-size: 8px;
-    }
-    .Departements_Links_En {
-        font-size: 3.5px;
-    }
-    ::marker {
-        font-size: 0.5rem;
+    #Institute_Sections_H1{
+        font-size: 18px !important;
     }
 }
