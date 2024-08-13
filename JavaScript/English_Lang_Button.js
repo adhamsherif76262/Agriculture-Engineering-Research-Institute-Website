@@ -7,13 +7,17 @@ function Switch_NavBar_Lang_En(){
 function Switch_Footer_Lang_En(){
   Main_Footer[0].innerHTML = En_FooterTemplate;
 }
+// async function Store_Encrypted_Lang_En() {
+//   const EncryptedData = await encryptData(password, "English");
+//   localStorage.setItem("Permenant_Language", JSON.stringify(EncryptedData));
+// }
 function LangBtnEnClick() {
   console.log("onclick=LangBtnEnClick()");
   
   localStorage.setItem("Permenant_Language" , "English");
   alert("The Language Now is :: " + localStorage.getItem("Permenant_Language"));
-
-  Switch_Footer_Lang_En()
+  // Store_Encrypted_Lang_En();
+  Switch_Footer_Lang_En();
   Switch_NavBar_Lang_En();
 
     switch (true) {

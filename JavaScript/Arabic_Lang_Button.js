@@ -3,16 +3,23 @@ function Switch_NavBar_Lang_Ar(){
     Ar_Nav.innerHTML = Ar_NavTemplate;
     En_Nav.classList.add("D_None");
     Ar_Nav.classList.remove("D_None");
-
 }
 function Switch_Footer_Lang_Ar() {
   Main_Footer[0].innerHTML = Ar_FooterTemplate;
 }
+// async function Store_Encrypted_Lang_Ar() {
+//   const EncryptedData = await encryptData(password, "عربي");
+//   localStorage.setItem("Permenant_Language", JSON.stringify(EncryptedData));
+// }
 function LangBtnArClick() {
     console.log("onclick=LangBtnArClick()");
-
-  localStorage.setItem("Permenant_Language", "عربي");
-  alert("The Language Now is :: " + localStorage.getItem("Permenant_Language"));
+    // Store_Encrypted_Lang_Ar();
+    localStorage.setItem("Permenant_Language","عربي");
+    alert("The Language Now is :: " + localStorage.getItem("Permenant_Language"));
+    // Get_Decrypted_Language().then(Decrypted_Lang_Value=>{
+    //   alert("The Language Now is :: " + Decrypted_Lang_Value);
+      
+    //   });
 
   Switch_NavBar_Lang_Ar();
   Switch_Footer_Lang_Ar();
