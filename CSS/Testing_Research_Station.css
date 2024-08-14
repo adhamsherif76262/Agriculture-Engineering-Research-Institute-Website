@@ -721,16 +721,27 @@ li::before {
     .Main_List_Item_H3_Ar::before {
         margin-left: 1.5rem;
     }
+    .Main_List_Item:hover{
+        margin-top: 200px !important;
+        margin-bottom: 200px !important;
+        /* display: none !important; */
+    }
 }
 
 @media screen and (max-width : 450px) {
     .Main_List_Item_H3_Ar {
-        margin-right: -40px !important;
+        margin-right: -20px !important;
         /* display: none; */
     }
 
+        .Main_List_Item:hover{
+        margin-top: 250px !important;
+        margin-bottom: 250px !important;
+        /* display: none !important; */
+    }
+
     .Inner_List_Ar {
-        margin-right: 0px !important;
+        /* margin-right: 0px !important; */
         /* display: none; */
     }
 }
@@ -739,7 +750,7 @@ li::before {
     .Main_List_Item_H3_Ar {
         /* font-size: 10px !important; */
         transform: scale(70%) !important;
-        margin-right: -65px !important;
+        margin-right: -50px !important;
         /* display: none; */
     }
 }
