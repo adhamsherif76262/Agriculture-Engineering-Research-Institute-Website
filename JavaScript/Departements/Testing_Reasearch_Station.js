@@ -1,8 +1,19 @@
 var Testing_Reasearch_Station_Page_Title = document.getElementById(
   "Testing_Reasearch_Station_Page_Title"
 );
-var Testing_Reasearch_Station_H1 = document.getElementById(
-  "Testing_Reasearch_Station_H1"
+
+// var Testing_Reasearch_Station_H1 = document.getElementById(
+//   "Testing_Reasearch_Station_H1"
+// );
+
+var Testing_Reasearch_Station_Span_1 = document.getElementById(
+  "Testing_Reasearch_Station_Span_1"
+);
+var Testing_Reasearch_Station_Span_2 = document.getElementById(
+  "Testing_Reasearch_Station_Span_2"
+);
+var Testing_Reasearch_Station_Span_3 = document.getElementById(
+  "Testing_Reasearch_Station_Span_3"
 );
 
 var TRS_TimeLine_Section = document.getElementById("TRS_TimeLine_Section");
@@ -308,14 +319,24 @@ var TRS_Services_Section_En = `
 `;
 
 function Testing_Reasearch_Station_Load_Content_Ar() {
-  Testing_Reasearch_Station_H1.textContent = "محطة أبحاث و أختبار الجرارات و الالات الزراعية";
+  if(window.innerWidth < "600"){
+    alert("sdansdyatgushjdkasjhb")
+    Testing_Reasearch_Station_Span_1.style.marginLeft = "47px"
+  }
+  Testing_Reasearch_Station_Span_1.textContent = "محطة أبحاث";
+  Testing_Reasearch_Station_Span_2.textContent = "و أختبار الجرارات";
+  Testing_Reasearch_Station_Span_3.textContent = "و الالات الزراعية";
+  // Testing_Reasearch_Station_H1.textContent = "محطة أبحاث و أختبار الجرارات و الالات الزراعية";
   HomePageTitle[0].innerHTML = "محطة أبحاث و أختبار الجرارات و الالات الزراعية";
   TRS_TimeLine_Section.innerHTML = TRS_TimeLine_Section_Ar;
   TRS_Projects_Section.innerHTML = TRS_Projects_Section_Ar;
   TRS_Services_Section.innerHTML = TRS_Services_Section_Ar;
 }
 function Testing_Reasearch_Station_Load_Content_En() {
-  Testing_Reasearch_Station_H1.textContent = "Testing & Reasearch Station For Tractor & Farm Machinery";
+  Testing_Reasearch_Station_Span_1.textContent = "Testing & Reasearch";
+  Testing_Reasearch_Station_Span_2.textContent = "Station For Tractor";
+  Testing_Reasearch_Station_Span_3.textContent = "& Farm Machinery";
+  // Testing_Reasearch_Station_H1.textContent = "Testing & Reasearch Station For Tractor & Farm Machinery";
   HomePageTitle[0].innerHTML = "AERI Testing & Reasearch Station For Tractor & Farm Machinery Page";
   TRS_TimeLine_Section.innerHTML = TRS_TimeLine_Section_En;
   TRS_Projects_Section.innerHTML = TRS_Projects_Section_En;

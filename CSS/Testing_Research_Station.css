@@ -43,15 +43,42 @@ h2 {
 #Header_Marquee {
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 95% !important;
+    margin-left: 2.5% !important;
+    margin-right: 2.5% !important;
+    transition: 1s;
+    height: 100px;
+}
+
+#Inner_Header_Marquee {
+    transition: 1s;
+    z-index: 100;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #Inner_Header_Marquee:hover {
+    transition: 1s;
     background-color: rgb(0, 0, 119);
     color: white;
     cursor: pointer;
-    border: double 10px white;
+    border: double 15px white;
     /* border-radius: 50%; */
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
+
+#Testing_Reasearch_Station_Span_1,
+#Testing_Reasearch_Station_Span_2,
+#Testing_Reasearch_Station_Span_3 {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    font-size: 40px;
+}
+
+/* #Testing_Reasearch_Station_H1 {
+    border: white double 20px;
+    margin-bottom: 23px;
+} */
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
@@ -634,11 +661,21 @@ li::before {
     #TRS_Services_Section {
         max-width: 90% !important;
         margin-left: 5% !important;
-        margin-right: 5% !important; 
+        margin-right: 5% !important;
     }
-    .Main_List_Item{
-        max-width: 88%;
+
+    .Main_List_Item {
+        max-width: 85%;
         /* display: none; */
+    }
+}
+
+@media (max-width: 900px) {
+
+    #Testing_Reasearch_Station_Span_1,
+    #Testing_Reasearch_Station_Span_2,
+    #Testing_Reasearch_Station_Span_3 {
+        font-size: 30px;
     }
 }
 
@@ -684,25 +721,42 @@ li::before {
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
 
+    #Testing_Reasearch_Station_Span_1::after,
+    #Testing_Reasearch_Station_Span_2::after {
+        content: "\a";
+        white-space:pre;
+    }
+
     /* .Main_List_Item {
         margin: 3rem auto;
         padding: 3rem 2rem 2rem;
     } */
-     #TRS_Services_Section{
+    .Main_List_Item_P_Ar {
+        padding: 0 !important;
+        padding-right: 15px !important;
+        /* margin-right: -20px !important; */
+        /* display: none; */
+    }
+
+    #TRS_Services_Section {
         margin-bottom: 50px;
         margin-top: 50px;
-     }
-     #UL_Ar{
+    }
+
+    #UL_Ar {
         min-height: 300px !important;
         /* display: none; */
-     }
-     #H1_Ar{
+    }
+
+    #H1_Ar {
         font-size: 30px !important;
-     }
-    .Li_Ar{
+    }
+
+    .Li_Ar {
         font-size: 20px;
         margin-right: 50px;
     }
+
     .Main_List_Item_H3_En {
         font-size: 2.25rem;
         margin: 0 0 2rem;
@@ -725,9 +779,10 @@ li::before {
     .Main_List_Item_H3_Ar::before {
         margin-left: 1.5rem;
     }
-    .Main_List_Item:hover{
-        margin-top: 200px !important;
-        margin-bottom: 200px !important;
+
+    .Main_List_Item:hover {
+        /* margin-top: 200px !important;
+        margin-bottom: 200px !important; */
         /* display: none !important; */
     }
 }
@@ -738,9 +793,9 @@ li::before {
         /* display: none; */
     }
 
-        .Main_List_Item:hover{
-        margin-top: 250px !important;
-        margin-bottom: 250px !important;
+    .Main_List_Item:hover {
+        margin-top: 150px !important;
+        margin-bottom: 150px !important;
         /* display: none !important; */
     }
 
@@ -756,5 +811,11 @@ li::before {
         transform: scale(70%) !important;
         margin-right: -50px !important;
         /* display: none; */
+    }
+
+    .Main_List_Item:hover {
+        margin-top: 250px !important;
+        margin-bottom: 250px !important;
+        /* display: none !important; */
     }
 }
