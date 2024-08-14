@@ -636,6 +636,10 @@ li::before {
         margin-left: 5% !important;
         margin-right: 5% !important; 
     }
+    .Main_List_Item{
+        max-width: 88%;
+        /* display: none; */
+    }
 }
 
 @media screen and (max-width : 700px) {
