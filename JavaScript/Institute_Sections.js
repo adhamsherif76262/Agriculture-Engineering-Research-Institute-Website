@@ -28,7 +28,7 @@ var Institute_Departements_En = `
           </a>
       </li>
       <li>
-          <a class = "Departements_Links_En" href="./Departements/Rice_Mechanization_Center.html">Rice Mechanization Center in Mit Diba
+          <a class = "Departements_Links_En" href="./Departements/Rice_Mechanization_Center.html">Rice Mechanization Center in Mit El-Deeba
             Department
           </a>
       </li>

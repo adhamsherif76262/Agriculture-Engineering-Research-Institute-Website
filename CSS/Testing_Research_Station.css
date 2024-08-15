@@ -187,7 +187,6 @@ h2 {
 .Inner_List {
     list-style-type: disc;
     line-height: 1.6;
-    /* mar */
 }
 
 @counter-style symbols {
@@ -325,8 +324,6 @@ h2 {
     margin: 10px;
 }
 
-
-
 #UL_En {
     position: relative;
     width: 100%;
@@ -459,45 +456,6 @@ h2 {
         transform: rotateY(360deg) translateX(0px) scale(1);
         filter: saturate(100%) brightness(1);
     }
-}
-
-
-body>div {
-    /* position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    background: #111;
-    padding: 20px;
-    border-radius: 50px; */
-    /* outline: 1px solid white; */
-    /* outline-offset: 10px; */
-}
-
-body>div::after {
-    /* position: absolute;
-    width: calc(100% + 100px);
-    height: calc(100% + 100px);
-    background: linear-gradient(90deg,
-            Red,
-            Orange,
-            Yellow,
-            LawnGreen,
-            Blue,
-            Violet,
-            Blue,
-            LawnGreen,
-            Yellow,
-            Orange,
-            Red);
-    background-size: 500%;
-    border-radius: 20px;
-    z-index: -1;
-    content: "";
-    animation: bg-rgb 40s linear infinite; */
 }
 
 ::-webkit-scrollbar {
@@ -727,10 +685,6 @@ li::before {
         white-space:pre;
     }
 
-    /* .Main_List_Item {
-        margin: 3rem auto;
-        padding: 3rem 2rem 2rem;
-    } */
     .Main_List_Item_P_Ar {
         padding: 0 !important;
         padding-right: 15px !important;
@@ -779,12 +733,6 @@ li::before {
     .Main_List_Item_H3_Ar::before {
         margin-left: 1.5rem;
     }
-
-    .Main_List_Item:hover {
-        /* margin-top: 200px !important;
-        margin-bottom: 200px !important; */
-        /* display: none !important; */
-    }
 }
 
 @media screen and (max-width : 450px) {
@@ -797,11 +745,6 @@ li::before {
         margin-top: 150px !important;
         margin-bottom: 150px !important;
         /* display: none !important; */
-    }
-
-    .Inner_List_Ar {
-        /* margin-right: 0px !important; */
-        /* display: none; */
     }
 }
 

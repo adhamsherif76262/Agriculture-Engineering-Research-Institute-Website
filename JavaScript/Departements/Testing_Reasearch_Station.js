@@ -319,10 +319,10 @@ var TRS_Services_Section_En = `
 `;
 
 function Testing_Reasearch_Station_Load_Content_Ar() {
-  if(window.innerWidth < "600"){
-    alert("sdansdyatgushjdkasjhb")
-    Testing_Reasearch_Station_Span_1.style.marginLeft = "47px"
-  }
+  // if(window.innerWidth < "600"){
+  //   alert("sdansdyatgushjdkasjhb")
+  //   Testing_Reasearch_Station_Span_1.style.marginLeft = "47px"
+  // }
   Testing_Reasearch_Station_Span_1.textContent = "محطة أبحاث";
   Testing_Reasearch_Station_Span_2.textContent = "و أختبار الجرارات";
   Testing_Reasearch_Station_Span_3.textContent = "و الالات الزراعية";
