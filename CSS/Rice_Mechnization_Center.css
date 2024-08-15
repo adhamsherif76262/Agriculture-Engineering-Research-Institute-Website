@@ -848,6 +848,10 @@
         width: 200px !important;
     }
 
+    #Drop_Down_Btn_Title_Ar_1 , #Drop_Down_Btn_Title_Ar_2{
+        font-size: 40px !important;
+    }
+
     .E_Button_1_Ar,
     .E_Button_2_Ar {
         /* margin-top: -50px !important;
@@ -855,6 +859,7 @@
         margin-bottom: -20px !important;
         margin-right: -50px !important;
         transform: scale(60%);
+        /* font-size: 10px !important; */
     }
 
     .LI_Tesxt_Gifs {
