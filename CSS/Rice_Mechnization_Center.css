@@ -829,7 +829,7 @@
     }
 
     body {
-        overflow-x: hidden !important;
+        overflow-x: visible !important;
     }
 }
 
