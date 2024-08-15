@@ -804,8 +804,14 @@
 
 @media screen and (max-width : 500px) {
 
+    .text {
+        max-width: 130% !important;
+        margin-right: 25px !important;
+        margin-left: -150px !important;
+    }
+
     .olcards_Ar li .content .title {
-        width: 300px !important;
+        width: 250px !important;
     }
 
     .LI_Tesxt_Gifs {
@@ -830,6 +836,9 @@
 
     #Main_RMC_Section {
         overflow-x: hidden !important;
+        width: 95% !important;
+        margin-left: 2.5% !important;
+        /* width: 100% !important; */
     }
 }
 
@@ -849,21 +858,22 @@
     }
 
     .LI_Tesxt_Gifs {
-        margin-left: -170px !important;
+        width: 260px !important;
+        margin-left: -130px !important;
         /* display: none; */
     }
 
     .LI_Text_sGifs {
-        margin-left: -150px !important;
+        margin-left: -110px !important;
         /* display: none; */
     }
 
     #List_1_Img_Ar {
-        margin-right: 175px !important;
+        margin-right: 125px !important;
     }
 
     #List_2_Img_Ar {
-        margin-right: 125px !important;
+        margin-right: 50px !important;
     }
 
     #Rice_Mechanization_Center_Span_1_Ar,
