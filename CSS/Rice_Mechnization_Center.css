@@ -382,7 +382,8 @@
 
 #Drop_Down_Btn_Title_Ar_1,
 #Drop_Down_Btn_Title_Ar_2 {
-    margin-right: 60px;
+    margin-right: 25px;
+    font-family: Omnes-Arabic-HairLine-Bold !important;
 }
 
 .m-dropdown .e-button_1:hover,
@@ -624,6 +625,7 @@
     background: #fff;
     color: #111;
 }
+
 #List_1_Img_Ar {
     transform: rotateY(180deg);
     width: 300px !important;
