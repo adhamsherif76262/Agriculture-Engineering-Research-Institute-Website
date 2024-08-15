@@ -828,7 +828,7 @@
         font-size: 50px;
     }
 
-    html{
+    #Main_RMC_Section {
         overflow-x: hidden !important;
     }
 }
