@@ -854,12 +854,9 @@
 
     .E_Button_1_Ar,
     .E_Button_2_Ar {
-        /* margin-top: -50px !important;
-        width: 100%; */
-        margin-bottom: -15px !important;
+        margin-bottom: -12px !important;
         margin-right: -50px !important;
         transform: scale(60%);
-        /* font-size: 10px !important; */
     }
 
     .LI_Tesxt_Gifs {
