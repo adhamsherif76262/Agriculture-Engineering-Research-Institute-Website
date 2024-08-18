@@ -23,11 +23,12 @@ var RMC_Marquee_En = `
 `;
 
 
-var RMC_Main_Section = document.getElementById("Main_RMC_Section");
+var RMC_Main_Section_Ar = document.getElementById("Main_RMC_Section_Ar");
+var RMC_Main_Section_En = document.getElementById("Main_RMC_Section_En");
 
-var RMC_Main_Section_Ar = `
+var RMC_Section_Ar = `
       <ol class="olcards_Ar">
-        <li style="--cardColor:#fc374e;">
+        <li style="--cardColor:rgb(190, 64, 64);">
             <div class="content">
                 <!-- <div class="icon">😁</div> -->
                 <div class="icon"><img src="../../Images/TRACTOR_giphy.gif" alt="Tractor Giffy" class="LI_Text_sGifs" style="width:200px; margin-right : 15px"></div>
@@ -40,7 +41,10 @@ var RMC_Main_Section_Ar = `
                 </div>
             </div>
         </li>
-        <li style="--cardColor:#36aeb3">
+        <li style="--cardColor:#E3AC59">
+        <li style="--cardColor:#C7E359">
+        <li style="--cardColor:#59E390">
+        <li style="--cardColor:#E3AC59">
             <div class="content">
                 <!-- <div class="icon">😀</div> -->
                 <div class="icon"><img id = "List_1_Img_Ar" src="../../Images/tractor.gif" alt="Tractor Giffy"></div>
@@ -74,10 +78,11 @@ var RMC_Main_Section_Ar = `
                 </div>
             </div>
         </li>
-        <li style="--cardColor:#162d59">
+        <li style="--cardColor:#C7E359">
+        <li style="--cardColor:#59E390">
             <div class="content">
                 <!-- <div class="icon">😉</div> -->
-                <div class="icon"><img src="../../Images/Tractor 4 .gif" alt="Tractor Giffy" class="LI_Tesxt_Gifs" style="width: 300px; margin-right: -50px !important;"></div>
+                <div class="icon"><img src="../../Images/Tractor 4 .gif" alt="Tractor Giffy" class="LI_Tesxt_Gifs_Ar" style="width: 300px; margin-right: -50px !important;"></div>
                 <div class="title LI_Paragraph_Titles Ar_Titles">اجمالي مساحة مركز ميكنة الأرز</div>
                 <div class="text">
                     ٨٢.٦ فدان منهم ٥ افدان مبنى الأداره 
@@ -86,7 +91,8 @@ var RMC_Main_Section_Ar = `
                 </div>
             </div>
         </li>
-        <li style="--cardColor:#f15f0e">
+        <li style="--cardColor:#E3AC59">
+        <li style="--cardColor:#75E359">
             <div class="content">
                 <!-- <div class="icon">😜</div> -->
                 <div class="icon"><img id = "List_2_Img_Ar" src="../../Images/Tractor_Replica .gif" alt="Tractor Giffy" class="LI_Text_Gsifs" style="width: 200px; margin-right: 20px; margin-left: -40px;"></div>
@@ -124,14 +130,14 @@ var RMC_Main_Section_Ar = `
         </li>
     </ol>
 `;
-var RMC_Main_Section_En = `
+var RMC_Section_En = `
       <ol class="olcards_En">
         <li style="--cardColor:#fc374e;">
             <div class="content">
                 <!-- <div class="icon">😁</div> -->
                 <div class="icon"><img src="../../Images/TRACTOR_giphy.gif" alt="Tractor Giffy" class="LI_sText_Gifs" style="transform: rotateY(180deg);width: 200px;margin-left: -20px;"></div>
                 <div class="title LI_Paragraph_Titles En_Titles" style="margin-left: -35px;font-size: 40px;">Establishment of the RMC</div>
-                <div class="text" style="line-height: 3rem;">
+                <div class="text text_En" style="line-height: 3rem;">
                     The Rice Mechanization Center project was launched in August 1981
                     through a mutual agreement between the governments of
                     Egypt and Japan. The project was located in Mit El-Deeba, Kafr 
@@ -151,7 +157,7 @@ var RMC_Main_Section_En = `
                 <iframe title="Tractor_Iframe" src="https://assets.pinterest.com/ext/embed.html?id=1151303092236036426" height="295"
                 width="345" frameborder="0" scrolling="no"></iframe>
                 </div> -->
-                <div class="title LI_Points_Titles En_Titles" style="margin-left: -60px;font-size: 45px;">Objectives of the RMC</div>
+                <div class="title LI_Points_Titles En_Titles_2nd" style="margin-left: -60px;font-size: 45px;">Objectives of the RMC</div>
                 <div class="Grid_List_Col">
                     <div class="m-dropdown">
                         <div class="e-button_1 E_Button_1_En open" style="width: 350px; height: 50px;">
@@ -182,8 +188,8 @@ var RMC_Main_Section_En = `
             <div class="content">
                 <!-- <div class="icon">😉</div> -->
                 <div class="icon"><img src="../../Images/Tractor 4 .gif" alt="Tractor Giffy" class="LI_Text_Gifs" style="width: 300px; margin-left: -80px !important; margin-right: -60px !important; transform: rotateY(180deg);"></div>
-                <div class="title LI_Paragraph_Titles En_Titles" style="margin-left: -60px;font-size: 45px;">Total Area of the RMC</div>
-                <div class="text" style="margin-left: 40px; line-height: 3rem;">
+                <div class="title LI_Paragraph_Titles En_Titles_3rd" style="margin-left: -60px;font-size: 45px;">Total Area of the RMC</div>
+                <div class="text text_En" style="margin-left: 40px; line-height: 3rem;">
                     The center covers a total area of 82.6 acres, including 5 acres dedicated to administration
                     buildings, training halls, accommodation for trainees, conference rooms, researcher offices, a
                     greenhouse for automated agriculture, workshops, and spare parts storage.
@@ -193,7 +199,7 @@ var RMC_Main_Section_En = `
         <li style="--cardColor:#f15f0e">
             <div class="content">
                 <!-- <div class="icon">😜</div> -->
-                <div class="icon"><img src="../../Images/Tractor_Replica .gif" alt="Tractor Giffy" class="LI_Text_Gsifs" style="transform: rotateY(180deg); width: 200px; margin-right: -40px; margin-left: 0px;"></div>
+                <div class="icon"><img src="../../Images/Tractor_Replica .gif" alt="Tractor Giffy" class="LI_Text_GsiFFs" style="transform: rotateY(180deg); width: 200px; margin-right: -40px; margin-left: 0px;"></div>
                     <div class="title LI_Points_Titles En_Titles" style="font-size: 45px;">Organizational Structure of the RMC</div>
                     <!-- <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, voluptatem. -->
                     <div class="Grid_List_Col">
@@ -230,7 +236,8 @@ function Rice_Mechanization_Center_Load_Content_Ar() {
   // Rice_Mechanization_Center_H1.textContent = "ىىىىىىىىىىىىىىىىىىىىىىىىىىىى";
   RMC_Marquee.innerHTML = RMC_Marquee_Ar;
   HomePageTitle[0].innerHTML = "نبذه عن مركز ميكنة الارز";
-  RMC_Main_Section.innerHTML = RMC_Main_Section_Ar;
+  RMC_Main_Section_Ar.innerHTML = RMC_Section_Ar;
+  RMC_Main_Section_En.innerHTML = "";
   $(".E_List_1_Ar").slideUp(function () {
     $(".E_Button_1_Ar").removeClass("open");
   });
@@ -270,7 +277,8 @@ function Rice_Mechanization_Center_Load_Content_En() {
   // Rice_Mechanization_Center_H1.textContent = "zzzzzzzzzzzzzz";
   RMC_Marquee.innerHTML = RMC_Marquee_En;
   HomePageTitle[0].innerHTML = "AERI Rice Mechanization Center Page";
-  RMC_Main_Section.innerHTML = RMC_Main_Section_En;
+  RMC_Main_Section_En.innerHTML = RMC_Section_En;
+  RMC_Main_Section_Ar.innerHTML = "";
   $(".E_List_1_En").slideUp(function () {
     $(".E_Button_1_En").removeClass("open");
   });

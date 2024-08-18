@@ -125,7 +125,7 @@
     color: black;
     font-family: PT-Bold-Heading;
     font-weight: bold;
-    font-size: 80px;
+    font-size: 70px;
 }
 
 #NavBar_P_En {
@@ -150,7 +150,10 @@
     /* background-color: #f1f1f1; */
     /* background-color: #feba27; */
     /* background-color: rgb(255, 205, 131); */
-    background-color: rgb(255, 223, 174);
+    /* background-color: rgb(239, 223, 194); */
+    /* background-color: rgb(230, 234, 255); */
+    background-color: rgb(243, 235, 223);
+    /* background-color: wheat; */
     transition: 0.4s;
     width: 100%;
     margin-top: -155px;
