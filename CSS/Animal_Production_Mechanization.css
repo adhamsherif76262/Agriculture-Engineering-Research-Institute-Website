@@ -1073,6 +1073,7 @@
     #image_Ar {
         margin-bottom: -950px !important;
         margin-right: 75px !important;
+        display: none;
     }
 
     #current-option-text1_Ar {
@@ -1102,7 +1103,7 @@
     }
 
     #image_En {
-        margin-bottom: -500px !important;
+        margin-bottom: -800px !important;
         margin-right: 125px !important;
     }
 
