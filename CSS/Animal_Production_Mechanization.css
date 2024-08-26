@@ -1122,6 +1122,7 @@
 
 
     #image_Ar {
+        display: block;
         transform: scale(90%);
         margin-bottom: -1000px !important;
         margin-right: 65px !important;
