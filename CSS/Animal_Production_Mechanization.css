@@ -625,18 +625,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width : 1250px) {
 
     #current-option-text1_En {
@@ -855,13 +843,13 @@
 @media screen and (max-width : 500px) {
 
     #carousel-wrapper_En {
-        margin-top: 800px !important;
-        height: 1250px !important;
+        margin-top: 550px !important;
+        /* height: 1100px !important; */
     }
 
     #image_En {
         transform: scale(95%);
-        margin-bottom: -800px !important;
+        margin-bottom: -625px !important;
         margin-right: 125px !important;
     }
 
@@ -902,16 +890,85 @@
     }
 }
 
-@media screen and (max-width : 400px) {
+@media screen and (max-width : 470px) {
     #carousel-wrapper_En {
         overflow-x: hidden;
+        margin-top: 750px !important;
+        height: 1100px !important;
+    }
+
+    #image_En {
+        /* transform: scale(70%); */
+        margin-bottom: -700px !important;
+        margin-right: 100px !important;
+    }
+
+    #next-option_En {
+        margin-left: 90% !important;
+        margin-top: 700px !important;
+    }
+
+    #previous-option_En {
+        margin-left: 90% !important;
+        margin-bottom: -700px !important;
+    }
+}
+
+@media screen and (max-width : 430px) {
+    #carousel-wrapper_En {
+        overflow-x: hidden;
+        margin-top: 770px !important;
+        height: 1220px !important;
+    }
+
+    #image_En {
+        margin-bottom: -800px !important;
+        margin-right: 125px !important;
+    }
+
+    #next-option_En {
+        margin-left: 90% !important;
+        margin-top: 800px !important;
+    }
+
+    #previous-option_En {
+        margin-left: 90% !important;
+        margin-bottom: -800px !important;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    #carousel-wrapper_En {
+        /* overflow-x: hidden; */
+        margin-top: 1000px !important;
+        height: 1400px !important;
+    }
+
+    #image_En {
+        transform: scale(90%);
+        margin-bottom: -1000px !important;
+        margin-right: 80px !important;
+    }
+
+    #next-option_En {
+        margin-left: 90% !important;
+        margin-top: 1000px !important;
+    }
+
+    #previous-option_En {
+        margin-left: 90% !important;
+        margin-bottom: -1000px !important;
+    }
+}
+@media screen and (max-width : 350px) {
+    #carousel-wrapper_En {
         margin-top: 1400px !important;
-        height: 1500px !important;
+        height: 1550px !important;
     }
 
     #image_En {
         transform: scale(70%);
-        margin-bottom: -1180px !important;
+        margin-bottom: -1200px !important;
         margin-right: 100px !important;
     }
 
