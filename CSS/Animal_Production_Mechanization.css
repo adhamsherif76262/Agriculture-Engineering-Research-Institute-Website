@@ -1172,29 +1172,29 @@
 @media screen and (max-width : 370px) {
 
     #image_Ar {
-        transform: scale(70%);
-        margin-bottom: -1250px !important;
+        transform: scale(80%);
+        margin-bottom: -1150px !important;
         margin-right: 65px !important;
     }
 
     #current-option-text1_Ar {
-        margin-bottom: 350px !important;
+        margin-bottom: 400px !important;
         margin-right: -50px !important;
     }
 
     #carousel-wrapper_Ar {
         margin-top: 850px !important;
-        height: 1600px;
+        height: 1550px;
     }
 
     #next-option_Ar {
         margin-right: 85% !important;
-        margin-top: 1250px !important;
+        margin-top: 1100px !important;
     }
 
     #previous-option_Ar {
         margin-right: 85% !important;
-        margin-bottom: -1250px !important;
+        margin-bottom: -1100px !important;
     }
 
     #carousel-wrapper_En {
@@ -1220,6 +1220,32 @@
 }
 
 @media screen and (max-width : 350px) {
+
+        #image_Ar {
+        transform: scale(70%);
+        margin-bottom: -1250px !important;
+        margin-right: 65px !important;
+    }
+
+    #current-option-text1_Ar {
+        margin-bottom: 350px !important;
+        margin-right: -50px !important;
+    }
+
+    #carousel-wrapper_Ar {
+        margin-top: 850px !important;
+        height: 1600px;
+    }
+
+    #next-option_Ar {
+        margin-right: 85% !important;
+        margin-top: 1250px !important;
+    }
+
+    #previous-option_Ar {
+        margin-right: 85% !important;
+        margin-bottom: -1250px !important;
+    }
     #carousel-wrapper_En {
         margin-top: 1250px !important;
         height: 1400px !important;
@@ -1246,12 +1272,12 @@
 
     #image_Ar {
         transform: scale(70%);
-        margin-bottom: -1250px !important;
+        margin-bottom: -1350px !important;
         margin-right: 45px !important;
     }
 
     #current-option-text1_Ar {
-        margin-bottom: 380px !important;
+        margin-bottom: 350px !important;
         margin-right: -50px !important;
     }
 
@@ -1262,12 +1288,12 @@
 
     #next-option_Ar {
         margin-right: 85% !important;
-        margin-top: 1250px !important;
+        margin-top: 1350px !important;
     }
 
     #previous-option_Ar {
         margin-right: 85% !important;
-        margin-bottom: -1250px !important;
+        margin-bottom: -1350px !important;
     }
 
     #carousel-wrapper_En {
