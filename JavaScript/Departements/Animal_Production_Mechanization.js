@@ -177,9 +177,9 @@ function Animal_Production_Mechanization_Load_Content_Ar() {
       "../../Images/Machine_3_-removebg-preview.png",
     ];
     const Image_Dimentions_Ar = [
-      { width: "500px", height: "635px" },
+      { width: "315px", height: "425px" },
       { width: "340px", height: "415px" },
-      { width: "350px", height: "325px" },
+      { width: "350px", height: "450px" },
     ];
     const Image_Margins_Ar = [
       { marginLeft: "-48%", marginRight: "" },
@@ -187,9 +187,9 @@ function Animal_Production_Mechanization_Load_Content_Ar() {
       { marginLeft: "-55%", marginRight: "" },
     ];
     const Text_Width_Margins_Ar = [
-      { marginLeft: "", width: "50%", marginRight: "5%" },
-      { marginLeft: "", width: "60%", marginRight: "5%" },
-      { marginLeft: "", width: "60%", marginRight: "5%" },
+      { marginLeft: "", width: "60%", marginRight: "1%" },
+      { marginLeft: "", width: "60%", marginRight: "1%" },
+      { marginLeft: "", width: "60%", marginRight: "1%" },
     ];
     var i_Ar = 0;
     const currentOptionText1_Ar = document.getElementById(
@@ -207,12 +207,6 @@ function Animal_Production_Mechanization_Load_Content_Ar() {
     currentOptionText1_Ar.innerText = text1_options_Ar[i_Ar];
     currentOptionText1_Ar.style.marginRight = `${Text_Width_Margins_Ar[i_Ar].marginRight}`;
     currentOptionText1_Ar.style.width = `${Text_Width_Margins_Ar[i_Ar].width}`;
-    // currentOptionText2.innerText = text2_options[i_Ar];
-    // currentOptionImage.style.background = "url(https://i.ibb.co/JCGfFJd/moto-net.gif)"
-    // currentOptionImage.style.background = "url('Machine 1 .jpg')"
-    // currentOptionImage.style.backgroundImage = "url(" + image_options[i_Ar] + ")";
-    // currentOptionImage.style.backgroundImage = `url(./Machine 1 .jpg)`;
-    // currentOptionImage.style.backgroundImage = `url(${image_options[i_Ar]})`;
     currentOptionImage_Ar.style.background = `url("${image_options_Ar[i_Ar]}")`;
     mainMenu_Ar.style.background = color_options_Ar[i_Ar];
     currentOptionImage_Ar.style.width = `${Image_Dimentions_Ar[i_Ar].width}`;
@@ -222,23 +216,6 @@ function Animal_Production_Mechanization_Load_Content_Ar() {
 
       i_Ar = i_Ar + 1;
       i_Ar = i_Ar % text1_options_Ar.length;
-
-      if (i_Ar == 1) {
-        alert("here 1");
-        currentOptionImage_Ar.style.marginTop = "-100px";
-        mainMenu_Ar.style.height = "900px";
-      } else if (i_Ar == 2) {
-        alert("here 2");
-        currentOptionImage_Ar.style.marginTop = "-250px";
-        mainMenu_Ar.style.height = "600px";
-        // alert("here 1 ELSE");
-        // currentOptionImage_En.style.marginTop = "-200px"
-        // mainMenu_En.style.height = "1100px";
-      } else {
-        alert("here 2 ELSE");
-        currentOptionImage_Ar.style.marginTop = "-50px";
-        mainMenu_Ar.style.height = "1100px";
-      }
 
       // currentOptionText1.dataset.nextText = text1_options[i_Ar];
       // currentOptionText2.dataset.nextText = text2_options[i_Ar];
@@ -262,24 +239,6 @@ function Animal_Production_Mechanization_Load_Content_Ar() {
         i_Ar = text1_options_Ar.length;
       }
       i_Ar = i_Ar - 1;
-
-      if (i_Ar == 1) {
-        alert("here 1");
-        currentOptionImage_Ar.style.marginTop = "-100px";
-        mainMenu_Ar.style.height = "900px";
-      } else if (i_Ar == 2) {
-        alert("here 2");
-        currentOptionImage_Ar.style.marginTop = "-250px";
-        mainMenu_Ar.style.height = "600px";
-        // alert("here 1 ELSE");
-        // currentOptionImage_En.style.marginTop = "-200px"
-        // mainMenu_En.style.height = "1100px";
-      } else {
-        alert("here 2 ELSE");
-        currentOptionImage_Ar.style.marginTop = "-50px";
-        mainMenu_Ar.style.height = "1100px";
-      }
-
       // currentOptionText1.dataset.previousText = text1_options[i_Ar];
       // currentOptionText2.dataset.previousText = text2_options[i_Ar];
       mainMenu_Ar.style.background = color_options_Ar[i_Ar];
@@ -320,7 +279,6 @@ function Animal_Production_Mechanization_Load_Content_Ar() {
       }, 1);
     });
 
-
     
     const text1_options_En = [
         `This research manufactures a self-propelled machine for scraping poultry litter off the concrete floor and packing it mechanically into sacks by a screw elevating system to reduce hygienic problems by preventing atmospheric emissions, such as hydrogen, sulfide, and ammonia.
@@ -357,9 +315,6 @@ function Animal_Production_Mechanization_Load_Content_Ar() {
       { width: "315px", height: "425px" },
       { width: "340px", height: "415px" },
       { width: "350px", height: "450px" },
-      // { width: "500px", height: "635px" },
-      // { width: "340px", height: "415px" },
-      // { width: "350px", height: "325px" },
     ];
     const Image_Margins_En = [
       { marginLeft: "55%", marginRight: "" },
@@ -386,146 +341,17 @@ function Animal_Production_Mechanization_Load_Content_Ar() {
     currentOptionText1_En.innerText = text1_options_En[i_En];
     currentOptionText1_En.style.marginLeft = `${Text_Width_Margins_En[i_En].marginLeft}`;
     currentOptionText1_En.style.width = `${Text_Width_Margins_En[i_En].width}`;
-    // currentOptionImage_En.setAttribute("src",`${image_options_En[i_En]}`);
-    // currentOptionText2.innerText = text2_options[i_En];
-    // currentOptionImage.style.background = "url(https://i.ibb.co/JCGfFJd/moto-net.gif)"
-    // currentOptionImage.style.background = "url('Machine 1 .jpg')"
-    // currentOptionImage.style.backgroundImage = "url(" + image_options[i_En] + ")";
-    // currentOptionImage.style.backgroundImage = `url(./Machine 1 .jpg)`;
-    // currentOptionImage.style.backgroundImage = `url(${image_options[i_En]})`;
     currentOptionImage_En.style.background = `url("${image_options_En[i_En]}")`;
-
-    // currentOptionImage_En.setAttribute("src" , `url("${image_options_En[i_En]}")`)
-    // currentOptionImage_En.style.background = `url("${image_options_En[i_En]}")`;
     mainMenu_En.style.background = color_options_En[i_En];
     currentOptionImage_En.style.width = `${Image_Dimentions_En[i_En].width}`;
     currentOptionImage_En.style.height = `${Image_Dimentions_En[i_En].height}`;
     currentOptionImage_En.style.marginLeft = `${Image_Margins_En[i_En].marginLeft}`;
-    // if (i_En == 0 && (window.innerWidth > 400 && window.innerWidth < 500)) {
-    //   currentOptionImage_En.style.transform = "scale(60%)";
-    //   currentOptionImage_En.style.marginTop = "200px"
-    //   optionNext_En.style.marginBottom = "-100px";
-    //   optionPrevious_En.style.marginTop = "400px";
-    // }
-
+    
     optionNext_En.onclick = function () {
 
       i_En = i_En + 1;
-      // if(i_En == 2 || i_En == 0){currentOptionImage_En.style.transform = `rotateY(180deg)`}
       i_En = i_En % text1_options_En.length;
-      // if (currentOptionImage_En.getAttribute("src")) {
-      //   currentOptionImage_En.setAttribute("src", "");
-      //   currentOptionImage_En.setAttribute(
-      //     "src",
-      //     `${image_options_En[i_En]}`
-      //   );
-      // } else {
-      //   currentOptionImage_En.setAttribute(
-      //     "src",
-      //     `${image_options_En[i_En]}`
-      //   );
-      // }
-      // currentOptionText1.dataset.nextText = text1_options[i_En];
-      // currentOptionText2.dataset.nextText = text2_options[i_En];
-      // if (window.innerWidth > 700 && window.innerWidth < 750) {
-      //   if (i_En == 1) {
-      //     // alert("here 1")
-      //     currentOptionImage_En.style.marginTop = "-200px";
-      //     mainMenu_En.style.height = "900px";
-      //     mainMenu_En.style.marginTop = "-100px";
-      //   } else if (i_En == 2) {
-      //     // alert("here 2")
-      //     mainMenu_En.style.marginTop = "-300px";
-      //     currentOptionImage_En.style.marginTop = "-550px";
-      //     mainMenu_En.style.height = "600px";
-      //     // alert("here 1 ELSE");
-      //     // currentOptionImage_En.style.marginTop = "-200px"
-      //     // mainMenu_En.style.height = "1100px";
-      //   } else {
-      //     // alert("here 2 ELSE")
-      //     currentOptionText1_En.style.paddingTop = "350px"
-      //     currentOptionImage_En.style.marginTop = "0px";
-      //     mainMenu_En.style.height = "1400px";
-      //   }
-      // }
-      // if (window.innerWidth > 600 && window.innerWidth < 700) {
-      //   if (i_En == 1) {
-      //     // alert("here 1")
-      //     currentOptionImage_En.style.marginTop = "-200px";
-      //     mainMenu_En.style.height = "950px";
-      //     mainMenu_En.style.marginTop = "-150px";
-      //     optionNext_En.style.marginBottom = "0px";
-      //     optionPrevious_En.style.marginTop = "300px";
-      //   } else if (i_En == 2) {
-      //     // alert("here 2")
-      //     mainMenu_En.style.marginTop = "-500px";
-      //     currentOptionImage_En.style.marginTop = "-550px";
-      //     mainMenu_En.style.height = "900px";
-      //     currentOptionText1_En.style.paddingTop = "200px"
-      //     // alert("here 1 ELSE");
-      //     // currentOptionImage_En.style.marginTop = "-200px"
-      //     // mainMenu_En.style.height = "1100px";
-      //   } else if(i_En == 0){
-      //     // alert("here 2 ELSE")
-      //     currentOptionText1_En.style.paddingTop = "575px"
-      //     currentOptionImage_En.style.marginTop = "0px";
-      //     mainMenu_En.style.height = "1750px";
-      //   }
-      // }
-      // if (window.innerWidth > 500 && window.innerWidth < 600) {
-      //   if (i_En == 1) {
-      //     // alert("here 1")
-      //     currentOptionImage_En.style.marginTop = "-100px";
-      //     mainMenu_En.style.height = "1050px";
-      //   } else if (i_En == 2) {
-      //     // alert("here 2")
-      //     currentOptionImage_En.style.marginTop = "-250px";
-      //     mainMenu_En.style.height = "750px";
-      //     optionNext_En.style.marginBottom = "400px";
-      //     optionPrevious_En.style.marginTop = "-100px";
-      //     // optionPrevious_En.style.transform = `rotateY(180deg)`
-      //   } else {
-      //     // alert("here 2 ELSE")
-      //     currentOptionImage_En.style.marginTop = "0px";
-      //     mainMenu_En.style.height = "1250px";
-      //   }
-      // }
-      // if (window.innerWidth > 400 && window.innerWidth < 500) {
-      //   // if (i_En == 1 && window.innerWidth > 400) {
-      //   //   currentOptionImage_En.style.transform = "scale(60%)";
-      //   //   currentOptionImage_En.style.marginTop = "200px";
-      //   //   optionNext_En.style.marginBottom = "-100px";
-      //   //   optionPrevious_En.style.marginTop = "400px";
-      //   // }
-      //   if (i_En == 1) {
-      //     currentOptionImage_En.style.transform = "scale(70%)";
-      //     // alert("here 1")
-      //     currentOptionImage_En.style.marginTop = "100px";
-      //     mainMenu_En.style.height = "1100px";
-      //   } else if (i_En == 2) {
-      //     // alert("here 2")
-      //     currentOptionImage_En.style.transform = "scale(85%)";
-      //     currentOptionImage_En.style.marginTop = "-350px";
-      //     // currentOptionImage_En.style.marginLeft = "-50px";
-      //     mainMenu_En.style.height = "850px";
-      //     mainMenu_En.style.marginTop = "-250px";
-      //     optionNext_En.style.marginBottom = "250px";
-      //     optionPrevious_En.style.marginTop = "100px";
-      //     // optionPrevious_En.style.transform = `rotateY(180deg)`
-      //   } else if (i_En == 0) {
-      //     currentOptionImage_En.style.transform = "scale(50%)";
-      //     // alert("here 2")
-      //     // mainMenu_En.style.height = "750px";
-      //     // optionNext_En.style.marginBottom = "400px"
-      //     // optionPrevious_En.style.marginTop = "-100px";
-      //     // optionPrevious_En.style.transform = `rotateY(180deg)`
-      //   } else {
-      //     // alert("here 2 ELSE")
-      //     currentOptionImage_En.style.marginTop = "0px";
-      //     mainMenu_En.style.height = "1250px";
-      //   }
-      // }
-      
+
       mainMenu_En.style.background = color_options_En[i_En];
       carousel_En.classList.add("anim-next");
       setTimeout(() => {
@@ -546,23 +372,6 @@ function Animal_Production_Mechanization_Load_Content_Ar() {
         i_En = text1_options_En.length;
       }
       i_En = i_En - 1;
-
-      // if (i_En == 1) {
-      //   // alert("here 1");
-      //   currentOptionImage_En.style.marginTop = "-100px";
-      //   mainMenu_En.style.height = "900px";
-      // } else if (i_En == 2) {
-      //   // alert("here 2");
-      //   currentOptionImage_En.style.marginTop = "-250px";
-      //   mainMenu_En.style.height = "600px";
-      //   // alert("here 1 ELSE");
-      //   // currentOptionImage_En.style.marginTop = "-200px"
-      //   // mainMenu_En.style.height = "1100px";
-      // } else {
-      //   // alert("here 2 ELSE");
-      //   currentOptionImage_En.style.marginTop = "-50px";
-      //   mainMenu_En.style.height = "1100px";
-      // }
 
       // currentOptionText1.dataset.previousText = text1_options[i_En];
       // currentOptionText2.dataset.previousText = text2_options[i_En];
