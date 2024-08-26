@@ -13,6 +13,11 @@
     src: url(../Fonts/ArbFONTS-OMNES-ARABIC-REGULAR.ttf);
 }
 
+@font-face {
+    font-family: Arial-Black;
+    src: url(../Fonts/Arial\ Black.ttf);
+}
+
 #Inner_Header_Marquee {
     transition: 1s;
     z-index: 100;
@@ -40,7 +45,7 @@
 #Animal_Production_Mechanization_Span_1_En,
 #Animal_Production_Mechanization_Span_2_En,
 #Animal_Production_Mechanization_Span_3_En {
-    font-family: Arial Black, Arial Bold, Gadget, sans-serif !important;
+    font-family: Arial-Black !important;
     font-size: 40px;
 }
 
@@ -418,7 +423,7 @@
 
 #carousel-wrapper_En #menu_En #current-option_En #current-option-text1_En {
     direction: ltr;
-    font-family: Arial Black, Arial Bold, Gadget, sans-serif !important;
+    font-family: Arial-Black !important;
     font-size: 25px;
     line-height: 2rem;
     align-self: flex-start;
@@ -1223,7 +1228,7 @@
 
 @media screen and (max-width : 350px) {
 
-        #image_Ar {
+    #image_Ar {
         transform: scale(70%);
         margin-bottom: -1250px !important;
         margin-right: 65px !important;
@@ -1248,6 +1253,7 @@
         margin-right: 85% !important;
         margin-bottom: -1250px !important;
     }
+
     #carousel-wrapper_En {
         margin-top: 1250px !important;
         height: 1400px !important;
