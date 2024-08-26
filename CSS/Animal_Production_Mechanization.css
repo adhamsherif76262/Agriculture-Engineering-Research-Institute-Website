@@ -948,7 +948,7 @@
     }
 
     #carousel-wrapper_En {
-        margin-top: 500px !important;
+        margin-top: 525px !important;
         height: 1050px !important;
     }
 
@@ -972,7 +972,7 @@
 @media screen and (max-width : 500px) {
 
     #carousel-wrapper_En {
-        margin-top: 550px !important;
+        margin-top: 575px !important;
         /* height: 1100px !important; */
     }
 
@@ -1097,7 +1097,7 @@
 
     #carousel-wrapper_En {
         overflow-x: hidden;
-        margin-top: 800px !important;
+        margin-top: 825px !important;
         height: 1220px !important;
     }
 
@@ -1198,7 +1198,7 @@
     }
 
     #carousel-wrapper_En {
-        margin-top: 1000px !important;
+        margin-top: 1050px !important;
         height: 1400px !important;
     }
 
