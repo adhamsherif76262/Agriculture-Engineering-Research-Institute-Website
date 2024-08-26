@@ -3,6 +3,11 @@
     src: url(../Fonts/PT\ Bold\ Heading.ttf);
 }
 
+@font-face {
+    font-family: Arial-Black;
+    src: url(../Fonts/Arial\ Black.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +21,7 @@
 }
 
 #TopBtnEn {
-    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+    font-family: Arial-Black;
     font-size: 22px !important;
     margin-right: 20px;
 }
@@ -39,7 +44,7 @@
 }
 
 #Footer_LangBtnEn {
-    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+    font-family: Arial-Black;
     font-size: 20px;
     /* animation: Language_Button_Footer_En cubic-bezier(0.77, 0, 0.175, 1) 2s; */
     margin-left: 20px;
@@ -129,7 +134,7 @@
 }
 
 #NavBar_P_En {
-    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+    font-family: Arial-Black;
     color: black;
     font-weight: bold;
     font-size: 40px;
@@ -222,7 +227,7 @@
 .Nav_Links_En {
     font-size: 25px;
     width: min-content;
-    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+    font-family: Arial-Black;
 }
 
 .Nav_Links_Ar {

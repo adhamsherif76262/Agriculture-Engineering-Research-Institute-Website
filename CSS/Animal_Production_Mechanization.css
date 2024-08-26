@@ -150,6 +150,7 @@
     width: 90%;
     left: 50%;
     margin-left: -45%;
+    font-family: Arial-Black !important;
     /* margin-top: -200px !important; */
     /* z-index: 100; */
 }
@@ -376,6 +377,7 @@
 
 
 #carousel-wrapper_En {
+    margin-top: 100px;
     height: 700px;
     width: 90% !important;
     margin-right: 5%;
@@ -645,7 +647,7 @@
     #carousel-wrapper_En {
         width: 95% !important;
         margin-left: 2.5% !important;
-        margin-top: 100px !important;
+        margin-top: 300px !important;
         overflow-x: hidden !important;
     }
 
@@ -691,6 +693,7 @@
         width: 95% !important;
         margin-left: 2.5% !important;
         overflow-x: hidden !important;
+        margin-top: 350px !important;
     }
 
     #image_En {
@@ -722,7 +725,7 @@
     }
 
     #carousel-wrapper_En {
-        margin-top: 150px !important;
+        margin-top: 450px !important;
         height: 900px;
         /* height: 100%; */
     }
@@ -755,7 +758,7 @@
 @media screen and (max-width : 800px) {
 
     #carousel-wrapper_En {
-        margin-top: 250px !important;
+        margin-top: 550px !important;
     }
 
     #carousel-wrapper_Ar {
@@ -823,6 +826,7 @@
 
     #carousel-wrapper_En {
         height: 850px !important;
+        margin-top: 600px !important;
     }
 
 
@@ -888,7 +892,7 @@
     }
 
     #carousel-wrapper_En {
-        margin-top: 350px !important;
+        margin-top: 750px !important;
         height: 950px !important;
     }
 
@@ -946,7 +950,7 @@
     }
 
     #carousel-wrapper_En {
-        margin-top: 525px !important;
+        margin-top: 1100px !important;
         height: 1050px !important;
     }
 
@@ -971,6 +975,7 @@
 
     #carousel-wrapper_En {
         margin-top: 575px !important;
+        margin-top: 1150px !important;
         /* height: 1100px !important; */
     }
 
@@ -1045,7 +1050,7 @@
 
     #carousel-wrapper_En {
         overflow-x: hidden;
-        margin-top: 750px !important;
+        margin-top: 1380px !important;
         height: 1100px !important;
     }
 
@@ -1096,7 +1101,7 @@
 
     #carousel-wrapper_En {
         overflow-x: hidden;
-        margin-top: 825px !important;
+        margin-top: 1500px !important;
         height: 1220px !important;
     }
 
@@ -1148,7 +1153,7 @@
 
     #carousel-wrapper_En {
         /* overflow-x: hidden; */
-        margin-top: 920px !important;
+        margin-top: 1650px !important;
         height: 1300px !important;
     }
 
@@ -1198,7 +1203,7 @@
     }
 
     #carousel-wrapper_En {
-        margin-top: 1050px !important;
+        margin-top: 1750px !important;
         height: 1400px !important;
     }
 
@@ -1248,7 +1253,7 @@
     }
 
     #carousel-wrapper_En {
-        margin-top: 1100px !important;
+        margin-top: 2100px !important;
         height: 1400px !important;
     }
 
@@ -1298,7 +1303,7 @@
     }
 
     #carousel-wrapper_En {
-        margin-top: 1250px !important;
+        margin-top: 2280px !important;
         height: 1550px !important;
     }
 
@@ -1348,7 +1353,7 @@
     }
 
     #carousel-wrapper_En {
-        margin-top: 1700px !important;
+        margin-top: 2900px !important;
         height: 1850px !important;
     }
 

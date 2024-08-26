@@ -13,6 +13,11 @@
     src: url(../Fonts/ArbFONTS-OMNES-ARABIC-REGULAR.ttf);
 }
 
+@font-face {
+    font-family: Arial-Black;
+    src: url(../Fonts/Arial\ Black.ttf);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -281,7 +286,7 @@ h2 {
 }
 
 #H1_En {
-    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+    font-family: Arial-Black;
     font-size: 40px !important;
     /* display: none; */
 }
@@ -558,7 +563,7 @@ li::before {
 }
 
 .Main_List_Item_H3_En {
-    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+    font-family: Arial-Black;
     font-size: 35px;
     display: flex;
     align-items: baseline;

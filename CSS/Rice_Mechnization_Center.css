@@ -13,6 +13,11 @@
     src: url(../Fonts/ArbFONTS-OMNES-ARABIC-REGULAR.ttf);
 }
 
+@font-face {
+    font-family: Arial-Black;
+    src: url(../Fonts/Arial\ Black.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +38,7 @@
     margin-bottom: 1rem !important;
     margin-top: 3rem !important;
     direction: ltr;
-    font-family: Arial Black, Arial Bold, Gadget, sans-serif !important;
+    font-family: Arial-Black !important;
 }
 
 .LI_Text_Gifs {
@@ -46,7 +51,7 @@
     direction: ltr;
     list-style: none;
     counter-reset: cardCount;
-    font-family: Arial Black, Arial Bold, Gadget, sans-serif !important;
+    font-family: Arial-Black !important;
     display: flex;
     flex-direction: column;
     --cardsGap: 2rem;
@@ -371,7 +376,7 @@
 #Rice_Mechanization_Center_Span_1_En,
 #Rice_Mechanization_Center_Span_2_En,
 #Rice_Mechanization_Center_Span_3_En {
-    font-family: Arial Black, Arial Bold, Gadget, sans-serif !important;
+    font-family: Arial-Black !important;
     font-size: 60px;
     /* word-spacing: 100px !important; */
 }

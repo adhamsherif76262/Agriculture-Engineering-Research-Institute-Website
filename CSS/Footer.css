@@ -3,6 +3,11 @@
     src: url(../Fonts/PT\ Bold\ Heading.ttf);
 }
 
+@font-face {
+    font-family: Arial-Black;
+    src: url(../Fonts/Arial\ Black.ttf);
+}
+
 /* #Upper_Footer_Left_Ar{
     display: flex !important;
     flex-direction: row !important;
@@ -24,7 +29,7 @@
 }
 
 #Navigation_Links_Footer_Div_En {
-    font-family: Arial Black, Arial Bold, Gadget, sans-serif !important;
+    font-family: Arial-Black !important;
 }
 
 #Navigation_Links_Footer_Div_Ar,
@@ -70,7 +75,7 @@
 }
 
 .Single_Contact_Info_En {
-    font-family: Arial Black, Arial Bold, Gadget, sans-serif !important;
+    font-family: Arial-Black !important;
     font-size: 17px;
 }
 
@@ -124,7 +129,7 @@
 }
 
 #Contact_Email {
-    font-family: Arial Black, Arial Bold, Gadget, sans-serif !important;
+    font-family: Arial-Black !important;
     font-size: 20px !important;
     transition: 0.4s;
     margin-right: 17px;
@@ -236,7 +241,7 @@
 }
 
 #Footer_Section .footer p {
-    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+    font-family: Arial-Black;
     margin: 0;
     font-size: 2rem;
     padding: 1rem;
