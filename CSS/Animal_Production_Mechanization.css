@@ -662,15 +662,12 @@
 
     #carousel-wrapper_Ar {
         width: 95% !important;
-        /* margin-right: 4% !important; */
         margin-left: 2.5% !important;
-        /* margin-top: 200px !important; */
         overflow-x: hidden !important;
     }
 
     #image_Ar {
         transform: scale(85%);
-        /* display: none; */
     }
 
     #current-option_Ar {
@@ -692,15 +689,12 @@
 
     #carousel-wrapper_En {
         width: 95% !important;
-        /* margin-right: 4% !important; */
         margin-left: 2.5% !important;
-        /* margin-top: 200px !important; */
         overflow-x: hidden !important;
     }
 
     #image_En {
         transform: scale(85%);
-        /* display: none; */
     }
 
     #current-option_En {
@@ -713,7 +707,6 @@
 
     #previous-option_En {
         margin-left: 95% !important;
-
     }
 
     #current-option-text1_En {
