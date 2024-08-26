@@ -645,7 +645,6 @@
         /* display: none; */
     }
 }
-
 @media screen and (max-width : 1000px) {
     #APM_Machinery_Section {
         width: 100% !important;
@@ -683,7 +682,6 @@
         font-size: 23px;
     }
 }
-
 @media screen and (max-width : 900px) {
     #carousel-wrapper_En {
         margin-top: 150px !important;
@@ -708,7 +706,6 @@
         font-size: 35px;
     }
 }
-
 @media screen and (max-width : 800px) {
 
     #carousel-wrapper_En {
@@ -747,7 +744,6 @@
         font-size: 35px;
     }
 }
-
 @media screen and (max-width : 750px) {
 
     #next-option_En {
@@ -782,7 +778,6 @@
         flex-direction: row !important;
     }
 }
-
 @media screen and (max-width : 700px) {
     #carousel-wrapper_En {
         margin-top: 350px !important;
@@ -805,7 +800,6 @@
         font-size: 25px;
     }
 }
-
 @media screen and (max-width : 600px) {
 
     #next-option_En {
@@ -839,7 +833,6 @@
         font-size: 20px;
     }
 }
-
 @media screen and (max-width : 500px) {
 
     #carousel-wrapper_En {
@@ -889,7 +882,6 @@
         white-space: pre !important;
     }
 }
-
 @media screen and (max-width : 470px) {
     #carousel-wrapper_En {
         overflow-x: hidden;
@@ -913,7 +905,6 @@
         margin-bottom: -700px !important;
     }
 }
-
 @media screen and (max-width : 430px) {
     #carousel-wrapper_En {
         overflow-x: hidden;
@@ -936,8 +927,30 @@
         margin-bottom: -800px !important;
     }
 }
-
 @media screen and (max-width : 400px) {
+    #carousel-wrapper_En {
+        /* overflow-x: hidden; */
+        margin-top: 1000px !important;
+        height: 1300px !important;
+    }
+
+    #image_En {
+        transform: scale(90%);
+        margin-bottom: -900px !important;
+        margin-right: 100px !important;
+    }
+
+    #next-option_En {
+        margin-left: 90% !important;
+        margin-top: 800px !important;
+    }
+
+    #previous-option_En {
+        margin-left: 90% !important;
+        margin-bottom: -800px !important;
+    }
+}
+@media screen and (max-width : 370px) {
     #carousel-wrapper_En {
         /* overflow-x: hidden; */
         margin-top: 1000px !important;
@@ -962,6 +975,28 @@
 }
 @media screen and (max-width : 350px) {
     #carousel-wrapper_En {
+        margin-top: 1250px !important;
+        height: 1400px !important;
+    }
+
+    #image_En {
+        transform: scale(70%);
+        margin-bottom: -1080px !important;
+        margin-right: 100px !important;
+    }
+
+    #next-option_En {
+        margin-left: 90% !important;
+        margin-top: 1100px !important;
+    }
+
+    #previous-option_En {
+        margin-left: 90% !important;
+        margin-bottom: -1100px !important;
+    }
+}
+@media screen and (max-width : 320px) {
+    #carousel-wrapper_En {
         margin-top: 1400px !important;
         height: 1550px !important;
     }
@@ -982,7 +1017,6 @@
         margin-bottom: -1100px !important;
     }
 }
-
 @media screen and (max-width : 300px) {
 
     #carousel-wrapper_En {
