@@ -1180,28 +1180,28 @@
 
     #image_Ar {
         transform: scale(80%);
-        margin-bottom: -1150px !important;
+        margin-bottom: -820px !important;
         margin-right: 65px !important;
     }
 
     #current-option-text1_Ar {
-        margin-bottom: 400px !important;
+        margin-bottom: 530px !important;
         margin-right: -50px !important;
     }
 
     #carousel-wrapper_Ar {
-        margin-top: 850px !important;
+        margin-top: 800px !important;
         height: 1550px;
     }
 
     #next-option_Ar {
         margin-right: 85% !important;
-        margin-top: 1100px !important;
+        margin-top: 800px !important;
     }
 
     #previous-option_Ar {
         margin-right: 85% !important;
-        margin-bottom: -1100px !important;
+        margin-bottom: -800px !important;
     }
 
     #carousel-wrapper_En {
