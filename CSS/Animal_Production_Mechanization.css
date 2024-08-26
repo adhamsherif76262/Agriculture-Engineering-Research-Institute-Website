@@ -1078,7 +1078,7 @@
     #image_Ar {
         margin-bottom: -950px !important;
         margin-right: 75px !important;
-        display: none;
+        /* display: none; */
     }
 
     #current-option-text1_Ar {
@@ -1108,18 +1108,18 @@
     }
 
     #image_En {
-        margin-bottom: -800px !important;
+        margin-bottom: -650px !important;
         margin-right: 125px !important;
     }
 
     #next-option_En {
         margin-left: 90% !important;
-        margin-top: 800px !important;
+        margin-top: 600px !important;
     }
 
     #previous-option_En {
         margin-left: 90% !important;
-        margin-bottom: -800px !important;
+        margin-bottom: -600px !important;
     }
 }
 
@@ -1155,24 +1155,24 @@
 
     #carousel-wrapper_En {
         /* overflow-x: hidden; */
-        margin-top: 1000px !important;
+        margin-top: 920px !important;
         height: 1300px !important;
     }
 
     #image_En {
         transform: scale(90%);
-        margin-bottom: -900px !important;
-        margin-right: 100px !important;
+        margin-bottom: -750px !important;
+        margin-right: 120px !important;
     }
 
     #next-option_En {
         margin-left: 90% !important;
-        margin-top: 800px !important;
+        margin-top: 700px !important;
     }
 
     #previous-option_En {
         margin-left: 90% !important;
-        margin-bottom: -800px !important;
+        margin-bottom: -700px !important;
     }
 }
 
@@ -1205,24 +1205,24 @@
     }
 
     #carousel-wrapper_En {
-        margin-top: 1050px !important;
+        margin-top: 1000px !important;
         height: 1400px !important;
     }
 
     #image_En {
         transform: scale(90%);
-        margin-bottom: -1000px !important;
-        margin-right: 80px !important;
+        margin-bottom: -800px !important;
+        margin-right: 115px !important;
     }
 
     #next-option_En {
-        margin-left: 90% !important;
-        margin-top: 1000px !important;
+        margin-left: 92% !important;
+        margin-top: 800px !important;
     }
 
     #previous-option_En {
-        margin-left: 90% !important;
-        margin-bottom: -1000px !important;
+        margin-left: 92% !important;
+        margin-bottom: -800px !important;
     }
 }
 
@@ -1255,24 +1255,24 @@
     }
 
     #carousel-wrapper_En {
-        margin-top: 1250px !important;
+        margin-top: 1100px !important;
         height: 1400px !important;
     }
 
     #image_En {
-        transform: scale(70%);
-        margin-bottom: -1080px !important;
+        transform: scale(80%);
+        margin-bottom: -1000px !important;
         margin-right: 100px !important;
     }
 
     #next-option_En {
         margin-left: 90% !important;
-        margin-top: 1100px !important;
+        margin-top: 900px !important;
     }
 
     #previous-option_En {
         margin-left: 90% !important;
-        margin-bottom: -1100px !important;
+        margin-bottom: -900px !important;
     }
 }
 
@@ -1305,24 +1305,24 @@
     }
 
     #carousel-wrapper_En {
-        margin-top: 1400px !important;
+        margin-top: 1250px !important;
         height: 1550px !important;
     }
 
     #image_En {
         transform: scale(70%);
-        margin-bottom: -1200px !important;
+        margin-bottom: -1000px !important;
         margin-right: 100px !important;
     }
 
     #next-option_En {
         margin-left: 90% !important;
-        margin-top: 1100px !important;
+        margin-top: 1000px !important;
     }
 
     #previous-option_En {
         margin-left: 90% !important;
-        margin-bottom: -1100px !important;
+        margin-bottom: -1000px !important;
     }
 }
 
@@ -1355,24 +1355,24 @@
     }
 
     #carousel-wrapper_En {
-        margin-top: 1900px !important;
+        margin-top: 1700px !important;
         height: 1850px !important;
     }
 
     #image_En {
         transform: scale(60%);
-        margin-bottom: -1570px !important;
-        margin-right: 70px !important;
+        margin-bottom: -1100px !important;
+        margin-right: 80px !important;
     }
 
     #next-option_En {
         margin-left: 90% !important;
-        margin-top: 1500px !important;
+        margin-top: 1100px !important;
     }
 
     #previous-option_En {
         margin-left: 90% !important;
-        margin-bottom: -1500px !important;
+        margin-bottom: -1100px !important;
     }
 
     #Animal_Production_Mechanization_Span_1_En,
