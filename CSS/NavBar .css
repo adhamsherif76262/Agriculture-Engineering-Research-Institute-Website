@@ -357,7 +357,7 @@
     }
 
     100% {
-        transform: translate(410px, 0);
+        transform: translate(450px, 0);
     }
 }
 
@@ -367,7 +367,7 @@
     }
 
     100% {
-        transform: translate(210px, 0);
+        transform: translate(190px, 0);
     }
 }
 
@@ -491,11 +491,11 @@
 
 @keyframes navlink_5_En {
     0% {
-        transform: translate(200px, 0);
+        transform: translate(140px, 0);
     }
 
     100% {
-        transform: translate(200px, 0);
+        transform: translate(140px, 0);
     }
 }
 
@@ -505,7 +505,7 @@
     }
 
     100% {
-        transform: translate(20px, 0);
+        transform: translate(-25px, 0);
     }
 }
 
@@ -515,7 +515,7 @@
     }
 
     100% {
-        transform: translate(-150px, 0);
+        transform: translate(-175px, 0);
     }
 }
 
@@ -525,7 +525,7 @@
     }
 
     100% {
-        transform: translate(-310px, 0);
+        transform: translate(-330px, 0);
     }
 }
 
@@ -634,7 +634,7 @@
     }
 
     100% {
-        transform: scale(0.8) translate(-170px, -30px)
+        transform: scale(0.8) translate(-210px, -40px)
     }
 }
 
@@ -654,7 +654,7 @@
     }
 
     100% {
-        transform: scale(0.8) translate(-175px, 200px);
+        transform: scale(0.8) translate(-250px, 200px);
     }
 }
 
@@ -714,7 +714,7 @@
     }
 
     100% {
-        transform: scale(0.78) translate(-180px, 65px);
+        transform: scale(0.78) translate(-220px, 65px);
     }
 }
 
@@ -886,7 +886,7 @@
     }
 
     100% {
-        transform: scale(0.8) translate(-205px, 65px);
+        transform: scale(0.8) translate(-250px, 45px);
     }
 }
 
@@ -1203,7 +1203,8 @@
     }
 
     .Nav_Links_En:nth-child(5) {
-        animation-name: blob-top-left-anim_En;
+        animation-name: blob-bottom-left-anim_En;
+        /* animation-name: blob-top-left-anim_En; */
     }
 
     .Nav_Links_En:nth-child(6) {
@@ -1215,7 +1216,8 @@
     }
 
     .Nav_Links_En:nth-child(8) {
-        animation-name: blob-bottom-left-anim_En;
+        animation-name: blob-top-left-anim_En;
+        /* animation-name: blob-bottom-left-anim_En; */
     }
 
     .Nav_Links_En:nth-child(9) {
