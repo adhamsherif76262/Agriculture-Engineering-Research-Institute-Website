@@ -35,7 +35,7 @@ function LangBtnArClick() {
     case location.href.includes("/Patents") ||
       location.href.includes("/patents"):
       alert("Hello from Patents");
-      HomePageTitle[0].innerHTML = "برءات الاختراع";
+      HomePageTitle[0].innerHTML = "التطبيقات التكنولوجية";
       Patents_Load_Content_Ar();
       break;
 

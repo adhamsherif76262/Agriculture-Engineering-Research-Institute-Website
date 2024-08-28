@@ -30,7 +30,7 @@ function LangBtnEnClick() {
       case location.href.includes("/Patents") ||
         location.href.includes("/patents"):
         alert("Heloo from Patents ENG");
-        HomePageTitle[0].innerHTML = "AERI Patents Page";
+        HomePageTitle[0].innerHTML = "AERI Technological Applications Page";
         Patents_Load_Content_En();
         break;
 

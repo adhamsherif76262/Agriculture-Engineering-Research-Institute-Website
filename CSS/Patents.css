@@ -1,0 +1,618 @@
+@font-face {
+    font-family: PT-Bold-Heading;
+    src: url(../Fonts/PT\ Bold\ Heading.ttf);
+}
+
+@font-face {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    src: url(../Fonts/ArbFONTS-OMNES-ARABIC-BOLD.ttf);
+}
+
+@font-face {
+    font-family: Omnes-Arabic-HairLine;
+    src: url(../Fonts/ArbFONTS-OMNES-ARABIC-REGULAR.ttf);
+}
+
+@font-face {
+    font-family: Arial-Black;
+    src: url(../Fonts/Arial\ Black.ttf);
+}
+
+
+#Technological_Applications_Section {
+    overflow: hidden;
+}
+
+.Project_Aims_UL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 25px;
+}
+
+.center_Ar {
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    font-family: Omnes-Arabic-HairLine-Bold;
+    /* font-size: 25px; */
+    /* margin-bottom: 500px !important; */
+    /* margin-top: 500px !important; */
+}
+
+.wrapper_Ar {
+    width: 68.9%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    grid-gap: 1em;
+    overflow: hidden;
+    /* width: 50em; */
+}
+
+.wrapper_Ar>.inner_Ar {
+    width: 100% !important;
+    display: flex;
+    grid-gap: 1em;
+    transition: all 1s ease-in-out;
+    flex-direction: row-reverse;
+    /* width: 1500px !important; */
+}
+
+.card_Ar {
+    /* width: min-content !important; */
+    /* height: 650px !important; */
+    /* z-index: 100; */
+    /* background-color: rebeccapurple; */
+    width: 1000px !important;
+    height: max-content !important;
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card_Ar>img {
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+    display: block;
+    width: 1000px !important;
+    height: 500px !important;
+    /* max-width: 1000px !important;
+    max-height: 450px !important; */
+}
+
+.card_Ar>.content_Ar {
+    background: #0a2640;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    padding: 1em;
+    text-align: center;
+}
+
+.card_Ar>.content_Ar>h1,
+.card_Ar>.content_Ar>h3 {
+    margin: 0.35em 0;
+}
+
+.card_Ar>.content_Ar>h1 {
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.card_Ar>.content_Ar>h3 {
+    color: #ccc;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.map_Ar {
+    margin-top: 1rem !important;
+    /* margin-bottom: -1.5rem !important; */
+}
+
+.map_Ar>button {
+    all: unset;
+    background: #11406c;
+    cursor: pointer;
+    margin: 0 0.125em;
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+    border-radius: 100%;
+    height: 1em;
+    width: 1em;
+}
+
+.map_Ar>button.active:after {
+    background: red;
+    content: "";
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    border-radius: 100%;
+    height: 0.5em;
+    width: 0.5em;
+}
+
+.center_En {
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    font-family: Arial-Black;
+    /* margin-bottom: 500px !important; */
+    /* margin-top: 500px !important; */
+}
+
+.wrapper_En {
+    width: 68.9%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    grid-gap: 1em;
+    overflow: hidden;
+    /* width: 50em; */
+}
+
+.wrapper_En>.inner_En {
+    width: 100% !important;
+    display: flex;
+    grid-gap: 1em;
+    transition: all 1s ease-in-out;
+    /* width: 1500px !important; */
+}
+
+.card_En {
+    width: 1000px !important;
+    /* width: min-content !important; */
+    height: max-content !important;
+    /* height: 650px !important; */
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    /* z-index: 100; */
+    /* background-color: rebeccapurple; */
+}
+
+.card_En>img {
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+    display: block;
+    width: 1000px !important;
+    height: 500px !important;
+    /* max-width: 1000px !important;
+    max-height: 450px !important; */
+}
+
+.card_En>.content_En {
+    background: #0a2640;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    padding: 1em;
+    text-align: center;
+}
+
+.card_En>.content_En>h1,
+.card_En>.content_En>h3 {
+    margin: 0.35em 0;
+}
+
+.card_En>.content_En>h1 {
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.card_En>.content_En>h3 {
+    color: #ccc;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.map_En {
+    margin-top: 1rem !important;
+    /* margin-bottom: -1.5rem !important; */
+}
+
+.map_En>button {
+    all: unset;
+    background: #11406c;
+    cursor: pointer;
+    margin: 0 0.125em;
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+    border-radius: 100%;
+    height: 1em;
+    width: 1em;
+}
+
+.map_En>button.active:after {
+    background: red;
+    content: "";
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    border-radius: 100%;
+    height: 0.5em;
+    width: 0.5em;
+}
+
+#Patents_Section {
+    margin-top: 100px;
+}
+
+
+.container_Ar {
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Omnes-Arabic-HairLine-Bold;
+}
+
+.responsive-table_Ar li {
+    border-radius: 3px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+}
+
+.responsive-table_Ar .table-header_Ar {
+    background-color: #95a5a6;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    width: 100% !important;
+}
+
+.responsive-table_Ar .table-row_Ar {
+    background-color: #fff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+
+.responsive-table_Ar .col-1_Ar {
+    flex-basis: 15%;
+    text-align: right;
+    font-size: 25px;
+}
+
+.responsive-table_Ar .col-2_Ar {
+    flex-basis: 85%;
+    text-align: right;
+    font-size: 30px;
+}
+
+.container_En {
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Arial-Black;
+}
+
+.responsive-table_En li {
+    border-radius: 3px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.responsive-table_En .table-header_En {
+    background-color: #95a5a6;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.responsive-table_En .table-row_En {
+    background-color: #fff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+
+.responsive-table_En .col-1_En {
+    flex-basis: 10%;
+}
+
+.responsive-table_En .col-2_En {
+    flex-basis: 90%;
+}
+
+
+
+
+
+
+@media screen and (max-width : 1250px) {
+    .wrapper_En>.inner_En {
+        margin-top: 50px !important;
+    }
+    .wrapper_Ar>.inner_Ar {
+        margin-top: 50px !important;
+    }
+
+    .map_Ar,
+    .map_En {
+        display: none;
+    }
+
+    .wrapper_Ar {
+        width: 100% !important;
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+    }
+
+    .wrapper_Ar>.inner_Ar {
+        display: block;
+        margin-left: 9%;
+        margin-right: 5% !important;
+    }
+
+    .wrapper_En {
+        width: 100% !important;
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+    }
+
+    .wrapper_En>.inner_En {
+        display: block;
+        margin-left: 9%;
+        margin-right: 5% !important;
+    }
+}
+
+@media screen and (max-width : 1125px) {
+    .wrapper_Ar>.inner_Ar {
+        margin-left: 1%;
+    }
+
+    .wrapper_En>.inner_En {
+        margin-left: 1%;
+    }
+
+}
+
+@media screen and (max-width : 1025px) {
+    .wrapper_Ar>.inner_Ar {
+        display: block;
+        margin-left: -4%;
+        transform: scale(90%);
+        margin-top: -400px !important;
+        /* margin-right: 5% !important; */
+    }
+
+    .wrapper_En>.inner_En {
+        display: block;
+        margin-left: -4%;
+        transform: scale(90%);
+        margin-top: -400px !important;
+        /* margin-right: 5% !important; */
+    }
+
+    #Patents_Section {
+        margin-top: -400px !important;
+    }
+}
+
+@media screen and (max-width : 925px) {
+    .wrapper_Ar>.inner_Ar {
+        display: block;
+        margin-left: -9%;
+        transform: scale(80%);
+        margin-top: -850px !important;
+    }
+
+    .wrapper_En>.inner_En {
+        display: block;
+        margin-left: -9%;
+        transform: scale(80%);
+        margin-top: -850px !important;
+    }
+
+    #Patents_Section {
+        margin-top: -800px !important;
+    }
+}
+
+@media screen and (max-width : 825px) {
+    .wrapper_Ar>.inner_Ar {
+        display: block;
+        margin-left: -14%;
+        transform: scale(70%);
+        margin-top: -1300px !important;
+    }
+
+    .wrapper_En>.inner_En {
+        display: block;
+        margin-left: -14%;
+        transform: scale(70%);
+        margin-top: -1300px !important;
+    }
+
+    #Patents_Section {
+        margin-top: -1300px !important;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .responsive-table_Ar .table-header_Ar {
+        display: none;
+    }
+
+    .responsive-table_Ar li {
+        display: block;
+    }
+
+    .responsive-table_Ar .col_Ar {
+        flex-basis: 100%;
+    }
+
+    .responsive-table_Ar .col_Ar {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 10px 0;
+    }
+
+    .responsive-table_Ar .col_Ar:before {
+        color: #6c7a89;
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right;
+        margin-left: 20px;
+    }
+
+    .responsive-table_En .table-header_En {
+        display: none;
+    }
+
+    .responsive-table_En li {
+        display: block;
+    }
+
+    .responsive-table_En .col_En {
+        flex-basis: 100%;
+    }
+
+    .responsive-table_En .col_En {
+        display: flex;
+        padding: 10px 0;
+    }
+
+    .responsive-table_En .col_En:before {
+        color: #6c7a89;
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width : 725px) {
+    .wrapper_Ar>.inner_Ar {
+        display: block;
+        margin-left: -19%;
+        transform: scale(60%);
+        margin-top: -1700px !important;
+    }
+
+    .wrapper_En>.inner_En {
+        display: block;
+        margin-left: -19%;
+        transform: scale(60%);
+        margin-top: -1750px !important;
+    }
+
+    #Patents_Section {
+        margin-top: -1700px !important;
+    }
+}
+
+@media screen and (max-width : 625px) {
+    .wrapper_Ar>.inner_Ar {
+        display: block;
+        margin-left: -24%;
+        transform: scale(50%);
+        margin-top: -2150px !important;
+    }
+
+    .wrapper_En>.inner_En {
+        display: block;
+        margin-left: -24%;
+        transform: scale(50%);
+        margin-top: -2200px !important;
+    }
+
+    #Patents_Section {
+        margin-top: -2150px !important;
+    }
+}
+
+@media screen and (max-width : 525px) {
+    .wrapper_Ar>.inner_Ar {
+        display: block;
+        margin-left: -28%;
+        transform: scale(40%);
+        margin-top: -2600px !important;
+    }
+
+    .wrapper_En>.inner_En {
+        display: block;
+        margin-left: -28%;
+        transform: scale(40%);
+        margin-top: -2650px !important;
+    }
+
+    #Patents_Section {
+        margin-top: -2600px !important;
+    }
+}
+
+@media screen and (max-width : 425px) {
+    .wrapper_Ar>.inner_Ar {
+        display: block;
+        margin-left: -34%;
+        transform: scale(30%);
+        margin-top: -3050px !important;
+    }
+
+    .wrapper_En>.inner_En {
+        display: block;
+        margin-left: -34%;
+        transform: scale(30%);
+        margin-top: -3100px !important;
+    }
+
+    #Patents_Section {
+        margin-top: -3050px !important;
+    }
+}
+
+@media all and (max-width: 400px) {
+
+    .responsive-table_Ar .col_Ar {
+        font-size: 1rem;
+    }
+
+    .responsive-table_En .col_En {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width : 325px) {
+    .wrapper_Ar>.inner_Ar {
+        display: block;
+        margin-left: -37%;
+        transform: scale(25%);
+        margin-top: -3250px !important;
+    }
+
+    .wrapper_En>.inner_En {
+        display: block;
+        margin-left: -37%;
+        transform: scale(25%);
+        margin-top: -3350px !important;
+    }
+
+    #Patents_Section {
+        margin-top: -3250px !important;
+    }
+}
