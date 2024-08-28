@@ -597,12 +597,12 @@ function Patents_Load_Content_En() {
 
     var Wrapper_En = document.getElementById("wrapper_En");
     if (
-      browserName.toLowerCase() === "chrome" ||
-      browserName.toLowerCase() === "firefox"
-    ) {
+      browserName.toLowerCase() === "chrome") {
       Wrapper_En.style.width = "66.8%";
+    } else if (browserName.toLowerCase() === "firefox") {
+      Wrapper_En.style.width = "64.8%";
     } else if (browserName.toLowerCase() === "microsoft edge") {
-      Wrapper_En.style.width = "68.9%";
+      Wrapper_En.style.width = "62.9%";
     }
   
     const myfun_En = (num) => {
