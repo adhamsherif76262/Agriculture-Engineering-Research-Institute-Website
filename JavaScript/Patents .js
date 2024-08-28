@@ -479,14 +479,24 @@ function Patents_Load_Content_Ar() {
   Technological_Applications_Section.innerHTML = Technological_Applications_Section_Ar;
   Patents_Section.innerHTML = Patents_Section_Ar;
   var Wrapper_Ar = document.getElementById("wrapper_Ar");
-
-  if (browserName.toLowerCase() === "chrome") {
-    Wrapper_Ar.style.width = "66.8%";
-  } else if (browserName.toLowerCase() === "firefox") {
-    Wrapper_Ar.style.width = "66%";
-  } else if (browserName.toLowerCase() === "microsoft edge") {
-    Wrapper_Ar.style.width = "62.9%";
-  }
+    if (
+      window.performance.getEntriesByType("navigation")[0].type === "reload"
+    ) {
+      if (browserName.toLowerCase() === "chrome") {
+        alert(browserName);
+        Wrapper_Ar.style.width = "66.8%";
+        alert(Wrapper_Ar.style.width);
+      } else if (browserName.toLowerCase() === "firefox") {
+        alert(browserName);
+        Wrapper_Ar.style.width = "66%";
+        alert(Wrapper_Ar.style.width);
+      } else if (browserName.toLowerCase() === "microsoft edge") {
+        alert(browserName);
+        // Wrapper_En.style.width = "62.9%";
+        Wrapper_Ar.style.width = "68.9%";
+        alert(Wrapper_Ar.style.width);
+      }
+    }
   const myfun_Ar = (num) => {
     let res = 0;
     res = (num - 1) * 100;
@@ -593,15 +603,22 @@ function Patents_Load_Content_En() {
   HomePageTitle[0].innerHTML = "AERI Technological Applications Page";
   Technological_Applications_Section.innerHTML = Technological_Applications_Section_En;
   Patents_Section.innerHTML = Patents_Section_En;
-
-    var Wrapper_En = document.getElementById("wrapper_En");
-    if (
-      browserName.toLowerCase() === "chrome") {
-      Wrapper_En.style.width = "66.8%";
-    } else if (browserName.toLowerCase() === "firefox") {
-      Wrapper_En.style.width = "66%";
-    } else if (browserName.toLowerCase() === "microsoft edge") {
-      Wrapper_En.style.width = "62.9%";
+  var Wrapper_En = document.getElementById("wrapper_En");
+    if (window.performance.getEntriesByType("navigation")[0].type === "reload"){
+      
+      if (
+        browserName.toLowerCase() === "chrome") {
+          alert(browserName)
+        Wrapper_En.style.width = "66.8%";
+      } else if (browserName.toLowerCase() === "firefox") {
+        alert(browserName)
+        Wrapper_En.style.width = "66%";
+      } else if (browserName.toLowerCase() === "microsoft edge") {
+        alert(browserName)
+        // Wrapper_En.style.width = "62.9%";
+        Wrapper_En.style.width = "68.9%";
+        alert(Wrapper_En.style.width);
+      }
     }
   
     const myfun_En = (num) => {

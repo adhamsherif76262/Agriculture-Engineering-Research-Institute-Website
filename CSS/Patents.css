@@ -46,8 +46,9 @@
 }
 
 .wrapper_Ar {
-    /* width: 68.9%; Microsoft Edge*/
-    width: 66.8%;
+    /* width: 68.9% !important; */
+     /*Microsoft Edge*/
+    /* width: 66.8%; */
     /*Google Chrome & FireFox*/
     margin-left: 5%;
     margin-right: 5%;
@@ -156,7 +157,8 @@
 
 .wrapper_En {
     /* width: 68.9%; Microsoft Edge*/
-    width: 66.8%; /*Google Chrome & FireFox*/
+    /* width: 66.8%; */
+     /*Google Chrome & FireFox*/
     margin-left: 5%;
     margin-right: 5%;
     display: flex;
@@ -175,13 +177,9 @@
 
 .card_En {
     width: 1000px !important;
-    /* width: min-content !important; */
     height: max-content !important;
-    /* height: 650px !important; */
     border-radius: 0.5em;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-    /* z-index: 100; */
-    /* background-color: rebeccapurple; */
 }
 
 .card_En>img {
@@ -220,8 +218,8 @@
 }
 
 .map_En {
-    margin-top: 1rem !important;
-    /* margin-bottom: -1.5rem !important; */
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
 }
 
 .map_En>button {
