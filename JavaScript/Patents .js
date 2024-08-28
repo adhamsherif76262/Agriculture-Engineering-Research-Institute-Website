@@ -480,7 +480,8 @@ function Patents_Load_Content_Ar() {
   Patents_Section.innerHTML = Patents_Section_Ar;
   var Wrapper_Ar = document.getElementById("wrapper_Ar");
     if (
-      window.performance.getEntriesByType("navigation")[0].type === "reload"
+      window.performance.getEntriesByType("navigation")[0].type !== "prerender" ||
+      window.performance.getEntriesByType("navigation")[0].type === "prerender"
     ) {
       if (browserName.toLowerCase() === "chrome") {
         alert(browserName);
@@ -604,7 +605,8 @@ function Patents_Load_Content_En() {
   Technological_Applications_Section.innerHTML = Technological_Applications_Section_En;
   Patents_Section.innerHTML = Patents_Section_En;
   var Wrapper_En = document.getElementById("wrapper_En");
-    if (window.performance.getEntriesByType("navigation")[0].type === "reload"){
+    if (window.performance.getEntriesByType("navigation")[0].type !== "prerender" ||
+        window.performance.getEntriesByType("navigation")[0].type === "prerender"){
       
       if (
         browserName.toLowerCase() === "chrome") {
