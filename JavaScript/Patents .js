@@ -600,7 +600,7 @@ function Patents_Load_Content_En() {
       browserName.toLowerCase() === "chrome") {
       Wrapper_En.style.width = "66.8%";
     } else if (browserName.toLowerCase() === "firefox") {
-      Wrapper_En.style.width = "64.8%";
+      Wrapper_En.style.width = "65.5%";
     } else if (browserName.toLowerCase() === "microsoft edge") {
       Wrapper_En.style.width = "62.9%";
     }
