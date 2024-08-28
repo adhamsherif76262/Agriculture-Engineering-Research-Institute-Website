@@ -5,7 +5,7 @@ var Technological_Applications_Section = document.getElementById(
 );
 var Technological_Applications_Section_Ar = `
       <div class="center_Ar">
-        <div class="wrapper_Ar">
+        <div class="wrapper_Ar" id = "wrapper_Ar">
             <div class="inner_Ar">
                 <div class="card_Ar">
                     <img src="../Images/Picture1.jpg">
@@ -173,7 +173,7 @@ var Technological_Applications_Section_Ar = `
 `;
 var Technological_Applications_Section_En = `
       <div class="center_En">
-        <div class="wrapper_En">
+        <div class="wrapper_En" id = "wrapper_En">
             <div class="inner_En">
                 <div class="card_En">
                     <img src="../Images/Picture1.jpg">
@@ -449,12 +449,45 @@ var Patents_Section_En = `
         </ul>
     </div>
 `;
+// Function to detect the browser name
+function detectBrowser() {
+    var userAgent = navigator.userAgent;
+    if (userAgent.indexOf("Edg") > -1) {
+        return "Microsoft Edge";
+    } else if (userAgent.indexOf("Chrome") > -1) {
+        return "Chrome";
+    } else if (userAgent.indexOf("Firefox") > -1) {
+        return "Firefox";
+    } else if (userAgent.indexOf("Safari") > -1) {
+        return "Safari";
+    } else if (userAgent.indexOf("Opera") > -1) {
+        return "Opera";
+    } else if (userAgent.indexOf("Trident") > -1 || userAgent.indexOf("MSIE") > -1) {
+        return "Internet Explorer";
+    }
 
+    return "Unknown";
+}
+
+// Get the browser name and display it
+var browserName = detectBrowser();
+console.log("Your browser is: " + browserName);
 function Patents_Load_Content_Ar() {
   // Patents_h1.textContent = "ىىىىىىىىىىىىىىىىىىىىىىىىىىىى";
+  
   HomePageTitle[0].innerHTML = "التطبيقات التكنولوجية";
   Technological_Applications_Section.innerHTML = Technological_Applications_Section_Ar;
   Patents_Section.innerHTML = Patents_Section_Ar;
+  var Wrapper_Ar = document.getElementById("wrapper_Ar");
+  if (
+    browserName.toLowerCase() === "chrome" ||
+    browserName.toLowerCase() === "firefox"
+  ) {
+    Wrapper_Ar.style.width = "66.8%";
+  }
+  else if(browserName.toLowerCase() === "microsoft edge"){
+    Wrapper_Ar.style.width = "68.9%";
+  }
   const myfun_Ar = (num) => {
     let res = 0;
     res = (num - 1) * 100;
@@ -479,12 +512,12 @@ function Patents_Load_Content_Ar() {
         }0px)`;
         break;
       case num == 9 || num == 10:
-        slides_Ar.style.transform = `translateX(${res - 4.75}%) translateX(${
+        slides_Ar.style.transform = `translateX(${res - 5}%) translateX(${
           num - 4
         }0px)`;
         break;
       case num == 11 || num == 12:
-        slides_Ar.style.transform = `translateX(${res - 7.5}%) translateX(${
+        slides_Ar.style.transform = `translateX(${res - 7.2}%) translateX(${
           num - 4
         }0px)`;
         break;
@@ -562,7 +595,17 @@ function Patents_Load_Content_En() {
   Technological_Applications_Section.innerHTML = Technological_Applications_Section_En;
   Patents_Section.innerHTML = Patents_Section_En;
 
-        const myfun_En = (num) => {
+    var Wrapper_En = document.getElementById("wrapper_En");
+    if (
+      browserName.toLowerCase() === "chrome" ||
+      browserName.toLowerCase() === "firefox"
+    ) {
+      Wrapper_En.style.width = "66.8%";
+    } else if (browserName.toLowerCase() === "microsoft edge") {
+      Wrapper_En.style.width = "68.9%";
+    }
+  
+    const myfun_En = (num) => {
           let res = 0;
           res = (num - 1) * 100;
           switch (true) {
@@ -598,11 +641,10 @@ function Patents_Load_Content_En() {
           }
 
           // console.log("Fun Called")
-        };
-        const buttonsWrapper_En = document.querySelector(".map_En");
-        const slides_En = document.querySelector(".inner_En");
-
-        buttonsWrapper_En.addEventListener("click", (e) => {
+    };
+    const buttonsWrapper_En = document.querySelector(".map_En");
+    const slides_En = document.querySelector(".inner_En");
+    buttonsWrapper_En.addEventListener("click", (e) => {
           if (e.target.nodeName === "BUTTON") {
             Array.from(buttonsWrapper_En.children).forEach((item) =>
               item.classList.remove("active")
@@ -661,7 +703,7 @@ function Patents_Load_Content_En() {
                 break;
             }
           }
-        });
+    });
 }
 
 if (localStorage.getItem("Permenant_Language") === "English") {

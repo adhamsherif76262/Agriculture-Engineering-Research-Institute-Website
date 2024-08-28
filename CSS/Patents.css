@@ -46,7 +46,9 @@
 }
 
 .wrapper_Ar {
-    width: 68.9%;
+    /* width: 68.9%; Microsoft Edge*/
+    width: 66.8%;
+    /*Google Chrome & FireFox*/
     margin-left: 5%;
     margin-right: 5%;
     display: flex;
@@ -153,7 +155,8 @@
 }
 
 .wrapper_En {
-    width: 68.9%;
+    /* width: 68.9%; Microsoft Edge*/
+    width: 66.8%; /*Google Chrome & FireFox*/
     margin-left: 5%;
     margin-right: 5%;
     display: flex;
@@ -398,7 +401,6 @@
         transform: scale(90%) !important;
         position: relative !important;
         top: -400px !important;
-        /* margin-right: 5% !important; */
     }
 
     .wrapper_En>.inner_En {
@@ -407,8 +409,6 @@
         transform: scale(90%) !important;
         position: relative !important;
         top: -400px;
-        /* margin-top: -400px !important; */
-        /* margin-right: 5% !important; */
     }
 
     #Patents_Section {
@@ -593,12 +593,15 @@
         transform: scale(30%) !important;
         margin-bottom: 1900px !important;
     }
+
     .wrapper_En {
         height: 4400px !important;
     }
+
     .wrapper_Ar {
         height: 4300px !important;
     }
+
     .wrapper_En>.inner_En {
         display: block;
         margin-left: -34%;
