@@ -9,6 +9,7 @@ var Manufacturing_Evaluation_Section_H2 = document.getElementById(
 // );
 var Acomplishments_Section = document.getElementById("Acomplishments_Section");
 var M_E_Section = document.getElementById("Manufacturing_Evaluation_Section");
+
 var M_E_Section_Ar = `
       <div class="slider-container">
 
@@ -28,7 +29,7 @@ var M_E_Section_Ar = `
             </div>
             <div class="slider-single">
                 <img class="slider-single-image" src="../../Images/M&E_P_4.png" alt="4" />
-                <h1 class="slider-single-title_Ar">ماكينة تدريج حجمى لثمار الفاكهة ( الخضروات والفاكهة)</h1>
+                <h1 class="slider-single-title_Ar">ماكينة تدريج حجمى لثمار الفاكهة و الخضروات </h1>
             </div>
             <div class="slider-single">
                 <img class="slider-single-image" src="../../Images/M&E_P_5.png" alt="5" />
