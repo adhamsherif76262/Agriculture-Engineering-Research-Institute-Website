@@ -1,0 +1,1327 @@
+@font-face {
+    font-family: PT-Bold-Heading;
+    src: url(../Fonts/PT\ Bold\ Heading.ttf);
+}
+
+@font-face {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    src: url(../Fonts/ArbFONTS-OMNES-ARABIC-BOLD.ttf);
+}
+
+@font-face {
+    font-family: Omnes-Arabic-HairLine;
+    src: url(../Fonts/ArbFONTS-OMNES-ARABIC-REGULAR.ttf);
+}
+
+@font-face {
+    font-family: Arial-Black;
+    src: url(../Fonts/Arial\ Black.ttf);
+}
+
+#Inner_Header_Marquee:hover {
+    transition: 1s;
+    background-color: rgb(0, 0, 119);
+    color: white;
+    cursor: pointer;
+    border: double 15px white;
+    /* border-radius: 50%; */
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#Handling_Processing_D_Span_1,
+#Handling_Processing_D_Span_2 {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    font-size: 40px !important;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* ============= Begin Testimonial Flexbox ============ */
+#flex-container {
+    background-color: rgb(243, 235, 223) !important;
+    font-family: Omnes-Arabic-HairLine-Bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 96%;
+    min-height: 650px !important;
+    height: 100vh;
+    /* max-width: 1000px; */
+    margin: auto;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+        0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    padding-top: 20px;
+}
+
+#left-zone {
+    height: 100%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 200px !important;
+    /* width:100%; */
+    /* display: none; */
+}
+
+#left-zone .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin: auto;
+    /* margin-right: 200px; */
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+.item input {
+    display: none;
+}
+
+label {
+    display: block;
+    opacity: 0.5;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+}
+
+label:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.content-test {
+    position: absolute;
+    right: 0;
+    /* left: 20%; */
+    bottom: 0;
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    height: 100%;
+    width: 80% !important;
+    -webkit-transition: 0.5s ease-out;
+    -o-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+.content-test p {
+    max-width: 50%;
+    text-align: center;
+}
+
+#right-zone {
+    width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    height: 100% !important;
+}
+
+input:checked~.content-test {
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+    opacity: 1;
+}
+
+.content_testimonial-1 .picto,
+.content_testimonial-2 .picto,
+.content_testimonial-3 .picto,
+.content_testimonial-4 .picto,
+.content_testimonial-5 .picto,
+.content_testimonial-6 .picto,
+.content_testimonial-7 .picto,
+.content_testimonial-8 .picto,
+.content_testimonial-9 .picto,
+.content_testimonial-10 .picto,
+.content_testimonial-11 .picto,
+.content_testimonial-12 .picto {
+    /* height: 100px;
+    width: 100px; */
+    height: 96%;
+    width: 96%;
+    margin-left: 2% !important;
+    margin-right: 2% !important;
+    margin-top: 25px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content_testimonial-1 .picto {
+    background-image: url(../Images/Picture3.jpg);
+    /* width:  100%; */
+    width: 800px !important;
+    height: 800px !important;
+
+}
+
+.content_testimonial-2 .picto {
+    background-image: url(../Images/Inovative\ Grain\ .png);
+    /* width:  100%;
+    height: 100%; */
+    width: 770px;
+    height: 300px;
+
+}
+
+.content_testimonial-3 .picto {
+    background-image: url(../Images/Thermal\ Stabilization\ .png);
+    width: 800px;
+    height: 400px;
+
+}
+
+.content_testimonial-4 .picto {
+    background-image: url(../Images/Biochar\ Production\ .png);
+    width: 700px;
+    height: 300px;
+
+}
+
+.content_testimonial-5 .picto {
+    background-image: url(../Images/Post\ Harvest\ .png);
+    width: 800px;
+    height: 275px;
+
+}
+
+.content_testimonial-6 .picto {
+    background-image: url(../Images/Picture12\ copyyyyyyy\ .png);
+    width: 900px;
+    height: 450px;
+
+}
+
+.content_testimonial-7 .picto {
+    background-image: url(../Images/Safe\ Storage\ .png);
+    width: 750px;
+    height: 250px;
+
+}
+
+.content_testimonial-8 .picto {
+    background-image: url(../Images/Solar\ Dates\ Drying\ .png);
+    width: 850px;
+    height: 480px;
+
+}
+
+.content_testimonial-9 .picto {
+    background-image: url(../Images/Thermal\ Efficiency.png);
+    width: 585px;
+    height: 425px;
+
+}
+
+.content_testimonial-10 .picto {
+    background-image: url(../Images/sorting\ and\ grading\ system\ in\ operation\ .webp);
+    width: 900px;
+    height: 900px;
+
+}
+
+.content_testimonial-11 .picto {
+    background-image: url(../Images/Engineering\ fodder\ production\ .webp);
+    width: 900px;
+    height: 900px;
+}
+
+.content_testimonial-12 .picto {
+    background-image: url(../Images/Silkworm\ .jpg);
+    width: 900px;
+    height: 900px;
+    background-size: contain;
+}
+
+.content_testimonial-1 h1 {
+    font-size: 30px;
+    color: #d64541;
+    text-align: center;
+}
+
+.content_testimonial-2 h1 {
+    font-size: 30px;
+    color: #f5d76e;
+    text-align: center;
+}
+
+.content_testimonial-3 h1 {
+    font-size: 30px;
+    color: #00b16a;
+    text-align: center;
+}
+
+.content_testimonial-4 h1 {
+    color: #f27935;
+    font-size: 30px;
+    text-align: center;
+}
+
+.content_testimonial-5 h1 {
+    font-size: 30px;
+    color: #663399;
+    text-align: center;
+}
+
+.content_testimonial-6 h1 {
+    font-size: 30px;
+    color: #dc143c;
+    text-align: center;
+}
+
+.content_testimonial-7 h1 {
+    font-size: 30px;
+    color: #ff1493;
+    text-align: center;
+}
+
+.content_testimonial-8 h1 {
+    font-size: 30px;
+    color: #00fa9a;
+    text-align: center;
+}
+
+.content_testimonial-9 h1 {
+    font-size: 30px;
+    color: #7fffd4;
+    text-align: center;
+}
+
+.content_testimonial-10 h1 {
+    font-size: 30px;
+    color: #6495ed;
+    text-align: center;
+}
+
+.content_testimonial-11 h1 {
+    font-size: 30px;
+    color: #8a2be2;
+    text-align: center;
+}
+
+.content_testimonial-12 h1 {
+    font-size: 30px;
+    color: #b22222;
+    text-align: center;
+}
+
+.content-test h1:first-letter {
+    text-transform: uppercase;
+}
+
+input:checked~label {
+    opacity: 1;
+    -webkit-animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+input:checked~label.label_testimonial-1 {
+    color: #d64541;
+    border-right: solid 4px #d64541;
+}
+
+input:checked~label.label_testimonial-2 {
+    color: #f5d76e;
+    border-right: solid 4px #f5d76e;
+}
+
+input:checked~label.label_testimonial-3 {
+    color: #00b16a;
+    border-right: solid 4px #00b16a;
+}
+
+input:checked~label.label_testimonial-4 {
+    color: #f27935;
+    border-right: solid 4px #f27935;
+}
+
+input:checked~label.label_testimonial-5 {
+    color: #663399;
+    border-right: solid 4px #663399;
+}
+
+input:checked~label.label_testimonial-6 {
+    color: #dc143c;
+    border-right: solid 4px #dc143c;
+}
+
+input:checked~label.label_testimonial-7 {
+    color: #ff1493;
+    border-right: solid 4px #ff1493;
+}
+
+input:checked~label.label_testimonial-8 {
+    color: #00fa9a;
+    border-right: solid 4px #00fa9a;
+}
+
+input:checked~label.label_testimonial-9 {
+    color: #7fffd4;
+    border-right: solid 4px #7fffd4;
+}
+
+input:checked~label.label_testimonial-10 {
+    color: #6495ed;
+    border-right: solid 4px #6495ed;
+}
+
+input:checked~label.label_testimonial-11 {
+    color: #8a2be2;
+    border-right: solid 4px #8a2be2;
+}
+
+input:checked~label.label_testimonial-12 {
+    color: #b22222;
+    border-right: solid 4px #b22222;
+    /* display: none; */
+}
+
+label.label_testimonial-1:before,
+label.label_testimonial-2:before,
+label.label_testimonial-3:before,
+label.label_testimonial-4:before,
+label.label_testimonial-5:before,
+label.label_testimonial-6:before,
+label.label_testimonial-7:before,
+label.label_testimonial-8:before,
+label.label_testimonial-9:before,
+label.label_testimonial-10:before,
+label.label_testimonial-11:before,
+label.label_testimonial-12:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    /* height: 150px; */
+    margin-left: 15px;
+    background-position: center;
+    background-size: 75% 75%;
+    /* background-size: 100% 100%; */
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+label.label_testimonial-1:before {
+    background-image: url(../Images/Picture3.jpg);
+    /* display: n; */
+}
+
+label.label_testimonial-2:before {
+    background-image: url(../Images/Inovative\ Grain\ .png);
+
+}
+
+label.label_testimonial-3:before {
+    background-image: url(../Images/Thermal\ Stabilization\ .png);
+
+}
+
+label.label_testimonial-4:before {
+    background-image: url(../Images/Biochar\ Production\ .png);
+
+}
+
+label.label_testimonial-5:before {
+    background-image: url(../Images/Post\ Harvest\ .png);
+
+}
+
+label.label_testimonial-6:before {
+    background-image: url(../Images/Picture12\ copyyyyyyy\ .png);
+
+}
+
+label.label_testimonial-7:before {
+    background-image: url(../Images//Safe\ Storage\ .png);
+
+}
+
+label.label_testimonial-8:before {
+    background-image: url(../Images/Solar\ Dates\ Drying\ .png);
+
+}
+
+label.label_testimonial-9:before {
+    background-image: url(../Images/Thermal\ Efficiency.png);
+
+}
+
+label.label_testimonial-10:before {
+    background-image: url(../Images/sorting\ and\ grading\ system\ in\ operation\ .webp);
+
+}
+
+label.label_testimonial-11:before {
+    background-image: url(../Images/Engineering\ fodder\ production\ .webp);
+
+}
+
+label.label_testimonial-12:before {
+    background-image: url(../Images/Silkworm\ .jpg);
+
+}
+
+label:first-letter {
+    text-transform: uppercase;
+}
+
+ul>li>label>span {
+    padding-left: 150px;
+    font-weight: bold;
+    /* align-self: flex-end; */
+    /* margin-left: 100px; */
+    /* display: none; */
+}
+
+.label_testimonial-1:hover {
+    background-image: -webkit-gradient(linear,
+            left top,
+            right top,
+            from(#ffffff),
+            to(#d64541a3));
+    background-image: -webkit-linear-gradient(left, #ffffff, #d64541a3);
+    background-image: -o-linear-gradient(left, #ffffff, #d64541a3);
+    background-image: linear-gradient(to right, #ffffff, #d64541a3);
+    font-size: 1.2rem;
+    -webkit-transition: font-size 0.5s;
+    -o-transition: font-size 0.5s;
+    transition: font-size 0.5s;
+}
+
+.label_testimonial-2:hover {
+    background-image: -webkit-gradient(linear,
+            left top,
+            right top,
+            from(#ffffff),
+            to(#f5d76e59));
+    background-image: -webkit-linear-gradient(left, #ffffff, #f5d76e59);
+    background-image: -o-linear-gradient(left, #ffffff, #f5d76e59);
+    background-image: linear-gradient(to right, #ffffff, #f5d76e59);
+    font-size: 1.2rem;
+    -webkit-transition: font-size 0.5s;
+    -o-transition: font-size 0.5s;
+    transition: font-size 0.5s;
+}
+
+.label_testimonial-3:hover {
+    background-image: -webkit-gradient(linear,
+            left top,
+            right top,
+            from(#ffffff),
+            to(#00b16aa3));
+    background-image: -webkit-linear-gradient(left, #ffffff, #00b16aa3);
+    background-image: -o-linear-gradient(left, #ffffff, #00b16aa3);
+    background-image: linear-gradient(to right, #ffffff, #00b16aa3);
+    font-size: 1.2rem;
+    -webkit-transition: font-size 0.5s;
+    -o-transition: font-size 0.5s;
+    transition: font-size 0.5s;
+}
+
+.label_testimonial-4:hover {
+    background-image: -webkit-gradient(linear,
+            left top,
+            right top,
+            from(#ffffff),
+            to(#f27935a3));
+    background-image: -webkit-linear-gradient(left, #ffffff, #f27935a3);
+    background-image: -o-linear-gradient(left, #ffffff, #f27935a3);
+    background-image: linear-gradient(to right, #ffffff, #f27935a3);
+    font-size: 1.2rem;
+    -webkit-transition: font-size 0.5s;
+    -o-transition: font-size 0.5s;
+    transition: font-size 0.5s;
+}
+
+.label_testimonial-5:hover {
+    background-image: -webkit-gradient(linear,
+            left top,
+            right top,
+            from(#ffffff),
+            to(#9932cca3));
+    background-image: -webkit-linear-gradient(left, #ffffff, #9932cca3);
+    background-image: -o-linear-gradient(left, #ffffff, #9932cca3);
+    background-image: linear-gradient(to right, #ffffff, #9932cca3);
+    font-size: 1.2rem;
+    -webkit-transition: font-size 0.5s;
+    -o-transition: font-size 0.5s;
+    transition: font-size 0.5s;
+}
+
+.label_testimonial-6:hover {
+    background-image: -webkit-gradient(linear,
+            left top,
+            right top,
+            from(#ffffff),
+            to(#dc143ca3));
+    background-image: -webkit-linear-gradient(left, #ffffff, #dc143ca3);
+    background-image: -o-linear-gradient(left, #ffffff, #dc143ca3);
+    background-image: linear-gradient(to right, #ffffff, #dc143ca3);
+    font-size: 1.2rem;
+    -webkit-transition: font-size 0.5s;
+    -o-transition: font-size 0.5s;
+    transition: font-size 0.5s;
+}
+
+.label_testimonial-7:hover {
+    background-image: -webkit-gradient(linear,
+            left top,
+            right top,
+            from(#ffffff),
+            to(#ff1493a3));
+    background-image: -webkit-linear-gradient(left, #ffffff, #ff1493a3);
+    background-image: -o-linear-gradient(left, #ffffff, #ff1493a3);
+    background-image: linear-gradient(to right, #ffffff, #ff1493a3);
+    font-size: 1.2rem;
+    -webkit-transition: font-size 0.5s;
+    -o-transition: font-size 0.5s;
+    transition: font-size 0.5s;
+}
+
+.label_testimonial-8:hover {
+    background-image: -webkit-gradient(linear,
+            left top,
+            right top,
+            from(#ffffff),
+            to(#00fa9aa3));
+    background-image: -webkit-linear-gradient(left, #ffffff, #00fa9aa3);
+    background-image: -o-linear-gradient(left, #ffffff, #00fa9aa3);
+    background-image: linear-gradient(to right, #ffffff, #00fa9aa3);
+    font-size: 1.2rem;
+    -webkit-transition: font-size 0.5s;
+    -o-transition: font-size 0.5s;
+    transition: font-size 0.5s;
+}
+
+.label_testimonial-9:hover {
+    background-image: -webkit-gradient(linear,
+            left top,
+            right top,
+            from(#ffffff),
+            to(#7fffd4a3));
+    background-image: -webkit-linear-gradient(left, #ffffff, #7fffd4a3);
+    background-image: -o-linear-gradient(left, #ffffff, #7fffd4a3);
+    background-image: linear-gradient(to right, #ffffff, #7fffd4a3);
+    font-size: 1.2rem;
+    -webkit-transition: font-size 0.5s;
+    -o-transition: font-size 0.5s;
+    transition: font-size 0.5s;
+}
+
+.label_testimonial-10:hover {
+    background-image: -webkit-gradient(linear,
+            left top,
+            right top,
+            from(#ffffff),
+            to(#6495eda3));
+    background-image: -webkit-linear-gradient(left, #ffffff, #6495eda3);
+    background-image: -o-linear-gradient(left, #ffffff, #6495eda3);
+    background-image: linear-gradient(to right, #ffffff, #6495eda3);
+    font-size: 1.2rem;
+    -webkit-transition: font-size 0.5s;
+    -o-transition: font-size 0.5s;
+    transition: font-size 0.5s;
+}
+
+.label_testimonial-11:hover {
+    background-image: -webkit-gradient(linear,
+            left top,
+            right top,
+            from(#ffffff),
+            to(#8a2be2a3));
+    background-image: -webkit-linear-gradient(left, #ffffff, #8a2be2a3);
+    background-image: -o-linear-gradient(left, #ffffff, #8a2be2a3);
+    background-image: linear-gradient(to right, #ffffff, #8a2be2a3);
+    font-size: 1.2rem;
+    -webkit-transition: font-size 0.5s;
+    -o-transition: font-size 0.5s;
+    transition: font-size 0.5s;
+}
+
+.label_testimonial-12:hover {
+    background-image: -webkit-gradient(linear,
+            left top,
+            right top,
+            from(#ffffff),
+            to(#b22222a3));
+    background-image: -webkit-linear-gradient(left, #ffffff, #b22222a3);
+    background-image: -o-linear-gradient(left, #ffffff, #b22222a3);
+    background-image: linear-gradient(to right, #ffffff, #b22222a3);
+    font-size: 1.2rem;
+    -webkit-transition: font-size 0.5s;
+    -o-transition: font-size 0.5s;
+    transition: font-size 0.5s;
+}
+
+
+p.testimonialState {
+    margin-top: -5px;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #808080d4;
+}
+
+p.testimonialFrom {
+    margin-top: 5px;
+    font-weight: bold;
+    color: #33475c;
+}
+
+/* ============== End Testimonial Flexbox ============= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 1175px) {
+
+    .content_testimonial-1 .picto,
+    .content_testimonial-2 .picto,
+    .content_testimonial-3 .picto,
+    .content_testimonial-4 .picto,
+    .content_testimonial-5 .picto,
+    .content_testimonial-6 .picto,
+    .content_testimonial-7 .picto,
+    .content_testimonial-8 .picto,
+    .content_testimonial-9 .picto,
+    .content_testimonial-10 .picto,
+    .content_testimonial-11 .picto,
+    .content_testimonial-12 .picto {
+        transform: scale(90%);
+        margin-left: 25px !important;
+        margin-right: 25px !important;
+    }
+}
+
+@media screen and (max-width : 1100px) {
+
+    .content_testimonial-1 .picto,
+    .content_testimonial-2 .picto,
+    .content_testimonial-3 .picto,
+    .content_testimonial-4 .picto,
+    .content_testimonial-5 .picto,
+    .content_testimonial-6 .picto,
+    .content_testimonial-7 .picto,
+    .content_testimonial-8 .picto,
+    .content_testimonial-9 .picto,
+    .content_testimonial-10 .picto,
+    .content_testimonial-11 .picto,
+    .content_testimonial-12 .picto {
+        transform: scale(80%);
+    }
+}
+
+@media screen and (max-width : 1000px) {
+
+    .content_testimonial-1 .picto,
+    .content_testimonial-2 .picto,
+    .content_testimonial-3 .picto,
+    .content_testimonial-4 .picto,
+    .content_testimonial-5 .picto,
+    .content_testimonial-6 .picto,
+    .content_testimonial-7 .picto,
+    .content_testimonial-8 .picto,
+    .content_testimonial-9 .picto,
+    .content_testimonial-10 .picto,
+    .content_testimonial-11 .picto,
+    .content_testimonial-12 .picto {
+        transform: scale(70%);
+    }
+
+    .content_testimonial-1 h1,
+    .content_testimonial-2 h1,
+    .content_testimonial-3 h1,
+    .content_testimonial-4 h1,
+    .content_testimonial-5 h1,
+    .content_testimonial-6 h1,
+    .content_testimonial-7 h1,
+    .content_testimonial-8 h1,
+    .content_testimonial-9 h1,
+    .content_testimonial-10 h1,
+    .content_testimonial-11 h1,
+    .content_testimonial-12 h1 {
+        width: 90% !important;
+        /* font-size: 25px !important; */
+    }
+}
+
+@media screen and (max-width : 925px) {
+
+    .content_testimonial-1 .picto,
+    .content_testimonial-2 .picto,
+    .content_testimonial-3 .picto,
+    .content_testimonial-4 .picto,
+    .content_testimonial-5 .picto,
+    .content_testimonial-6 .picto,
+    .content_testimonial-7 .picto,
+    .content_testimonial-8 .picto,
+    .content_testimonial-9 .picto,
+    .content_testimonial-10 .picto,
+    .content_testimonial-11 .picto,
+    .content_testimonial-12 .picto {
+        transform: scale(60%);
+    }
+}
+
+@media screen and (max-width : 850px) {
+
+    .content_testimonial-1 .picto,
+    .content_testimonial-2 .picto,
+    .content_testimonial-3 .picto,
+    .content_testimonial-4 .picto,
+    .content_testimonial-5 .picto,
+    .content_testimonial-6 .picto,
+    .content_testimonial-7 .picto,
+    .content_testimonial-8 .picto,
+    .content_testimonial-9 .picto,
+    .content_testimonial-10 .picto,
+    .content_testimonial-11 .picto,
+    .content_testimonial-12 .picto {
+        transform: scale(50%);
+    }
+
+    .content_testimonial-1 h1,
+    .content_testimonial-2 h1,
+    .content_testimonial-3 h1,
+    .content_testimonial-4 h1,
+    .content_testimonial-5 h1,
+    .content_testimonial-6 h1,
+    .content_testimonial-7 h1,
+    .content_testimonial-8 h1,
+    .content_testimonial-9 h1,
+    .content_testimonial-10 h1,
+    .content_testimonial-11 h1,
+    .content_testimonial-12 h1 {
+        width: 80% !important;
+        font-size: 25px !important;
+    }
+}
+
+@media screen and (max-width : 775px) {
+
+    .content_testimonial-1 .picto,
+    .content_testimonial-2 .picto,
+    .content_testimonial-3 .picto,
+    .content_testimonial-4 .picto,
+    .content_testimonial-5 .picto,
+    .content_testimonial-6 .picto,
+    .content_testimonial-7 .picto,
+    .content_testimonial-8 .picto,
+    .content_testimonial-9 .picto,
+    .content_testimonial-10 .picto,
+    .content_testimonial-11 .picto,
+    .content_testimonial-12 .picto {
+        transform: scale(40%);
+    }
+
+    .content_testimonial-1 h1,
+    .content_testimonial-2 h1,
+    .content_testimonial-3 h1,
+    .content_testimonial-4 h1,
+    .content_testimonial-5 h1,
+    .content_testimonial-6 h1,
+    .content_testimonial-7 h1,
+    .content_testimonial-8 h1,
+    .content_testimonial-9 h1,
+    .content_testimonial-10 h1,
+    .content_testimonial-11 h1,
+    .content_testimonial-12 h1 {
+        width: 70% !important;
+        font-size: 25px !important;
+    }
+}
+
+@media screen and (max-width : 700px) {
+    #flex-container {
+        min-height: 1000px !important;
+        flex-direction: row;
+    }
+
+    #left-zone {
+        width: 100% !important;
+        margin-top: -350px !important;
+        z-index: 101 !important;
+    }
+
+    .list {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
+        z-index: 101 !important;
+    }
+
+    .content-test {
+        margin-bottom: -50px !important;
+        width: 100% !important;
+    }
+
+    .content_testimonial-1 .picto,
+    .content_testimonial-2 .picto,
+    .content_testimonial-3 .picto,
+    .content_testimonial-4 .picto,
+    .content_testimonial-5 .picto,
+    .content_testimonial-6 .picto,
+    .content_testimonial-7 .picto,
+    .content_testimonial-8 .picto,
+    .content_testimonial-9 .picto,
+    .content_testimonial-10 .picto,
+    .content_testimonial-11 .picto {
+        transform: scale(60%) !important;
+    }
+
+    .content_testimonial-12 .picto {
+        background-image: url(../Images/Silkworm\ .jpg);
+        width: 1600px !important;
+        transform: scale(35%) !important;
+    }
+
+    .content_testimonial-1 h1,
+    .content_testimonial-2 h1,
+    .content_testimonial-3 h1,
+    .content_testimonial-4 h1,
+    .content_testimonial-5 h1,
+    .content_testimonial-6 h1,
+    .content_testimonial-7 h1,
+    .content_testimonial-8 h1,
+    .content_testimonial-9 h1,
+    .content_testimonial-10 h1,
+    .content_testimonial-11 h1,
+    .content_testimonial-12 h1 {
+        width: 90% !important;
+        font-size: 30px !important;
+    }
+
+    .content_testimonial-1 h1,
+    .content_testimonial-10 h1,
+    .content_testimonial-11 h1,
+    .content_testimonial-12 h1 {
+        margin-top: -120px !important;
+    }
+}
+
+@media screen and (max-width : 600px) {
+
+    #Handling_Processing_D_Span_1::after,
+    #Handling_Processing_D_Span_2::after {
+        content: "\a";
+        white-space: pre;
+    }
+
+    #flex-container {
+        min-height: 1000px !important;
+    }
+
+    #left-zone {
+        width: 100% !important;
+        margin-top: -350px !important;
+        z-index: 101 !important;
+    }
+
+    .list {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        z-index: 101 !important;
+    }
+
+    .content-test {
+        margin-bottom: -50px !important;
+        width: 100% !important;
+    }
+
+    .content_testimonial-1 .picto,
+    .content_testimonial-2 .picto,
+    .content_testimonial-3 .picto,
+    /* .content_testimonial-4 .picto, */
+    .content_testimonial-5 .picto,
+    .content_testimonial-6 .picto,
+    .content_testimonial-7 .picto,
+    .content_testimonial-8 .picto,
+    /* .content_testimonial-9 .picto, */
+    .content_testimonial-10 .picto,
+    .content_testimonial-11 .picto {
+        transform: scale(50%) !important;
+    }
+
+    .content_testimonial-12 .picto {
+        transform: scale(28%) !important;
+    }
+
+    .content_testimonial-1 h1,
+    .content_testimonial-2 h1,
+    .content_testimonial-3 h1,
+    .content_testimonial-4 h1,
+    .content_testimonial-5 h1,
+    .content_testimonial-6 h1,
+    .content_testimonial-7 h1,
+    .content_testimonial-8 h1,
+    .content_testimonial-9 h1,
+    .content_testimonial-10 h1,
+    .content_testimonial-11 h1,
+    .content_testimonial-12 h1 {
+        width: 90% !important;
+        font-size: 30px !important;
+    }
+
+    .content_testimonial-1 h1,
+    .content_testimonial-10 h1,
+    .content_testimonial-11 h1 {
+        margin-top: -200px !important;
+    }
+
+    .content_testimonial-12 h1 {
+        margin-top: -250px !important;
+    }
+
+    .content_testimonial-6 h1,
+    .content_testimonial-8 h1 {
+        margin-top: -75px !important;
+    }
+
+    .content_testimonial-12 {
+        margin-bottom: 50px !important;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    ul>li>label>span {
+        margin-left: -70px !important;
+        padding-left: 175px !important;
+
+    }
+
+    .content-test {
+        margin-bottom: -50px !important;
+        width: 100% !important;
+    }
+
+    .content_testimonial-1 .picto,
+    .content_testimonial-2 .picto,
+    .content_testimonial-3 .picto,
+    /* .content_testimonial-4 .picto, */
+    .content_testimonial-5 .picto,
+    .content_testimonial-6 .picto,
+    .content_testimonial-7 .picto,
+    .content_testimonial-8 .picto,
+    /* .content_testimonial-9 .picto, */
+    .content_testimonial-10 .picto,
+    .content_testimonial-11 .picto {
+        transform: scale(40%) !important;
+    }
+
+    .content_testimonial-12 .picto {
+        transform: scale(22%) !important;
+    }
+
+    .content_testimonial-1 h1,
+    .content_testimonial-2 h1,
+    .content_testimonial-3 h1,
+    .content_testimonial-4 h1,
+    .content_testimonial-5 h1,
+    .content_testimonial-6 h1,
+    .content_testimonial-7 h1,
+    .content_testimonial-8 h1,
+    .content_testimonial-9 h1,
+    .content_testimonial-10 h1,
+    .content_testimonial-11 h1,
+    .content_testimonial-12 h1 {
+        width: 90% !important;
+        font-size: 30px !important;
+    }
+
+    .content_testimonial-1 h1,
+    .content_testimonial-10 h1,
+    .content_testimonial-11 h1 {
+        margin-top: -200px !important;
+    }
+
+    .content_testimonial-12 h1 {
+        margin-top: -250px !important;
+    }
+
+    .content_testimonial-6 h1,
+    .content_testimonial-8 h1 {
+        margin-top: -75px !important;
+    }
+
+    .content_testimonial-12 {
+        margin-bottom: 50px !important;
+    }
+
+    .content_testimonial-8 {
+        margin-bottom: 20px !important;
+    }
+
+    .content_testimonial-9 {
+        margin-bottom: -120px !important;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .content-test {
+        margin-bottom: -50px !important;
+        width: 100% !important;
+    }
+
+    .content_testimonial-1 .picto,
+    .content_testimonial-2 .picto,
+    .content_testimonial-3 .picto,
+    /* .content_testimonial-4 .picto, */
+    .content_testimonial-5 .picto,
+    .content_testimonial-6 .picto,
+    .content_testimonial-7 .picto,
+    .content_testimonial-8 .picto,
+    /* .content_testimonial-9 .picto, */
+    .content_testimonial-10 .picto,
+    .content_testimonial-11 .picto {
+        transform: scale(30%) !important;
+    }
+
+    .content_testimonial-12 .picto {
+        transform: scale(18%) !important;
+    }
+
+    .content_testimonial-9 .picto {
+        transform: scale(45%) !important;
+    }
+
+    .content_testimonial-1 h1,
+    .content_testimonial-2 h1,
+    .content_testimonial-3 h1,
+    .content_testimonial-4 h1,
+    .content_testimonial-5 h1,
+    .content_testimonial-6 h1,
+    .content_testimonial-7 h1,
+    .content_testimonial-8 h1,
+    .content_testimonial-9 h1,
+    .content_testimonial-10 h1,
+    .content_testimonial-11 h1,
+    .content_testimonial-12 h1 {
+        width: 90% !important;
+        font-size: 30px !important;
+    }
+
+    .content_testimonial-1 h1,
+    .content_testimonial-10 h1,
+    .content_testimonial-11 h1 {
+        margin-top: -200px !important;
+    }
+
+    .content_testimonial-12 h1 {
+        margin-top: -250px !important;
+    }
+
+    .content_testimonial-6 h1,
+    .content_testimonial-8 h1 {
+        margin-top: -75px !important;
+    }
+
+    .content_testimonial-9 h1 {
+        margin-top: -75px !important;
+    }
+
+    .content_testimonial-12 {
+        margin-bottom: 50px !important;
+    }
+
+    .content_testimonial-8 {
+        margin-bottom: 20px !important;
+    }
+
+    .content_testimonial-9 {
+        margin-bottom: -80px !important;
+    }
+}
+
+@media screen and (max-width : 335px) {
+    #flex-container {
+        min-height: 1350px !important;
+    }
+
+    .list {
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr);
+        z-index: 101 !important;
+    }
+
+    .content-test {
+        margin-bottom: -225px !important;
+        width: 100% !important;
+    }
+
+    .content_testimonial-1 .picto,
+    .content_testimonial-2 .picto,
+    .content_testimonial-3 .picto,
+    /* .content_testimonial-4 .picto, */
+    .content_testimonial-5 .picto,
+    /* .content_testimonial-6 .picto, */
+    .content_testimonial-7 .picto,
+    /* .content_testimonial-8 .picto, */
+    /* .content_testimonial-9 .picto, */
+    .content_testimonial-10 .picto,
+    .content_testimonial-11 .picto {
+        transform: scale(28%) !important;
+    }
+
+    .content_testimonial-12 .picto {
+        transform: scale(18%) !important;
+    }
+
+    .content_testimonial-8 .picto {
+        /* margin-bottom: -300px !important; */
+        transform: scale(25%) !important;
+    }
+
+    .content_testimonial-9 .picto {
+        transform: scale(35%) !important;
+        margin-top: 350px !important;
+    }
+
+    .content_testimonial-4 .picto {
+        transform: scale(30%) !important;
+    }
+
+    .content_testimonial-10 .picto {
+        margin-top: -100px !important;
+        transform: scale(30%) !important;
+    }
+
+    .content_testimonial-11 .picto {
+        margin-top: -100px !important;
+        transform: scale(30%) !important;
+    }
+
+    .content_testimonial-12 .picto {
+        margin-top: 300px !important;
+        transform: scale(14%) !important;
+    }
+
+    .content_testimonial-1 .picto {
+        margin-top: -100px !important;
+    }
+
+    .content_testimonial-6 .picto {
+        transform: scale(25%) !important;
+    }
+
+    .content_testimonial-1 h1,
+    .content_testimonial-2 h1,
+    .content_testimonial-3 h1,
+    .content_testimonial-4 h1,
+    .content_testimonial-5 h1,
+    .content_testimonial-6 h1,
+    .content_testimonial-7 h1,
+    .content_testimonial-8 h1,
+    .content_testimonial-9 h1,
+    .content_testimonial-10 h1,
+    .content_testimonial-11 h1,
+    .content_testimonial-12 h1 {
+        width: 90% !important;
+        font-size: 30px !important;
+    }
+
+    .content_testimonial-1 h1,
+    .content_testimonial-10 h1,
+    .content_testimonial-11 h1 {
+        margin-top: -200px !important;
+    }
+
+    .content_testimonial-12 h1 {
+        margin-top: -250px !important;
+    }
+
+    .content_testimonial-6 h1 {
+        margin-top: -75px !important;
+    }
+
+    .content_testimonial-8 h1 {
+        margin-bottom: -300px !important;
+    }
+
+    .content_testimonial-9 h1 {
+        margin-top: -75px !important;
+    }
+
+    .content_testimonial-12 {
+        margin-bottom: 50px !important;
+    }
+
+    .content_testimonial-8 {
+        margin-bottom: 20px !important;
+    }
+
+    .content_testimonial-9 {
+        margin-bottom: -80px !important;
+    }
+}
+
+@media screen and (max-width : 300px) {
+
+    #Handling_Processing_D_Span_1,
+    #Handling_Processing_D_Span_2 {
+        font-size: 30px !important;
+    }
+}

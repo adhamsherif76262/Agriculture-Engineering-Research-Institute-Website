@@ -1,7 +1,16 @@
 var Patents_Title = document.getElementById("Patents_Page_Title");
-var Patents_h1 = document.getElementById("Patents_h1");
+// var Patents_h1 = document.getElementById("Patents_h1");
 var Technological_Applications_Section = document.getElementById(
   "Technological_Applications_Section"
+);
+var Technological_Applications_Span_1 = document.getElementById(
+  "Technological_Applications_Span_1"
+);
+var Technological_Applications_Span_2 = document.getElementById(
+  "Technological_Applications_Span_2"
+);
+var Technological_Applications_Span_3 = document.getElementById(
+  "Technological_Applications_Span_3"
 );
 var Technological_Applications_Section_Ar = `
       <div class="center_Ar">
@@ -449,7 +458,7 @@ var Patents_Section_En = `
         </ul>
     </div>
 `;
-// Function to detect the browser name
+
 function detectBrowser() {
     var userAgent = navigator.userAgent;
     if (userAgent.indexOf("Edg") > -1) {
@@ -474,7 +483,8 @@ var browserName = detectBrowser();
 console.log("Your browser is: " + browserName);
 function Patents_Load_Content_Ar() {
   // Patents_h1.textContent = "ىىىىىىىىىىىىىىىىىىىىىىىىىىىى";
-  
+    Technological_Applications_Span_1.textContent = "التطبيقات";
+    Technological_Applications_Span_2.textContent = "التكنولوجيلة";
   HomePageTitle[0].innerHTML = "التطبيقات التكنولوجية";
   Technological_Applications_Section.innerHTML = Technological_Applications_Section_Ar;
   Patents_Section.innerHTML = Patents_Section_Ar;
@@ -601,6 +611,9 @@ function Patents_Load_Content_Ar() {
 }
 function Patents_Load_Content_En() {
   // Patents_h1.textContent = "zzzzzzzzzzzzzz";
+  Technological_Applications_Span_1.textContent = "Technological";
+  Technological_Applications_Span_2.textContent = "Applications";
+  
   HomePageTitle[0].innerHTML = "AERI Technological Applications Page";
   Technological_Applications_Section.innerHTML = Technological_Applications_Section_En;
   Patents_Section.innerHTML = Patents_Section_En;
