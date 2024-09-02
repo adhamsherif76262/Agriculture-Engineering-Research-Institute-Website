@@ -897,10 +897,6 @@
 
     100% {
         transform: scale(0.8) translate(-225px, 65px);
-        -webkit-transform: scale(0.8) translate(-225px, 65px);
-        -moz-transform: scale(0.8) translate(-225px, 65px);
-        -ms-transform: scale(0.8) translate(-225px, 65px);
-        -o-transform: scale(0.8) translate(-225px, 65px);
 }
 }
 
