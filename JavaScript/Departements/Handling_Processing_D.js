@@ -34,18 +34,33 @@ Research_Fields_Section.innerHTML = `
   </div>
 `;
 
-Activities_Section.innerHTML = `
-        <div class="container">
+var Activities_Section_Ar = `
+        <div class="container_Ar">
             <ul id = "Activities_UL">
-                <li id = "Activities_LI_1"></li>
-                <li id = "Activities_LI_2"></li>
-                <li id = "Activities_LI_3"></li>
-                <li id = "Activities_LI_4"></li>
-                <li id = "Activities_LI_5"></li>
-                <li id = "Activities_LI_6"></li>
-                <li id = "Activities_LI_7"></li>
-                <li id = "Activities_LI_8"></li>
-                <li id = "Activities_LI_9"></li>
+                <li id = "Activities_LI_1">اجراء البحوث التطبيقية الخاصة بالمجالات والفروع المختلفة لعمليات تصنيع وتداول المنتجات الزراعية . </li>
+                <li id = "Activities_LI_2">اجراء عمليات التطوير والتعديل والتهيئة لأجهزة ومعدات التصنيع والتداول والعمل على رفع كفاءة تلك المعدات مع الاخذ فى الاعتبار ترشيد الطاقة المستهلكة وزيادة جودة المنتج النهائى وتقليل الفواقد.</li>
+                <li id = "Activities_LI_3">اجراء الدورات التدريبية والارشادية والندوات العلمية الخاصة بنقل نتائج البحوث والدراسات الخاصة بنشاط القسم الى الجهات الارشادية والمزارعين والمواقع الانتاجية .</li>
+                <li id = "Activities_LI_4">التعاون العلمى والفنى بين انشطة القسم والجهات البحثية المختلفة والجامعات وصولا الى التكامل العلمى والاستفادة بخبرات الاخرين فى تنفيذ البحوث المتكاملة التى تغطى جميع الجوانب العلمية الخاصة بالموضوع البحثى .</li>
+                <li id = "Activities_LI_5">المساهمة فى حل المشاكل التي يتعرض لها القطاع الانتاجى فى مجالات تصنيع وتداول المنتجات الزراعية من خلال مشاريع مشتركة تهدف الى الربط بين نتائج البحوث والمشاكل التى يواجها القطاع الانتاجى . </li>
+                <li id = "Activities_LI_6">ربط مراحل التصنيع المختلفة فى صورة نظم متكاملة تؤدى إلى زيادة العائد الإقتصادى للمنتج.</li>
+                <li id = "Activities_LI_7">دراسات تطبيقية لاستخدام زيت الجوجوبا في التصنيع الغذائي</li>
+                <li id = "Activities_LI_8">تطبيق تقنيات الذكاء الاصطناعي في تحسين عمليات التصنيع الغذائي</li>
+                <li id = "Activities_LI_9">تصميم أنظمة إنتاج غذائي مرنة وتحسين كفاءة استخدام الموارد في التصنيع الغذائي لمواجهة التغيرات المناخية</li>
+            </ul>
+        </div>
+`;
+var Activities_Section_En = `
+        <div class="container_En">
+            <ul id = "Activities_UL">
+                <li id = "Activities_LI_1">Applied researches were conducted in various fields and branches of agricultural products processing and handling.</li>
+                <li id = "Activities_LI_2">To carry out the development, modification, and preparation of the processing and handling devices and equipment to upgrade the efficiency of such equipment, taking into account the rationalization of energy consumption, increasing the quality of the final product, and reducing the losses.</li>
+                <li id = "Activities_LI_3">Conducting training and extension courses, scientific seminars on the transfer of research results, and special studies related to department activities to the main section of guidance and farmers and production sites.</li>
+                <li id = "Activities_LI_4">Scientific and technical cooperation between the activities of the department and the other departments of the Institute, the various research organizations, and universities to achieve scientific integration and benefit from the expertise of others in the implementation of integrated research covering all scientific aspects of the research topic.</li>
+                <li id = "Activities_LI_5">Contribute to solving the problems facing the productive sector in the fields of processing and handling of agricultural products through joint projects aimed at linking the results of research and problems faced by the productive sector.</li>
+                <li id = "Activities_LI_6">Linking the various stages of processing in the form of integrated systems leads to increased economic return of the product.</li>
+                <li id = "Activities_LI_7">Applied studies on the use of jojoba oil in food processing.</li>
+                <li id = "Activities_LI_8">Application of artificial intelligence techniques in improving food processing.</li>
+                <li id = "Activities_LI_9">Designing flexible food production systems and improving resource efficiency in food processing to face climate change.</li>
             </ul>
         </div>
 `;
@@ -345,6 +360,8 @@ function M_E_Section_Load(){
   );
   alert("Width" + "         " +slider_single_image[1].offsetWidth);
   alert("Height" + "         " + slider_single_image[1].offsetHeight);
+  alert("Width" + "         " + window.innerWidth);
+  alert("Height" + "         " + window.innerHeight);
     const repeat = false;
     const noArrows = false;
     const noBullets = false;
@@ -572,30 +589,9 @@ function Handling_Processing_D_Load_Content_Ar() {
     M_E_Section_Load();
     Manufacturing_Evaluation_Section_H2.textContent = "النماذج الأولية للوحدات التي تم الإنتهاء من تصنيعها وتقييمها";
 
-    Activities_Section.style.direction = "rtl";
-    Activities_Section.style.marginLeft = "20%";
-    Activities_Section.style.marginRight = "0%";
-
-    Activities_LI_1.textContent =
-      "اجراء البحوث التطبيقية الخاصة بالمجالات والفروع المختلفة لعمليات تصنيع وتداول المنتجات الزراعية . ";
-    Activities_LI_2.textContent =
-      "اجراء عمليات التطوير والتعديل والتهيئة لأجهزة ومعدات التصنيع والتداول والعمل على رفع كفاءة تلك المعدات مع الاخذ فى الاعتبار ترشيد الطاقة المستهلكة وزيادة جودة المنتج النهائى وتقليل الفواقد. ";
-    Activities_LI_3.textContent =
-      "اجراء الدورات التدريبية والارشادية والندوات العلمية الخاصة بنقل نتائج البحوث والدراسات الخاصة بنشاط القسم الى الجهات الارشادية والمزارعين والمواقع الانتاجية . ";
-    Activities_LI_4.textContent =
-      "التعاون العلمى والفنى بين انشطة القسم والجهات البحثية المختلفة والجامعات وصولا الى التكامل العلمى والاستفادة بخبرات الاخرين فى تنفيذ البحوث المتكاملة التى تغطى جميع الجوانب العلمية الخاصة بالموضوع البحثى . ";
-    Activities_LI_5.textContent =
-      "المساهمة فى حل المشاكل التي يتعرض لها القطاع الانتاجى فى مجالات تصنيع وتداول المنتجات الزراعية من خلال مشاريع مشتركة تهدف الى الربط بين نتائج البحوث والمشاكل التى يواجها القطاع الانتاجى . ";
-    Activities_LI_6.textContent =
-      "ربط مراحل التصنيع المختلفة فى صورة نظم متكاملة تؤدى إلى زيادة العائد الإقتصادى للمنتج. ";
-    Activities_LI_7.textContent =
-      "دراسات تطبيقية لاستخدام زيت الجوجوبا في التصنيع الغذائي ";
-    Activities_LI_8.textContent =
-      "تطبيق تقنيات الذكاء الاصطناعي في تحسين عمليات التصنيع الغذائي";
-    Activities_LI_9.textContent =
-      "تصميم أنظمة إنتاج غذائي مرنة وتحسين كفاءة استخدام الموارد في التصنيع الغذائي لمواجهة التغيرات المناخية";
     Activities_Section_H2.textContent = "الأهداف الرئيسية للقسم";
-
+    Activities_Section.style.direction = "rtl";
+    Activities_Section.innerHTML = Activities_Section_Ar;
 
     Research_Fields_Span_1.textContent =
       "ستخدام تطبيقات النانوتكنولوجى فى هنسة التصنيع والتداول";
@@ -659,27 +655,7 @@ function Handling_Processing_D_Load_Content_Ar() {
   Manufacturing_Evaluation_Section_H2.textContent = "Prototypes of the units that have been completed and evaluated :";
   
   Activities_Section.style.direction = "ltr";
-  Activities_Section.style.marginLeft = "5%";
-  Activities_Section.style.marginRight = "15%";
-
-  Activities_LI_1.textContent =
-    "Applied researches were conducted in various fields and branches of agricultural products processing and handling.";
-  Activities_LI_2.textContent =
-    "To carry out the development, modification, and preparation of the processing and handling devices and equipment to upgrade the efficiency of such equipment, taking into account the rationalization of energy consumption, increasing the quality of the final product, and reducing the losses.";
-  Activities_LI_3.textContent =
-    "Conducting training and extension courses, scientific seminars on the transfer of research results, and special studies related to department activities to the main section of guidance and farmers and production sites.";
-  Activities_LI_4.textContent =
-    "Scientific and technical cooperation between the activities of the department and the other departments of the Institute, the various research organizations, and universities to achieve scientific integration and benefit from the expertise of others in the implementation of integrated research covering all scientific aspects of the research topic.";
-  Activities_LI_5.textContent =
-    "Contribute to solving the problems facing the productive sector in the fields of processing and handling of agricultural products through joint projects aimed at linking the results of research and problems faced by the productive sector.";
-  Activities_LI_6.textContent =
-    "Linking the various stages of processing in the form of integrated systems leads to increased economic return of the product.";
-  Activities_LI_7.textContent =
-    "Applied studies on the use of jojoba oil in food processing";
-  Activities_LI_8.textContent =
-    "Application of artificial intelligence techniques in improving food processing.";
-  Activities_LI_9.textContent =
-    "Designing flexible food production systems and improving resource efficiency in food processing to face climate change.";
+  Activities_Section.innerHTML = Activities_Section_En;
   Activities_Section_H2.textContent = "Main Objectives"
 
   Research_Fields_Span_1.textContent = "Using nano-technology applications in processing and handling engineering.";

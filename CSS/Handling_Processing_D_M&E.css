@@ -20,16 +20,13 @@
 
 /* Activities Section */
 
-/* body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-} */
 #Activities_Section {
     width: 80%;
     font-family: Omnes-Arabic-HairLine-Bold;
     font-size: 25px;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    /* overflow: hidden; */
 }
 
 #Activities_Section_H2 {
@@ -51,6 +48,13 @@
     border: double 15px white;
     padding-top: 25px;
     padding-bottom: 25px;
+}
+
+.container_Ar {
+    margin-left: 10%;
+}
+.container_En {
+    margin-right: 10%;
 }
 
 #Activities_UL li {
@@ -114,7 +118,7 @@
     margin-top: 50px;
     overflow: hidden !important;
     width: 90%;
-    margin-left:  5% !important;
+    margin-left: 5% !important;
     margin-right: 5% !important;
     /* background: #000; */
     /* min-height: 100vh; */
@@ -153,7 +157,8 @@
     position: relative;
     left: 0;
     /*color: #fce4ec;
-    */list-style: none;
+    */
+    list-style: none;
     margin: 4px 0;
     transition: 0.75s;
     cursor: pointer;
@@ -185,7 +190,7 @@
     height: 100%;
     background: #f50057;
     transform: scaleX(0);
-    transform-origin:left;
+    transform-origin: left;
     transition: 0.75s;
 }
 
@@ -566,6 +571,13 @@
 }
 
 @media screen and (max-width : 600px) {
+    .container_Ar {
+        margin-right: -10% !important;
+    }
+    .container_En {
+        margin-left: -10% !important;
+    }
+
     #Manufacturing_Evaluation_Section {
         height: 1000px !important;
     }
@@ -592,6 +604,13 @@
 }
 
 @media screen and (max-width : 400px) {
+    .container_Ar {
+        margin-right: -20% !important;
+    }
+    .container_En {
+        margin-left: -20% !important;
+    }
+
     .slider-single-title {
         padding-bottom: 100px !important;
     }
