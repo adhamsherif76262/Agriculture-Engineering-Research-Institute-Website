@@ -18,6 +18,113 @@
     src: url(../Fonts/Arial\ Black.ttf);
 }
 
+/* Activities Section */
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+#Activities_Section {
+    width: 80%;
+    font-family: Omnes-Arabic-HairLine-Bold;
+    font-size: 25px;
+}
+
+#Activities_Section_H2 {
+    transition: 1s;
+    text-align: center;
+    font-family: Omnes-Arabic-HairLine-Bold;
+    font-size: 43px;
+    margin-top: 100px;
+    width: 90%;
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+}
+
+#Activities_Section_H2:hover {
+    transition: 1s;
+    background-color: rgb(0, 0, 119);
+    color: white;
+    cursor: pointer;
+    border: double 15px white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#Activities_UL li {
+    width: 100%;
+    /* width: -moz-fit-content;
+    width: fit-content; */
+    /* height: 150px; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 1.5em;
+    cursor: pointer;
+    padding: 1em;
+    background: rgb(43, 43, 43);
+    position: relative;
+    color: white;
+    border-radius: 5px;
+    margin-top: 50px !important;
+}
+
+#Activities_UL li::before,
+#Activities_UL li::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border-radius: 5px;
+    width: 105%;
+    transition: all 0.4s;
+}
+
+#Activities_UL li::before {
+    left: 0%;
+    height: 130%;
+    background: linear-gradient(to right, #021B79, #00ffff);
+}
+
+#Activities_UL li::after {
+    left: -10%;
+    height: 120%;
+    background: rgb(243, 235, 223);
+    filter: blur(5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
+}
+
+#Activities_UL li:hover::before {
+    transform: translateX(-2.5%);
+}
+
+#Activities_UL li:hover::after {
+    transform: translateX(15%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* M & E Section*/
 #Manufacturing_Evaluation_Section {
     background-color: rgb(243, 235, 223);
     overflow: hidden;
