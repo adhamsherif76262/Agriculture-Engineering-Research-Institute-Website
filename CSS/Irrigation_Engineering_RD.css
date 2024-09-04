@@ -1,0 +1,249 @@
+@font-face {
+    font-family: PT-Bold-Heading;
+    src: url(../Fonts/PT\ Bold\ Heading.ttf);
+}
+
+@font-face {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    src: url(../Fonts/ArbFONTS-OMNES-ARABIC-BOLD.ttf);
+}
+
+@font-face {
+    font-family: Omnes-Arabic-HairLine;
+    src: url(../Fonts/ArbFONTS-OMNES-ARABIC-REGULAR.ttf);
+}
+
+@font-face {
+    font-family: Arial-Black;
+    src: url(../Fonts/Arial\ Black.ttf);
+}
+
+#Inner_Header_Marquee:hover {
+    transition: 1s;
+    background-color: rgb(0, 0, 119);
+    color: white;
+    cursor: pointer;
+    border: double 15px white;
+    /* border-radius: 50%; */
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#Irrigation_Engineering_Research_D_Span_1,
+#Irrigation_Engineering_Research_D_Span_2,
+#Irrigation_Engineering_Research_D_Span_3 {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    font-size: 40px !important;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: clamp(1rem, 2vw, 3rem);
+    /* font-family: "Open Sans", sans-serif; */
+}
+
+.Img {
+    width: 100%;
+    display: block;
+}
+
+.wrapper_En {
+    font-family: Arial-Black;
+    /* max-width: 80rem; */
+    direction: ltr;
+    margin: 0 auto;
+}
+
+.wrapper_Ar {
+    font-family: Omnes-Arabic-HairLine;
+    /* max-width: 80rem; */
+    direction: rtl;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    padding: 1.5rem;
+    border: 0.1rem solid lightgrey;
+    /* columns: 20rem; */
+    column-gap: 4rem;
+    column-rule: 0.2rem dotted turquoise;
+    border-radius: 0.5rem;
+}
+
+li {
+    --y: calc(100% - 2rem);
+    display: grid;
+    grid-template-columns: minmax(3.75em, auto) 1fr 1fr;
+    gap: 0 0.5em;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    background: radial-gradient(circle at 30% var(--y), rgb(50 50 50), rgb(0 0 0));
+    color: white;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 0.17)
+}
+
+li+li {
+    margin-top: 1rem;
+}
+
+.One_Image {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    aspect-ratio: 2;
+    object-fit: cover;
+}
+
+.One_Image_3 {
+    grid-column: 1 /4;
+    grid-row: 1;
+    aspect-ratio: 1;
+    object-fit: contain;
+    margin-top: -200px;
+}
+
+.One_Image_4 {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    aspect-ratio: 2;
+    object-fit: contain;
+}
+
+.One_Image_5 {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    aspect-ratio: 2;
+    object-fit: contain;
+}
+
+.One_Image_6 {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    aspect-ratio: 1.5;
+    object-fit: cover;
+}
+
+.Two_Images {
+    grid-column: 1 1;
+    grid-row: 1 1;
+    aspect-ratio: 1;
+    object-fit: cover;
+    margin-left: -30px;
+}
+
+.Two_Images_10_1 {
+    grid-column: 1;
+    grid-row: 1 1;
+    aspect-ratio: 2;
+    object-fit: contain;
+    margin-left: 25px;
+}
+
+.Two_Images_10_2 {
+    grid-column: 1;
+    grid-row: 1 1;
+    aspect-ratio: 1;
+    object-fit: contain;
+    margin-left: 25px;
+}
+
+li::before {
+    /* counter-increment: list-item -1; */
+    /* content: counter(list-item); */
+    content: "";
+    font-weight: 700;
+    font-size: 4.5em;
+    letter-spacing: -0.125em;
+    line-height: 1;
+    color: turquoise;
+    grid-column: 1;
+    grid-row: span 2;
+    align-self: end;
+    margin: 0 0 -0.15em -0.15em;
+}
+
+li span {
+    grid-column: 1 /4;
+    padding: 10px;
+}
+
+li span:first-of-type {
+    font-size: 1.5em;
+    padding-top: 1rem;
+}
+
+li span:last-of-type {
+    font-style: italic;
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width : 1275px) {
+    .Two_Images_10_1 {
+        margin-left: 8px !important;
+    }
+
+    .One_Image_3 {
+        margin-top: -100px !important;
+    }
+
+    #IRR_Span_3 {
+        margin-top: -100px !important;
+    }
+}
+
+@media screen and (max-width : 900px) {
+    .Two_Images_10_2 {
+        margin-left: 8px !important;
+    }
+
+    #IRR_Span_4 {
+        margin-top: -50px !important;
+    }
+}
+
+@media screen and (max-width : 700px) {
+
+    #Irrigation_Engineering_Research_D_Span_1::after,
+    #Irrigation_Engineering_Research_D_Span_2::after {
+        content: "\a";
+        white-space: pre;
+    }
+
+    .One_Image_3 {
+        margin-top: -50px !important;
+    }
+
+    #IRR_Span_3 {
+        margin-top: -50px !important;
+    }
+}
+
+@media screen and (max-width : 400px) {
+
+    #Irrigation_Engineering_Research_D_Span_1,
+    #Irrigation_Engineering_Research_D_Span_2,
+    #Irrigation_Engineering_Research_D_Span_3 {
+        font-size: 30px !important;
+    }
+
+    .One_Image_3 {
+        margin-top: 0px !important;
+    }
+
+    #IRR_Span_3 {
+        margin-top: 0px !important;
+    }
+
+    #IRR_Span_4 {
+        margin-top: 0px !important;
+    }
+}
