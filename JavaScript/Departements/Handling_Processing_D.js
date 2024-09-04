@@ -5,12 +5,35 @@ var Manufacturing_Evaluation_Section_H2 = document.getElementById(
   "Manufacturing_Evaluation_Section_H2"
 );
 var Activities_Section_H2 = document.getElementById("Activities_Section_H2");
-// var Handling_Processing_D_H1 = document.getElementById(
-//   "Handling_Processing_D_H1"
-// );
+var Research_Fields_Section_H2 = document.getElementById(
+  "Research_Fields_Section_H2"
+);
+
 var Acomplishments_Section = document.getElementById("Acomplishments_Section");
 var M_E_Section = document.getElementById("Manufacturing_Evaluation_Section");
 var Activities_Section = document.getElementById("Activities_Section");
+var Research_Fields_Section = document.getElementById(
+  "Research_Fields_Section"
+);
+
+Research_Fields_Section.innerHTML = `
+  <div class="RF_List">
+    <ul>
+      <li class = "Research_Fields_LI"><span id = "Research_Fields_Span_1"></span></li>
+      <li class = "Research_Fields_LI"><span id = "Research_Fields_Span_2"></span></li>
+      <li class = "Research_Fields_LI"><span id = "Research_Fields_Span_3"></span></li>
+      <li class = "Research_Fields_LI"><span id = "Research_Fields_Span_4"></span></li>
+      <li class = "Research_Fields_LI"><span id = "Research_Fields_Span_5"></span></li>
+      <li class = "Research_Fields_LI"><span id = "Research_Fields_Span_6"></span></li>
+      <li class = "Research_Fields_LI"><span id = "Research_Fields_Span_7"></span></li>
+      <li class = "Research_Fields_LI"><span id = "Research_Fields_Span_8"></span></li>
+      <li class = "Research_Fields_LI"><span id = "Research_Fields_Span_9"></span></li>
+      <li class = "Research_Fields_LI"><span id = "Research_Fields_Span_10"></span></li>
+      <li class = "Research_Fields_LI"><span id = "Research_Fields_Span_11"></span></li>
+    </ul>
+  </div>
+`;
+
 Activities_Section.innerHTML = `
         <div class="container">
             <ul id = "Activities_UL">
@@ -303,6 +326,19 @@ var Activities_LI_7 = document.getElementById("Activities_LI_7");
 var Activities_LI_8 = document.getElementById("Activities_LI_8");
 var Activities_LI_9 = document.getElementById("Activities_LI_9");
 
+var Research_Fields_LI = document.getElementsByClassName("Research_Fields_LI");
+var Research_Fields_Span_1 = document.getElementById("Research_Fields_Span_1");
+var Research_Fields_Span_2 = document.getElementById("Research_Fields_Span_2");
+var Research_Fields_Span_3 = document.getElementById("Research_Fields_Span_3");
+var Research_Fields_Span_4 = document.getElementById("Research_Fields_Span_4");
+var Research_Fields_Span_5 = document.getElementById("Research_Fields_Span_5");
+var Research_Fields_Span_6 = document.getElementById("Research_Fields_Span_6");
+var Research_Fields_Span_7 = document.getElementById("Research_Fields_Span_7");
+var Research_Fields_Span_8 = document.getElementById("Research_Fields_Span_8");
+var Research_Fields_Span_9 = document.getElementById("Research_Fields_Span_9");
+var Research_Fields_Span_10 = document.getElementById("Research_Fields_Span_10");
+var Research_Fields_Span_11 = document.getElementById("Research_Fields_Span_11");
+
 function M_E_Section_Load(){
   const slider_single_image = document.getElementsByClassName(
     "slider-single-image"
@@ -537,7 +573,8 @@ function Handling_Processing_D_Load_Content_Ar() {
     Manufacturing_Evaluation_Section_H2.textContent = "النماذج الأولية للوحدات التي تم الإنتهاء من تصنيعها وتقييمها";
 
     Activities_Section.style.direction = "rtl";
-    Activities_Section.style.marginLeft = "12%";
+    Activities_Section.style.marginLeft = "20%";
+    Activities_Section.style.marginRight = "0%";
 
     Activities_LI_1.textContent =
       "اجراء البحوث التطبيقية الخاصة بالمجالات والفروع المختلفة لعمليات تصنيع وتداول المنتجات الزراعية . ";
@@ -558,6 +595,33 @@ function Handling_Processing_D_Load_Content_Ar() {
     Activities_LI_9.textContent =
       "تصميم أنظمة إنتاج غذائي مرنة وتحسين كفاءة استخدام الموارد في التصنيع الغذائي لمواجهة التغيرات المناخية";
     Activities_Section_H2.textContent = "الأهداف الرئيسية للقسم";
+
+
+    Research_Fields_Span_1.textContent =
+      "ستخدام تطبيقات النانوتكنولوجى فى هنسة التصنيع والتداول";
+    Research_Fields_Span_2.textContent = "عمليات تجفيف  المنتجات الزراعية ";
+    Research_Fields_Span_3.textContent = "عمليات تخزين وحفظ المنتجات الزراعية ";
+    Research_Fields_Span_4.textContent =
+      "عمليات الفرز والتدريج والغسيل والتشميع والتعبئة للمحاصيل الزراعية ";
+    Research_Fields_Span_5.textContent =
+      "عمليات والتقشير والطحن والخلط للمحاصيل الزراعية ";
+    Research_Fields_Span_6.textContent =
+      "عمليات التعبئة والتغليف والنقل للمنتجات الزراعية ";
+    Research_Fields_Span_7.textContent =
+      "النظم المتكاملة لعمليات التصنيع والحفظ والتداول ";
+    Research_Fields_Span_8.textContent =
+      "عمليات التصنيع والتداول للمخلفات والنواتج الثانوية الناتجة عن عمليات التصنيع الزراعى ومصانع الاغذية ";
+    Research_Fields_Span_9.textContent =
+      "عمليات استخلاص وتنقية زيوت النباتية الطبية والعطرية";
+    Research_Fields_Span_10.textContent = "تطوير وتصنيع بعض الأجهزة العلمية ";
+    Research_Fields_Span_11.textContent =
+      "تطبيقات أشعة الليزر والأشعة الكهرومغناطيسية في تحسين جودة المنتجات الزراعية و البيئة";
+    Research_Fields_Section_H2.textContent = "المجالات البحثية للقسم";
+      for (let index = 0; index < Research_Fields_LI.length; index++) {
+        Research_Fields_LI[index].style.borderRight = "2px solid #f50057";
+        Research_Fields_LI[index].style.borderLeft = "none";
+      }
+      Research_Fields_Section.style.direction = "rtl";
   }
   function Handling_Processing_D_Load_Content_En() {
   Handling_Processing_D_Span_1.textContent = "Crop Handling";
@@ -595,7 +659,8 @@ function Handling_Processing_D_Load_Content_Ar() {
   Manufacturing_Evaluation_Section_H2.textContent = "Prototypes of the units that have been completed and evaluated :";
   
   Activities_Section.style.direction = "ltr";
-  Activities_Section.style.marginLeft = "8%";
+  Activities_Section.style.marginLeft = "5%";
+  Activities_Section.style.marginRight = "15%";
 
   Activities_LI_1.textContent =
     "Applied researches were conducted in various fields and branches of agricultural products processing and handling.";
@@ -616,6 +681,24 @@ function Handling_Processing_D_Load_Content_Ar() {
   Activities_LI_9.textContent =
     "Designing flexible food production systems and improving resource efficiency in food processing to face climate change.";
   Activities_Section_H2.textContent = "Main Objectives"
+
+  Research_Fields_Span_1.textContent = "Using nano-technology applications in processing and handling engineering.";
+  Research_Fields_Span_2.textContent = "Drying processes of agricultural products.";
+  Research_Fields_Span_3.textContent = "Storage and preservation processes of agricultural products.";
+  Research_Fields_Span_4.textContent = "Sorting, grading, washing, waxing, and packaging processes for crops.";
+  Research_Fields_Span_5.textContent = "Husking, Milling, and mixing processes for crops.";
+  Research_Fields_Span_6.textContent = "Packaging, coating, and transporting processes for agricultural products.";
+  Research_Fields_Span_7.textContent = "Integrated systems for processing, preservation, and handling.";
+  Research_Fields_Span_8.textContent = "Processing and handling processes for waste and by-products resulting from agricultural processing and food factories.";
+  Research_Fields_Span_9.textContent = "Extraction and purification processes for medical and aromatic plant oils. ";
+  Research_Fields_Span_10.textContent= "Development and manufacture of some scientific devices.";
+  Research_Fields_Span_11.textContent= "Applications of laser and electromagnetic radiation in improving the quality of agricultural products and the environment.";
+  Research_Fields_Section_H2.textContent = "Research Fields :";
+  for (let index = 0; index < Research_Fields_LI.length; index++) {
+      Research_Fields_LI[index].style.borderLeft = "2px solid #f50057";
+      Research_Fields_LI[index].style.borderRight = "none";
+  }
+  Research_Fields_Section.style.direction = "ltr";
   }
 
 if (localStorage.getItem("Permenant_Language") === "English") {

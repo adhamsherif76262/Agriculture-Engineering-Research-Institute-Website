@@ -105,24 +105,93 @@
 
 
 
+/* Research Fields Section */
 
+#Research_Fields_Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    overflow: hidden !important;
+    width: 90%;
+    margin-left:  5% !important;
+    margin-right: 5% !important;
+    /* background: #000; */
+    /* min-height: 100vh; */
+}
 
+#Research_Fields_Section_H2 {
+    transition: 1s;
+    text-align: center;
+    font-family: Omnes-Arabic-HairLine-Bold;
+    font-size: 43px;
+    margin-top: 100px;
+    width: 90%;
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+}
 
+#Research_Fields_Section_H2:hover {
+    transition: 1s;
+    background-color: rgb(0, 0, 119);
+    color: white;
+    cursor: pointer;
+    border: double 15px white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
 
+.RF_List {
+    position: relative;
+}
 
+.RF_List ul {
+    position: relative;
+}
 
+.RF_List ul li {
+    position: relative;
+    left: 0;
+    /*color: #fce4ec;
+    */list-style: none;
+    margin: 4px 0;
+    transition: 0.75s;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: Omnes-Arabic-HairLine-Bold;
+}
 
+.RF_List ul li:hover {
+    left: 10px;
+}
 
+.RF_List ul li span {
+    position: relative;
+    padding: 8px;
+    padding-left: 12px;
+    display: inline-block;
+    z-index: 1;
+    transition: 0.75s;
+}
 
+.RF_List ul li:hover span {
+    color: white;
+}
 
+.RF_List ul li:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #f50057;
+    transform: scaleX(0);
+    transform-origin:left;
+    transition: 0.75s;
+}
 
-
-
-
-
-
-
-
+.RF_List ul li:hover:before {
+    transform: scaleX(1);
+}
 
 /* M & E Section*/
 #Manufacturing_Evaluation_Section {
