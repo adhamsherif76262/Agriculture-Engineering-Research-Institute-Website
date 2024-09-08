@@ -296,7 +296,7 @@ input:checked~.content-test {
 
 .content_testimonial-2 h1 {
     font-size: 30px;
-    color: #f5d76e;
+    color: #e3bd34;
     text-align: center;
 }
 
@@ -326,19 +326,19 @@ input:checked~.content-test {
 
 .content_testimonial-7 h1 {
     font-size: 30px;
-    color: #ff1493;
+    color: #b80f69;
     text-align: center;
 }
 
 .content_testimonial-8 h1 {
     font-size: 30px;
-    color: #00fa9a;
+    color: #00d483;
     text-align: center;
 }
 
 .content_testimonial-9 h1 {
     font-size: 30px;
-    color: #7fffd4;
+    color: #52ac8e;
     text-align: center;
 }
 
@@ -411,8 +411,8 @@ input:checked~label.label_testimonial-8 {
 }
 
 input:checked~label.label_testimonial-9 {
-    color: #7fffd4;
-    border-right: solid 4px #7fffd4;
+    color: #52ac8e;
+    border-right: solid 4px #52ac8e;
 }
 
 input:checked~label.label_testimonial-10 {
@@ -654,10 +654,10 @@ ul>li>label>span {
             left top,
             right top,
             from(#ffffff),
-            to(#7fffd4a3));
-    background-image: -webkit-linear-gradient(left, #ffffff, #7fffd4a3);
-    background-image: -o-linear-gradient(left, #ffffff, #7fffd4a3);
-    background-image: linear-gradient(to right, #ffffff, #7fffd4a3);
+            to(#52ac8e));
+    background-image: -webkit-linear-gradient(left, #ffffff, #52ac8e);
+    background-image: -o-linear-gradient(left, #ffffff, #52ac8e);
+    background-image: linear-gradient(to right, #ffffff, #52ac8e);
     font-size: 1.2rem;
     -webkit-transition: font-size 0.5s;
     -o-transition: font-size 0.5s;

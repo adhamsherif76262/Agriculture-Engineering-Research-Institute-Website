@@ -107,7 +107,7 @@
 }
 
 .card_Ar>.content_Ar {
-    background: #0a2640;
+    background: #9efdff;
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
     padding: 1em;
@@ -269,6 +269,9 @@
     margin-top: 100px;
 }
 
+#Patent_Header_Ar, #Patent_Header_En{
+    margin-top: 30px;
+}
 
 .container_Ar {
     max-width: 90%;
@@ -281,8 +284,8 @@
 
 .responsive-table_Ar li {
     border-radius: 3px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 25px;
     padding-right: 25px;
     display: flex;
@@ -291,7 +294,9 @@
 }
 
 .responsive-table_Ar .table-header_Ar {
-    background-color: #95a5a6;
+    color: white;
+    background-color: #081336;
+    /* background-color: rgb(190, 64, 64); */
     font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -336,7 +341,8 @@
 }
 
 .responsive-table_En .table-header_En {
-    background-color: #95a5a6;
+    color: white;
+    background-color: #0a2640;
     font-size: 25px;
     text-transform: uppercase;
     letter-spacing: 0.05em;

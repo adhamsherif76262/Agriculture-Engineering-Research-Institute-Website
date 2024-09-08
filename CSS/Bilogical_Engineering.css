@@ -1,0 +1,59 @@
+@font-face {
+    font-family: PT-Bold-Heading;
+    src: url(../Fonts/PT\ Bold\ Heading.ttf);
+}
+
+@font-face {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    src: url(../Fonts/ArbFONTS-OMNES-ARABIC-BOLD.ttf);
+}
+
+@font-face {
+    font-family: Omnes-Arabic-HairLine;
+    src: url(../Fonts/ArbFONTS-OMNES-ARABIC-REGULAR.ttf);
+}
+
+@font-face {
+    font-family: Arial-Black;
+    src: url(../Fonts/Arial\ Black.ttf);
+}
+
+#Biological_Engineering_Span_1,
+#Biological_Engineering_Span_2,
+#Biological_Engineering_Span_3,
+#Biological_Engineering_Span_4 {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    font-size: 40px !important;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#Inner_Header_Marquee:hover {
+    transition: 1s;
+    background-color: rgb(0, 0, 119);
+    color: white;
+    cursor: pointer;
+    border: double 15px white;
+    /* border-radius: 50%; */
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width : 500px) {
+
+    #Biological_Engineering_Span_1,
+    #Biological_Engineering_Span_2{
+        font-size: 30px !important;
+    }
+
+}
+
+@media screen and (max-width : 450px) {
+
+    #Biological_Engineering_Span_1::after,
+    #Biological_Engineering_Span_2::after{
+        content: "\a";
+        white-space: pre;
+    }
+
+} 

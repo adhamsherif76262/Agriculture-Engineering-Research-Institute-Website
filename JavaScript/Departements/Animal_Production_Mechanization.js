@@ -170,7 +170,7 @@ function Animal_Production_Mechanization_Load_Content_Ar() {
     // "7 min. read",
     // "8 min. read",
     // ];
-    const color_options_Ar = ["#FE9968", "#7FE0EB", "#6CE5B1"];
+    const color_options_Ar = ["#E3AC59", "#59E390", "#E3AC59"];
     const image_options_Ar = [
       "../../Images/Machine_1_-removebg-preview.png",
       "../../Images/Machine_2_-removebg-preview.png",

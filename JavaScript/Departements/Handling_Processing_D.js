@@ -614,7 +614,8 @@ function Handling_Processing_D_Load_Content_Ar() {
       "تطبيقات أشعة الليزر والأشعة الكهرومغناطيسية في تحسين جودة المنتجات الزراعية و البيئة";
     Research_Fields_Section_H2.textContent = "المجالات البحثية للقسم";
       for (let index = 0; index < Research_Fields_LI.length; index++) {
-        Research_Fields_LI[index].style.borderRight = "2px solid #f50057";
+        Research_Fields_LI[index].style.borderRight =
+          "20px double rgb(243, 235, 223)";
         Research_Fields_LI[index].style.borderLeft = "none";
       }
       Research_Fields_Section.style.direction = "rtl";
@@ -671,7 +672,8 @@ function Handling_Processing_D_Load_Content_Ar() {
   Research_Fields_Span_11.textContent= "Applications of laser and electromagnetic radiation in improving the quality of agricultural products and the environment.";
   Research_Fields_Section_H2.textContent = "Research Fields :";
   for (let index = 0; index < Research_Fields_LI.length; index++) {
-      Research_Fields_LI[index].style.borderLeft = "2px solid #f50057";
+      Research_Fields_LI[index].style.borderLeft =
+        "25px double rgb(243, 235, 223)";
       Research_Fields_LI[index].style.borderRight = "none";
   }
   Research_Fields_Section.style.direction = "ltr";

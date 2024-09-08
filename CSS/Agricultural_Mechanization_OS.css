@@ -1,0 +1,813 @@
+* {
+    padding: 0;
+    -webkit-user-select: none;
+    user-select: none;
+    margin: 0;
+}
+
+@font-face {
+    font-family: PT-Bold-Heading;
+    src: url(../Fonts/PT\ Bold\ Heading.ttf);
+}
+
+@font-face {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    src: url(../Fonts/ArbFONTS-OMNES-ARABIC-BOLD.ttf);
+}
+
+@font-face {
+    font-family: Omnes-Arabic-HairLine;
+    src: url(../Fonts/ArbFONTS-OMNES-ARABIC-REGULAR.ttf);
+}
+
+@font-face {
+    font-family: Arial-Black;
+    src: url(../Fonts/Arial\ Black.ttf);
+}
+
+
+#Agricultural_Mechanization_OS_Span_1,
+#Agricultural_Mechanization_OS_Span_2,
+#Agricultural_Mechanization_OS_Span_3,
+#Agricultural_Mechanization_OS_Span_4 {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    font-size: 40px !important;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#Inner_Header_Marquee:hover {
+    transition: 1s;
+    background-color: rgb(0, 0, 119);
+    color: white;
+    cursor: pointer;
+    border: double 15px white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/**MAIN OBJECTIVES SECTION**/
+
+#Main_Objectives_Ar {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    font-size: 30px;
+    direction: rtl;
+    margin-top: 100px !important;
+}
+
+#Main_Objectives_En {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    font-size: 30px;
+    direction: ltr;
+    margin-top: 100px !important;
+}
+
+#Main_Objectives_Ar label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Main_Objectives_Ar a,
+#Main_Objectives_En a {
+    text-decoration: none;
+}
+
+#Main_Objectives_Ar ul,
+#Main_Objectives_En ul {
+    list-style: none;
+}
+
+/** * Hidden fallback */
+[hidden] {
+    display: none;
+    visibility: hidden;
+}
+
+/** * Styling navigation */
+#Main_Objectives_En,
+#Main_Objectives_Ar {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 90%;
+    box-shadow: 0px 0px 30px 15px black;
+
+
+}
+
+/** * Styling top level items */
+.nav a,
+.nav label {
+    display: block;
+    padding: 0.85rem;
+    color: black;
+    background-color: rgb(243, 235, 223);
+    box-shadow: inset 0 -5px black;
+    transition: all 0.25s ease-in;
+}
+
+.nav a:focus,
+.nav label:focus,
+.nav a:hover,
+.nav label:hover {
+    color: black;
+    background: white;
+}
+
+.nav label {
+    cursor: pointer;
+}
+
+/** * Styling first level lists items */
+.group-list_En a,
+.group-list_En label {
+    padding-left: 2rem;
+    background: wheat;
+    box-shadow: inset 0 -1px black;
+}
+
+.group-list_Ar a,
+.group-list_Ar label {
+    padding-right: 2rem;
+    background: wheat;
+    box-shadow: inset 0 -1px black;
+}
+
+.group-list_En a:focus,
+.group-list_En label:focus,
+.group-list_En a:hover,
+.group-list_En label:hover {
+    background: white;
+}
+
+.group-list_Ar a:focus,
+.group-list_Ar label:focus,
+.group-list_Ar a:hover,
+.group-list_Ar label:hover {
+    background: white;
+}
+
+/** * Hide nested lists */
+.group-list_En,
+.group-list_Ar {
+    height: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.nav__list input[type="checkbox"]:checked+label+ul {
+    /* reset the height when checkbox is checked */
+    max-height: 1000px;
+}
+
+/** * Rotating chevron icon */
+#Main_Objectives_Ar label>span {
+    float: right;
+    transition: transform 0.65s ease;
+    margin-right: 50px !important;
+}
+
+#Main_Objectives_En label>span {
+    float: right;
+    transition: transform 0.65s ease;
+    margin-left: 50px !important;
+}
+
+#Main_Objectives_Ar input[type="checkbox"]:checked+label>span {
+    transform: rotate(-90deg);
+}
+
+#Main_Objectives_En input[type="checkbox"]:checked+label>span {
+    transform: rotate(90deg);
+}
+
+
+/**ACHIEVIEMENTS SECTION**/
+
+#Achievements_Section {
+    font-family: Omnes-Arabic-HairLine-Bold;
+    height: 1300px;
+}
+
+#OL_EN {
+
+    list-style: none;
+    padding: 0px !important;
+    height: 1125px;
+}
+
+#OL_Ar {
+
+    list-style: none;
+    padding: 0px !important;
+    height: 735px;
+}
+
+/*-------------------- leaderboard --------------------*/
+
+.leaderboard_Ar {
+    direction: rtl;
+}
+
+.leaderboard_Ar {
+    top: 120%;
+
+}
+
+.leaderboard_En {
+    top: 150%;
+
+}
+
+.leaderboard_Ar,
+.leaderboard_En {
+    position: absolute;
+
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: auto;
+    background: linear-gradient(to bottom, #3a404d, #181c26);
+    border-radius: 10px;
+    box-shadow: 0 7px 30px rgba(62, 9, 11, .3);
+}
+
+.leaderboard_Ar h1,
+.leaderboard_En h1 {
+    font-size: 50px;
+    color: #e1e1e1;
+    padding: 12px 13px 18px;
+}
+
+.leaderboard_Ar h1 svg,
+.leaderboard_En h1 svg {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 3px;
+    margin-right: 25px;
+    vertical-align: baseline;
+}
+
+use {
+    transform: scale(200%);
+}
+
+.leaderboard_Ar ol,
+.leaderboard_En ol {
+    counter-reset: leaderboard_Ar;
+}
+
+.leaderboard_Ar ol li {
+    height: 225px;
+}
+
+.leaderboard_En ol li {
+    height: 225px;
+}
+
+.leaderboard_Ar ol li {
+    font-size: 35px;
+}
+
+.leaderboard_En ol li {
+    font-size: 30px;
+}
+
+.leaderboard_Ar ol li,
+.leaderboard_En ol li {
+    position: relative;
+    z-index: 1;
+    counter-increment: leaderboard_Ar;
+    padding: 18px 10px 18px 50px;
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1, 1);
+}
+
+.leaderboard_Ar ol li::before,
+.leaderboard_En ol li::before {
+    /* content: counter(leaderboard_Ar); */
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 32px;
+    color: #c24448;
+    background: #fff;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.leaderboard_Ar ol li mark,
+.leaderboard_En ol li mark {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 18px 10px 18px 50px;
+    margin: 0;
+    background: none;
+    color: #fff;
+}
+
+.leaderboard_Ar ol li mark::before,
+.leaderboard_Ar ol li mark::after,
+.leaderboard_En ol li mark::before,
+.leaderboard_En ol li mark::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: -11px;
+    left: -9px;
+    border-top: 10px solid #c24448;
+    border-top: 10px solid #c24448;
+    border-left: 10px solid transparent;
+    transition: all 0.1s ease-in-out;
+    opacity: 0;
+}
+
+.leaderboard_Ar ol li mark::after,
+.leaderboard_En ol li mark::after {
+    left: auto;
+    right: -9px;
+    border-left: none;
+    border-right: 10px solid transparent;
+}
+
+.leaderboard_Ar ol li small,
+.leaderboard_En ol li small {
+    position: relative;
+    z-index: 2;
+    display: block;
+    text-align: right;
+}
+
+.leaderboard_Ar ol li::after,
+.leaderboard_En ol li::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fa6855;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, .08);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.leaderboard_Ar ol li:nth-child(1),
+.leaderboard_En ol li:nth-child(1) {
+    background: #fa6855;
+}
+
+.leaderboard_Ar ol li:nth-child(1)::after,
+.leaderboard_En ol li:nth-child(1)::after {
+    background: #fa6855;
+}
+
+.leaderboard_Ar ol li:nth-child(2),
+.leaderboard_En ol li:nth-child(2) {
+    background: #e0574f;
+}
+
+.leaderboard_Ar ol li:nth-child(2)::after,
+.leaderboard_En ol li:nth-child(2)::after {
+    background: #e0574f;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, .08);
+}
+
+.leaderboard_Ar ol li:nth-child(2) mark::before,
+.leaderboard_Ar ol li:nth-child(2) mark::after,
+.leaderboard_En ol li:nth-child(2) mark::before,
+.leaderboard_En ol li:nth-child(2) mark::after {
+    border-top: 6px solid #ba4741;
+    bottom: -7px;
+}
+
+.leaderboard_Ar ol li:nth-child(3),
+.leaderboard_En ol li:nth-child(3) {
+    background: #d7514d;
+}
+
+.leaderboard_Ar ol li:nth-child(3)::after,
+.leaderboard_En ol li:nth-child(3)::after {
+    background: #d7514d;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .11);
+}
+
+.leaderboard_Ar ol li:nth-child(3) mark::before,
+.leaderboard_Ar ol li:nth-child(3) mark::after,
+.leaderboard_En ol li:nth-child(3) mark::before,
+.leaderboard_En ol li:nth-child(3) mark::after {
+    border-top: 2px solid #b0433f;
+    bottom: -3px;
+}
+
+.leaderboard_Ar ol li:nth-child(4),
+.leaderboard_En ol li:nth-child(4) {
+    background: #cd4b4b;
+}
+
+.leaderboard_Ar ol li:nth-child(4)::after,
+.leaderboard_En ol li:nth-child(4)::after {
+    background: #cd4b4b;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .15);
+}
+
+.leaderboard_Ar ol li:nth-child(4) mark::before,
+.leaderboard_Ar ol li:nth-child(4) mark::after,
+.leaderboard_En ol li:nth-child(4) mark::before,
+.leaderboard_En ol li:nth-child(4) mark::after {
+    top: -7px;
+    bottom: auto;
+    border-top: none;
+    border-bottom: 6px solid #a63d3d;
+}
+
+.leaderboard_Ar ol li:nth-child(5),
+.leaderboard_En ol li:nth-child(5) {
+    background: #c24448;
+    border-radius: 0 0 10px 10px;
+}
+
+.leaderboard_Ar ol li:nth-child(5)::after,
+.leaderboard_En ol li:nth-child(5)::after {
+    background: #c24448;
+    box-shadow: 0 -2.5px 0 rgba(0, 0, 0, .12);
+    border-radius: 0 0 10px 10px;
+}
+
+.leaderboard_Ar ol li:nth-child(5) mark::before,
+.leaderboard_Ar ol li:nth-child(5) mark::after,
+.leaderboard_En ol li:nth-child(5) mark::before,
+.leaderboard_En ol li:nth-child(5) mark::after {
+    top: -9px;
+    bottom: auto;
+    border-top: none;
+    border-bottom: 8px solid #993639;
+}
+
+.leaderboard_Ar ol li:hover,
+.leaderboard_En ol li:hover {
+    z-index: 2;
+    overflow: visible;
+}
+
+.leaderboard_Ar ol li:hover::after,
+.leaderboard_En ol li:hover::after {
+    opacity: 1;
+    transform: scaleX(1.06) scaleY(1.03);
+}
+
+.leaderboard_Ar ol li:hover mark::before,
+.leaderboard_Ar ol li:hover mark::after,
+.leaderboard_En ol li:hover mark::before,
+.leaderboard_En ol li:hover mark::after {
+    opacity: 1;
+    transition: all 0.35s ease-in-out;
+}
+
+
+
+@media screen and (max-width : 1250px) {
+    #Main_Objectives_Section {
+        margin-top: 200px !important;
+    }
+
+    #Achievements_Section {
+        height: 1625px;
+    }
+
+    .leaderboard_Ar ol li {
+        height: 275px;
+        font-size: 33px;
+    }
+
+    .leaderboard_En ol li {
+        height: 275px;
+    }
+}
+
+@media screen and (max-width : 1000px) {
+
+    #Agricultural_Mechanization_OS_Span_1,
+    #Agricultural_Mechanization_OS_Span_2,
+    #Agricultural_Mechanization_OS_Span_3,
+    #Agricultural_Mechanization_OS_Span_4 {
+        font-size: 30px !important;
+    }
+
+    #Achievements_Section {
+        height: 2000px;
+    }
+
+    .leaderboard_Ar ol li {
+        height: 375px;
+    }
+
+    .leaderboard_En ol li {
+        height: 375px;
+    }
+
+    use {
+        transform: scale(150%);
+    }
+
+    .leaderboard_Ar h1 svg,
+    .leaderboard_En h1 svg {
+        width: 38px;
+        height: 38px;
+        position: relative;
+        top: 3px;
+        margin-right: 25px;
+        vertical-align: baseline;
+    }
+
+    .leaderboard_Ar h1,
+    .leaderboard_En h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width : 800px) {
+
+    #Agricultural_Mechanization_OS_Span_1::after,
+    #Agricultural_Mechanization_OS_Span_2::after,
+    #Agricultural_Mechanization_OS_Span_3::after,
+    #Agricultural_Mechanization_OS_Span_4::after {
+        content: "\a";
+        white-space: pre;
+    }
+
+    #Achievements_Section {
+        height: 1800px;
+    }
+
+    #Main_Objectives_Section {
+        margin-top: 600px !important;
+    }
+
+    .leaderboard_Ar ol li {
+        height: 375px;
+        font-size: 30px !important;
+    }
+
+    .leaderboard_En ol li {
+        height: 425px;
+        font-size: 27.5px !important;
+    }
+
+    .leaderboard_Ar {
+        top: 150%;
+    }
+
+    .leaderboard_En {
+        top: 180%;
+    }
+
+    /* .leaderboard_Ar h1,
+    .leaderboard_En h1 {
+        font-size: 35px;
+    }
+
+    use {
+        transform: scale(150%);
+    }
+
+    .leaderboard_Ar h1 svg,
+    .leaderboard_En h1 svg {
+        width: 38px;
+        height: 38px;
+        position: relative;
+        top: 3px;
+        margin-right: 25px;
+        vertical-align: baseline;
+    } */
+}
+
+@media screen and (max-width : 650px) {
+
+    #Agricultural_Mechanization_OS_Span_1::after,
+    #Agricultural_Mechanization_OS_Span_2::after,
+    #Agricultural_Mechanization_OS_Span_3::after,
+    #Agricultural_Mechanization_OS_Span_4::after {
+        content: "\a";
+        white-space: pre;
+    }
+}
+
+@media screen and (max-width : 600px) {
+
+    #Main_Objectives_Section {
+        margin-top: 1000px !important;
+    }
+
+    .leaderboard_Ar ol li {
+        height: 500px;
+    }
+
+    .leaderboard_En ol li {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width : 515px) {
+
+    #Main_Objectives_Section {
+        margin-top: 1650px !important;
+    }
+
+    .leaderboard_Ar ol li {
+        height: 625px;
+    }
+
+    .leaderboard_En ol li {
+        height: 625px;
+    }
+
+    .leaderboard_Ar {
+        top: 170%;
+    }
+
+    .leaderboard_En {
+        top: 200%;
+    }
+}
+
+@media screen and (max-width : 450px) {
+
+    #Main_Objectives_Section {
+        margin-top: 2400px !important;
+    }
+
+    .leaderboard_Ar ol li {
+        height: 750px;
+    }
+
+    .leaderboard_En ol li {
+        height: 750px;
+    }
+
+    .leaderboard_Ar {
+        top: 170%;
+    }
+
+    .leaderboard_En {
+        top: 210%;
+    }
+}
+
+@media screen and (max-width : 400px) {
+
+    #Main_Objectives_Ar,
+    #Main_Objectives_En {
+        font-size: 25px;
+    }
+
+    #Main_Objectives_Section {
+        margin-top: 2400px !important;
+    }
+
+    .leaderboard_Ar ol li {
+        height: 775px;
+        font-size: 30px !important;
+    }
+
+    .leaderboard_En ol li {
+        height: 775px;
+        font-size: 25px !important;
+    }
+
+    .leaderboard_Ar {
+        top: 170%;
+    }
+
+    .leaderboard_En {
+        top: 200%;
+    }
+
+    .leaderboard_Ar h1,
+    .leaderboard_En h1 {
+        font-size: 30px;
+    }
+
+    use {
+        transform: scale(115%);
+}
+
+    .leaderboard_Ar h1 svg,
+    .leaderboard_En h1 svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+@media screen and (max-width : 350px) {
+
+    #Main_Objectives_Ar,
+    #Main_Objectives_En {
+        font-size: 25px;
+    }
+
+    #Main_Objectives_Section {
+        margin-top: 3100px !important;
+        /* overflow-x: hidden !important; */
+    }
+    #Achievements_Section{
+        overflow-x: hidden !important;
+
+    }
+
+    .leaderboard_Ar ol li {
+        height: 900px;
+        font-size: 30px !important;
+    }
+
+    .leaderboard_En ol li {
+        height: 900px;
+        font-size: 25px !important;
+    }
+
+    .leaderboard_Ar {
+        top: 170%;
+    }
+
+    .leaderboard_En {
+        top: 200%;
+    }
+
+    .leaderboard_Ar h1,
+    .leaderboard_En h1 {
+        font-size: 30px;
+    }
+
+    use {
+        transform: scale(115%);
+}
+
+    .leaderboard_Ar h1 svg,
+    .leaderboard_En h1 svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+@media screen and (max-width : 350px) {
+
+    #Main_Objectives_Ar,
+    #Main_Objectives_En {
+        font-size: 25px;
+    }
+
+    #Main_Objectives_Section {
+        margin-top: 4200px !important;
+        /* overflow-x: hidden !important; */
+    }
+    #Achievements_Section{
+        overflow-x: hidden !important;
+
+    }
+
+    .leaderboard_Ar ol li {
+        height: 1150px;
+        font-size: 30px !important;
+    }
+
+    .leaderboard_En ol li {
+        height: 900px;
+        font-size: 25px !important;
+    }
+
+    .leaderboard_Ar {
+        top: 150%;
+    }
+
+    .leaderboard_En {
+        top: 200%;
+    }
+
+    .leaderboard_Ar h1,
+    .leaderboard_En h1 {
+        font-size: 30px;
+    }
+
+    use {
+        transform: scale(115%);
+}
+
+    .leaderboard_Ar h1 svg,
+    .leaderboard_En h1 svg {
+        width: 30px;
+        height: 30px;
+    }
+}

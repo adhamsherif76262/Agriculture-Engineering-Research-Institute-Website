@@ -259,6 +259,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    /* background-color: red; */
 }
 
 #carousel-wrapper_Ar #menu_Ar #current-option_Ar #current-option-text1_Ar {

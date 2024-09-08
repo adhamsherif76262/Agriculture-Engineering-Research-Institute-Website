@@ -28,7 +28,7 @@ var RMC_Main_Section_En = document.getElementById("Main_RMC_Section_En");
 
 var RMC_Section_Ar = `
       <ol class="olcards_Ar">
-        <li style="--cardColor:rgb(190, 64, 64);">
+        <li style="--cardColor:rgb(190, 64, 64);" style = "margin-bottom : -300px">
             <div class="content">
                 <!-- <div class="icon">😁</div> -->
                 <div class="icon"><img src="../../Images/TRACTOR_giphy.gif" alt="Tractor Giffy" class="LI_Text_sGifs" style="width:200px; margin-right : 15px"></div>
@@ -41,9 +41,6 @@ var RMC_Section_Ar = `
                 </div>
             </div>
         </li>
-        <li style="--cardColor:#E3AC59">
-        <li style="--cardColor:#C7E359">
-        <li style="--cardColor:#59E390">
         <li style="--cardColor:#E3AC59">
             <div class="content">
                 <!-- <div class="icon">😀</div> -->
@@ -78,7 +75,6 @@ var RMC_Section_Ar = `
                 </div>
             </div>
         </li>
-        <li style="--cardColor:#C7E359">
         <li style="--cardColor:#59E390">
             <div class="content">
                 <!-- <div class="icon">😉</div> -->
@@ -91,8 +87,7 @@ var RMC_Section_Ar = `
                 </div>
             </div>
         </li>
-        <li style="--cardColor:#E3AC59">
-        <li style="--cardColor:#75E359">
+        <li style="--cardColor:#0e76d7">
             <div class="content">
                 <!-- <div class="icon">😜</div> -->
                 <div class="icon"><img id = "List_2_Img_Ar" src="../../Images/Tractor_Replica .gif" alt="Tractor Giffy" class="LI_Text_Gsifs" style="width: 200px; margin-right: 20px; margin-left: -40px;"></div>
@@ -132,7 +127,7 @@ var RMC_Section_Ar = `
 `;
 var RMC_Section_En = `
       <ol class="olcards_En">
-        <li style="--cardColor:#fc374e;">
+        <li style="--cardColor:rgb(190, 64, 64);">
             <div class="content">
                 <!-- <div class="icon">😁</div> -->
                 <div class="icon"><img src="../../Images/TRACTOR_giphy.gif" alt="Tractor Giffy" class="LI_sText_Gifs" style="transform: rotateY(180deg);width: 200px;margin-left: -20px;"></div>
@@ -148,7 +143,7 @@ var RMC_Section_En = `
                 </div>
             </div>
         </li>
-        <li style="--cardColor:#36aeb3">
+        <li style="--cardColor:#E3AC59">
             <div class="content">
                 <!-- <div class="icon">😀</div> -->
                 <div class="icon"><img src="../../Images/tractor.gif" alt="Tractor Giffy" class="LI_Text_Gsifs" style="width: 300px; margin-left: -20px; margin-right: -45px;"></div>
@@ -184,7 +179,7 @@ var RMC_Section_En = `
                 </div>
             </div>
         </li>
-        <li style="--cardColor:#162d59">
+        <li style="--cardColor:#59E390">
             <div class="content">
                 <!-- <div class="icon">😉</div> -->
                 <div class="icon"><img src="../../Images/Tractor 4 .gif" alt="Tractor Giffy" class="LI_Text_Gifs" style="width: 300px; margin-left: -80px !important; margin-right: -60px !important; transform: rotateY(180deg);"></div>
@@ -196,7 +191,7 @@ var RMC_Section_En = `
                 </div>
             </div>
         </li>
-        <li style="--cardColor:#f15f0e">
+        <li style="--cardColor:#0e76d7">
             <div class="content">
                 <!-- <div class="icon">😜</div> -->
                 <div class="icon"><img src="../../Images/Tractor_Replica .gif" alt="Tractor Giffy" class="LI_Text_GsiFFs" style="transform: rotateY(180deg); width: 200px; margin-right: -40px; margin-left: 0px;"></div>

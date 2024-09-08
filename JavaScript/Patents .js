@@ -369,7 +369,7 @@ var Patents_Section_Ar = `
     <div class="container_Ar">
         <ul class="responsive-table_Ar">
           <li class="table-header_Ar">
-                <div class="col_Ar col-2_Ar" style="text-align: center;">وصف براءة الاختراع
+                <div class="col_Ar col-2_Ar" id="Patent_Header_Ar" style="text-align: center;">وصف براءة الاختراع
                 </div>
                 <div class="col_Ar col-1_Ar" style="text-align: right;">رقم براءة الاختراع المحلية</div>
           </li>
@@ -419,7 +419,7 @@ var Patents_Section_En = `
     <div class="container_En">
         <ul class="responsive-table_En">
             <li class="table-header_En">
-                <div class="col_En col-1_En">Local Patent Number</div>
+                <div class="col_En col-1_En" id="Patent_Header_En">Local Patent Number</div>
                 <div class="col_En col-2_En" style="text-align: center; margin-top: 20px;">Patent Description</div>
             </li>
             <li class="table-row_En">
@@ -484,7 +484,7 @@ console.log("Your browser is: " + browserName);
 function Patents_Load_Content_Ar() {
   // Patents_h1.textContent = "ىىىىىىىىىىىىىىىىىىىىىىىىىىىى";
     Technological_Applications_Span_1.textContent = "التطبيقات";
-    Technological_Applications_Span_2.textContent = "التكنولوجيلة";
+    Technological_Applications_Span_2.textContent = "التكنولوجية";
   HomePageTitle[0].innerHTML = "التطبيقات التكنولوجية";
   Technological_Applications_Section.innerHTML = Technological_Applications_Section_Ar;
   Patents_Section.innerHTML = Patents_Section_Ar;
