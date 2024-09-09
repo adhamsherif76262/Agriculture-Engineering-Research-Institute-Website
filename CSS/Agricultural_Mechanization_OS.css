@@ -231,7 +231,7 @@
 }
 
 .leaderboard_En {
-    top: 150%;
+    top: 160%;
 }
 
 .leaderboard_Ar h1,
@@ -259,25 +259,6 @@ use {
 .leaderboard_En ol {
     counter-reset: leaderboard_Ar;
 } */
-#A_OL_LI_AR_1 {}
-
-#A_OL_LI_AR_2 {}
-
-#A_OL_LI_AR_3 {}
-
-#A_OL_LI_AR_4 {}
-
-#A_OL_LI_AR_5 {}
-
-#A_OL_LI_EN_1 {}
-
-#A_OL_LI_EN_2 {}
-
-#A_OL_LI_EN_3 {}
-
-#A_OL_LI_EN_4 {}
-
-#A_OL_LI_EN_5 {}
 
 .leaderboard_Ar ol li {
     height: 225px;
