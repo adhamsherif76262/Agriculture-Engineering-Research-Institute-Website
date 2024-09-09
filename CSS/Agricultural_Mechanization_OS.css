@@ -189,7 +189,7 @@
 
 #Achievements_Section {
     font-family: Omnes-Arabic-HairLine-Bold;
-    height: 1300px;
+    height: 1400px;
 }
 
 #OL_EN {
@@ -212,21 +212,11 @@
     direction: rtl;
 }
 
-.leaderboard_Ar {
-    top: 120%;
-
-}
-
-.leaderboard_En {
-    top: 150%;
-
-}
-
 .leaderboard_Ar,
 .leaderboard_En {
     position: absolute;
-
-    /* top: 50%; */
+    /*top: 50%;
+    */
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
@@ -234,6 +224,14 @@
     background: linear-gradient(to bottom, #3a404d, #181c26);
     border-radius: 10px;
     box-shadow: 0 7px 30px rgba(62, 9, 11, .3);
+}
+
+.leaderboard_Ar {
+    top: 125%;
+}
+
+.leaderboard_En {
+    top: 150%;
 }
 
 .leaderboard_Ar h1,
@@ -257,10 +255,29 @@ use {
     transform: scale(200%);
 }
 
-.leaderboard_Ar ol,
+/* .leaderboard_Ar ol,
 .leaderboard_En ol {
     counter-reset: leaderboard_Ar;
-}
+} */
+#A_OL_LI_AR_1 {}
+
+#A_OL_LI_AR_2 {}
+
+#A_OL_LI_AR_3 {}
+
+#A_OL_LI_AR_4 {}
+
+#A_OL_LI_AR_5 {}
+
+#A_OL_LI_EN_1 {}
+
+#A_OL_LI_EN_2 {}
+
+#A_OL_LI_EN_3 {}
+
+#A_OL_LI_EN_4 {}
+
+#A_OL_LI_EN_5 {}
 
 .leaderboard_Ar ol li {
     height: 225px;
@@ -482,21 +499,42 @@ use {
 
 
 @media screen and (max-width : 1250px) {
-    #Main_Objectives_Section {
-        margin-top: 200px !important;
-    }
 
     #Achievements_Section {
-        height: 1625px;
+        height: 1425px;
     }
 
-    .leaderboard_Ar ol li {
+    .leaderboard_Ar {
+        top: 135%;
+    }
+
+    .leaderboard_En {
+        top: 170%;
+    }
+
+    #A_OL_LI_AR_1,
+    #A_OL_LI_AR_2,
+    #A_OL_LI_AR_3,
+    #A_OL_LI_AR_4,
+    #A_OL_LI_AR_5 {
         height: 275px;
         font-size: 33px;
     }
 
-    .leaderboard_En ol li {
+    #A_OL_LI_EN_1,
+    #A_OL_LI_EN_2,
+    #A_OL_LI_EN_3,
+    #A_OL_LI_EN_4,
+    #A_OL_LI_EN_5 {
         height: 275px;
+    }
+
+    #A_OL_LI_EN_5 {
+        height: 200px;
+    }
+
+    #A_OL_LI_AR_5 {
+        height: 150px !important;
     }
 }
 
@@ -510,15 +548,7 @@ use {
     }
 
     #Achievements_Section {
-        height: 2000px;
-    }
-
-    .leaderboard_Ar ol li {
-        height: 375px;
-    }
-
-    .leaderboard_En ol li {
-        height: 375px;
+        height: 1900px;
     }
 
     use {
@@ -539,6 +569,34 @@ use {
     .leaderboard_En h1 {
         font-size: 40px;
     }
+
+    .leaderboard_En {
+        top: 170%;
+    }
+
+    #A_OL_LI_AR_1,
+    #A_OL_LI_AR_2,
+    #A_OL_LI_AR_3,
+    #A_OL_LI_AR_4,
+    #A_OL_LI_AR_5 {
+        height: 375px;
+    }
+
+    #A_OL_LI_EN_1,
+    #A_OL_LI_EN_2,
+    #A_OL_LI_EN_3,
+    #A_OL_LI_EN_4,
+    #A_OL_LI_EN_5 {
+        height: 375px;
+    }
+
+    #A_OL_LI_EN_5 {
+        height: 225px;
+    }
+
+    #A_OL_LI_AR_5 {
+        height: 200px !important;
+    }
 }
 
 @media screen and (max-width : 800px) {
@@ -552,49 +610,48 @@ use {
     }
 
     #Achievements_Section {
-        height: 1800px;
+        height: 2200px;
     }
 
     #Main_Objectives_Section {
-        margin-top: 600px !important;
-    }
-
-    .leaderboard_Ar ol li {
-        height: 375px;
-        font-size: 30px !important;
+        margin-top: -50px !important;
     }
 
     .leaderboard_En ol li {
-        height: 425px;
         font-size: 27.5px !important;
     }
 
+    #A_OL_LI_AR_1,
+    #A_OL_LI_AR_2,
+    #A_OL_LI_AR_3,
+    #A_OL_LI_AR_4,
+    #A_OL_LI_AR_5 {
+        height: 450px;
+    }
+
+    #A_OL_LI_EN_1,
+    #A_OL_LI_EN_2,
+    #A_OL_LI_EN_3,
+    #A_OL_LI_EN_4,
+    #A_OL_LI_EN_5 {
+        height: 425px;
+    }
+
+    #A_OL_LI_EN_5 {
+        height: 250px;
+    }
+
+    #A_OL_LI_AR_5 {
+        height: 250px !important;
+    }
+
     .leaderboard_Ar {
-        top: 150%;
+        top: 170%;
     }
 
     .leaderboard_En {
-        top: 180%;
+        top: 210%;
     }
-
-    /* .leaderboard_Ar h1,
-    .leaderboard_En h1 {
-        font-size: 35px;
-    }
-
-    use {
-        transform: scale(150%);
-    }
-
-    .leaderboard_Ar h1 svg,
-    .leaderboard_En h1 svg {
-        width: 38px;
-        height: 38px;
-        position: relative;
-        top: 3px;
-        margin-right: 25px;
-        vertical-align: baseline;
-    } */
 }
 
 @media screen and (max-width : 650px) {
@@ -610,62 +667,110 @@ use {
 
 @media screen and (max-width : 600px) {
 
-    #Main_Objectives_Section {
-        margin-top: 1000px !important;
+    #A_OL_LI_AR_1,
+    #A_OL_LI_AR_2,
+    #A_OL_LI_AR_3,
+    #A_OL_LI_AR_4,
+    #A_OL_LI_AR_5 {
+        height: 525px;
     }
 
-    .leaderboard_Ar ol li {
+    #A_OL_LI_EN_1,
+    #A_OL_LI_EN_2,
+    #A_OL_LI_EN_3,
+    #A_OL_LI_EN_4,
+    #A_OL_LI_EN_5 {
         height: 500px;
     }
 
-    .leaderboard_En ol li {
-        height: 500px;
+    #A_OL_LI_EN_5 {
+        height: 300px;
+    }
+
+    #A_OL_LI_AR_5 {
+        height: 250px !important;
+    }
+
+    #Achievements_Section {
+        height: 2550px;
     }
 }
 
 @media screen and (max-width : 515px) {
 
-    #Main_Objectives_Section {
-        margin-top: 1650px !important;
-    }
-
-    .leaderboard_Ar ol li {
+    #A_OL_LI_AR_1,
+    #A_OL_LI_AR_2,
+    #A_OL_LI_AR_3,
+    #A_OL_LI_AR_4,
+    #A_OL_LI_AR_5 {
         height: 625px;
     }
 
-    .leaderboard_En ol li {
-        height: 625px;
+    #A_OL_LI_EN_1,
+    #A_OL_LI_EN_2,
+    #A_OL_LI_EN_3,
+    #A_OL_LI_EN_4,
+    #A_OL_LI_EN_5 {
+        height: 575px;
+    }
+
+    #A_OL_LI_EN_5 {
+        height: 350px;
+    }
+
+    #A_OL_LI_AR_5 {
+        height: 300px !important;
+    }
+
+    #Achievements_Section {
+        height: 2950px;
     }
 
     .leaderboard_Ar {
-        top: 170%;
+        top: 185%;
     }
 
     .leaderboard_En {
-        top: 200%;
+        top: 225%;
     }
 }
 
 @media screen and (max-width : 450px) {
 
-    #Main_Objectives_Section {
-        margin-top: 2400px !important;
+    #A_OL_LI_AR_1,
+    #A_OL_LI_AR_2,
+    #A_OL_LI_AR_3,
+    #A_OL_LI_AR_4,
+    #A_OL_LI_AR_5 {
+        height: 700px;
     }
 
-    .leaderboard_Ar ol li {
-        height: 750px;
+    #A_OL_LI_EN_1,
+    #A_OL_LI_EN_2,
+    #A_OL_LI_EN_3,
+    #A_OL_LI_EN_4,
+    #A_OL_LI_EN_5 {
+        height: 700px;
     }
 
-    .leaderboard_En ol li {
-        height: 750px;
+    #A_OL_LI_EN_5 {
+        height: 475px;
+    }
+
+    #A_OL_LI_AR_5 {
+        height: 400px !important;
+    }
+
+    #Achievements_Section {
+        height: 3600px;
     }
 
     .leaderboard_Ar {
-        top: 170%;
+        top: 190%;
     }
 
     .leaderboard_En {
-        top: 210%;
+        top: 240%;
     }
 }
 
@@ -676,26 +781,42 @@ use {
         font-size: 25px;
     }
 
-    #Main_Objectives_Section {
-        margin-top: 2400px !important;
-    }
-
-    .leaderboard_Ar ol li {
-        height: 775px;
+    #A_OL_LI_AR_1,
+    #A_OL_LI_AR_2,
+    #A_OL_LI_AR_3,
+    #A_OL_LI_AR_4,
+    #A_OL_LI_AR_5 {
+        height: 700px;
         font-size: 30px !important;
     }
 
-    .leaderboard_En ol li {
-        height: 775px;
+    #A_OL_LI_EN_1,
+    #A_OL_LI_EN_2,
+    #A_OL_LI_EN_3,
+    #A_OL_LI_EN_4,
+    #A_OL_LI_EN_5 {
+        height: 700px;
         font-size: 25px !important;
     }
 
+    #A_OL_LI_EN_5 {
+        height: 475px;
+    }
+
+    #A_OL_LI_AR_5 {
+        height: 400px !important;
+    }
+
+    #Achievements_Section {
+        height: 3450px;
+    }
+
     .leaderboard_Ar {
-        top: 170%;
+        top: 190%;
     }
 
     .leaderboard_En {
-        top: 200%;
+        top: 225%;
     }
 
     .leaderboard_Ar h1,
@@ -705,7 +826,7 @@ use {
 
     use {
         transform: scale(115%);
-}
+    }
 
     .leaderboard_Ar h1 svg,
     .leaderboard_En h1 svg {
@@ -713,6 +834,7 @@ use {
         height: 30px;
     }
 }
+
 @media screen and (max-width : 350px) {
 
     #Main_Objectives_Ar,
@@ -721,22 +843,39 @@ use {
     }
 
     #Main_Objectives_Section {
-        margin-top: 3100px !important;
-        /* overflow-x: hidden !important; */
-    }
-    #Achievements_Section{
+        margin-top: 1500px !important;
         overflow-x: hidden !important;
-
     }
 
-    .leaderboard_Ar ol li {
-        height: 900px;
-        font-size: 30px !important;
+    #Achievements_Section {
+        overflow-x: hidden !important;
+        height: 3000px;
     }
 
-    .leaderboard_En ol li {
+    #A_OL_LI_AR_1,
+    #A_OL_LI_AR_2,
+    #A_OL_LI_AR_3,
+    #A_OL_LI_AR_4,
+    #A_OL_LI_AR_5 {
+        height: 1000px;
+        font-size: 29px !important;
+    }
+
+    #A_OL_LI_EN_1,
+    #A_OL_LI_EN_2,
+    #A_OL_LI_EN_3,
+    #A_OL_LI_EN_4,
+    #A_OL_LI_EN_5 {
         height: 900px;
         font-size: 25px !important;
+    }
+
+    #A_OL_LI_EN_5 {
+        height: 525px;
+    }
+
+    #A_OL_LI_AR_5 {
+        height: 400px !important;
     }
 
     .leaderboard_Ar {
@@ -744,7 +883,7 @@ use {
     }
 
     .leaderboard_En {
-        top: 200%;
+        top: 215%;
     }
 
     .leaderboard_Ar h1,
@@ -754,56 +893,7 @@ use {
 
     use {
         transform: scale(115%);
-}
-
-    .leaderboard_Ar h1 svg,
-    .leaderboard_En h1 svg {
-        width: 30px;
-        height: 30px;
     }
-}
-@media screen and (max-width : 350px) {
-
-    #Main_Objectives_Ar,
-    #Main_Objectives_En {
-        font-size: 25px;
-    }
-
-    #Main_Objectives_Section {
-        margin-top: 4200px !important;
-        /* overflow-x: hidden !important; */
-    }
-    #Achievements_Section{
-        overflow-x: hidden !important;
-
-    }
-
-    .leaderboard_Ar ol li {
-        height: 1150px;
-        font-size: 30px !important;
-    }
-
-    .leaderboard_En ol li {
-        height: 900px;
-        font-size: 25px !important;
-    }
-
-    .leaderboard_Ar {
-        top: 150%;
-    }
-
-    .leaderboard_En {
-        top: 200%;
-    }
-
-    .leaderboard_Ar h1,
-    .leaderboard_En h1 {
-        font-size: 30px;
-    }
-
-    use {
-        transform: scale(115%);
-}
 
     .leaderboard_Ar h1 svg,
     .leaderboard_En h1 svg {

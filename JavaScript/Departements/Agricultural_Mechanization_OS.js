@@ -146,33 +146,33 @@ var Achievements_Section_Ar = `
             انجازات القسم
         </h1>
         <ol id="OL_Ar">
-            <li>
+            <li id = "A_OL_LI_AR_1">
                 <mark>
                     تطوير آلات زراعية ذكية باستخدام الذكاء الاصطناعي : يشمل تصميم آلات زراعة مثل آلة زراعة بنجر السكر
                     وآلات للحيازات الصغيرة تعتمد على تقنيات الاستشعار الذكي لتقليل الهدر في البذور والأسمدة وتحسين الكفاءة
                 </mark>
             </li>
-            <li>
+            <li id = "A_OL_LI_AR_2">
                 <mark>
                     تطوير معدات حصاد منخفضة التكاليف باستخدام الروبوتات  : يشمل تصميم آلات حصاد ودراس محاصيل الحبوب
                     والفاكهة، بالإضافة إلى تطوير آلة لحصاد الذرة وفول الصويا تعتمد على تقنيات الذكاء الاصطناعي لتحديد
                     المحصول الناضج
                 </mark>
             </li>
-            <li>
+            <li id = "A_OL_LI_AR_3">
                 <mark>
                     تحسين عمليات ما بعد الحصاد باستخدام التكنولوجيا الحيوية : يشمل تصميم آلات لإزالة بقايا المحاصيل
                     وتحويلها إلى سماد عضوي، وتطوير معدات لدراس الكتان تعتمد على تقنيات الهواء المضغوط لتحسين الكفاءة
                 </mark>
             </li>
-            <li>
+            <li id = "A_OL_LI_AR_4">
                 <mark>
                     خدمة أشجار النخيل باستخدام أنظمة آلية وذكية  : يشمل تطوير معدات للتلقيح والتقليم والحصاد، بما في
                     ذلك معدات تلقائية تعتمد على الذكاء الاصطناعي لتحديد أفضل وقت للتلقيح وسلالم هيدروليكية ذكية لضمان
                     أمان العاملين
                 </mark>
             </li>
-            <li>
+            <li id = "A_OL_LI_AR_5">
                 <mark>
                     صميم أدوات اختبار ذكية تتيح مراقبة أداء المعدات الزراعية بشكل لحظي وإجراء التعديلات الفورية لتحسين
                 </mark>
@@ -213,35 +213,35 @@ var Achievements_Section_En = `
             Achievements of the Department
         </h1>
         <ol id="OL_EN">
-            <li>
+            <li id = "A_OL_LI_EN_1">
                 <mark>
                     Development of intelligent agricultural machinery using artificial intelligence: This includes
                     designing planting machines such as sugar beet planters and equipment for small-scale farms that
                     rely on smart sensor technologies to reduce seed and fertilizer waste and improve efficiency.
                 </mark>
             </li>
-            <li>
+            <li id = "A_OL_LI_EN_2">
                 <mark>
                     Development of low-cost harvesting equipment using robotics: Involves designing machines for
                     harvesting and threshing grain and fruit crops, as well as developing corn and soybean harvesters
                     that use AI technologies to identify ripe crops.
                 </mark>
             </li>
-            <li>
+            <li id = "A_OL_LI_EN_3">
                 <mark>
                     Improving post-harvest processes using biotechnology: Includes designing machines for removing
                     crop residues and converting them into organic fertilizer, and developing flax threshing equipment
                     that relies on compressed air technologies to enhance efficiency.
                 </mark>
             </li>
-            <li>
+            <li id = "A_OL_LI_EN_4">
                 <mark>
                     Servicing palm trees using automated and intelligent systems: Includes developing equipment for
                     pollination, pruning, and harvesting, including AI-powered tools to determine the optimal
                     pollination time and smart hydraulic ladders to ensure worker safety.
                 </mark>
             </li>
-            <li>
+            <li id = "A_OL_LI_EN_5">
                 <mark>
                     Design of smart testing tools: These tools allow real-time monitoring of agricultural equipment
                     performance and enable instant adjustments to improve overall efficiency.
