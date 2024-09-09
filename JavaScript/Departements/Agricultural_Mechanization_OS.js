@@ -278,8 +278,29 @@ var Achievements_Section_En = `
 var Research_Fields_Section = document.getElementById(
   "Research_Fields_Section"
 );
-var Research_Fields_Section_Ar = ``;
-var Research_Fields_Section_En = ``;
+var Research_Fields_Section_Ar = `
+<div class="list-type5_Ar">
+    <ol>
+        <li><a href="">تطبيق الذكاء الاصطناعي والروبوتات في الزراعة  :<br><br> يشمل تطوير روبوتات ومعدات ذكية لتنفيذ مهام الزراعة، الري، الحصاد، والإنتاج الحيواني، بالإضافة إلى تحسين إدارة الموارد الزراعية باستخدام الذكاء الاصطناعي.</a></li>
+        <li><a href="">ابتكار تقنيات ري وتسميد وحصاد ذكية  :<br><br> يركز على تطوير تقنيات ري وتسميد مبتكرة، ومعدات حصاد منخفضة التكاليف لتحسين كفاءة استخدام الموارد وتقليل الفاقد.</a></li>
+        <li><a href="">تحسين أنظمة الفرز والتعبئة والتغليف  :<br><br> يشمل تحسين عمليات ما بعد الحصاد لضمان جودة المحاصيل وزيادة الكفاءة.</a></li>
+        <li><a href="">تطوير تقنيات مستدامة لإعادة تدوير المخلفات الزراعية  :<br><br> يركز على ابتكار حلول مستدامة لإدارة وإعادة تدوير المخلفات الزراعية لتعزيز الاستدامة البيئية.</a></li>
+        <li><a href="">دمج التكنولوجيا الحيوية والآلات المستدامة  :<br><br> يشمل تصميم آلات تقلل الأثر البيئي وتعزز الاستدامة، بالإضافة إلى دمج التكنولوجيا الحيوية لتحسين جودة المحاصيل وزيادة مقاومتها.</a></li>
+    </ol>
+</div>
+`;
+
+var Research_Fields_Section_En = `
+<div class="list-type5_En">
+    <ol>
+        <li><a href="">Application of artificial intelligence and robotics in agriculture:<br><br> This involves the development of robots and intelligent machinery to perform agricultural tasks such as planting, irrigation, harvesting, and livestock production, as well as improving resource management through AI technologies.</a></li>
+        <li><a href="">Innovation in smart irrigation, fertilization, and harvesting techniques:<br><br> Focuses on the development of innovative irrigation and fertilization technologies, along with low-cost harvesting equipment to enhance resource efficiency and reduce waste.</a></li>
+        <li><a href="">Improvement of sorting, packing, and packaging systems:<br><br> Aims at enhancing post-harvest processes to ensure crop quality and increase operational efficiency.</a></li>
+        <li><a href="">Development of sustainable technologies for recycling agricultural waste:<br><br> Focuses on creating sustainable solutions for managing and recycling agricultural waste to promote environmental sustainability.</a></li>
+        <li><a href="">Integration of biotechnology and sustainable machinery:<br><br> Involves designing machines that reduce environmental impact and promote sustainability, while also incorporating biotechnology to improve crop quality and resistance.as</a></li>
+    </ol>
+</div>
+`;
 
 function Agricultural_Mechanization_OS_Load_Content_Ar() {
     Agricultural_Mechanization_OS_Span_1.textContent = "نظم ميكنة";
@@ -288,9 +309,10 @@ function Agricultural_Mechanization_OS_Load_Content_Ar() {
     Agricultural_Mechanization_OS_Span_4.textContent = "";
     HomePageTitle[0].innerHTML = "نظم ميكنة العمليات الزراعية";
     Main_Objectives_Section.innerHTML = Main_Objectives_Section_Ar;
-    Achievements_Section.innerHTML = Achievements_Section_Ar
-  }
-  function Agricultural_Mechanization_OS_Load_Content_En() {
+    Achievements_Section.innerHTML = Achievements_Section_Ar;
+    Research_Fields_Section.innerHTML = Research_Fields_Section_Ar;
+}
+function Agricultural_Mechanization_OS_Load_Content_En() {
     Agricultural_Mechanization_OS_Span_1.textContent = "Agricultural";
     Agricultural_Mechanization_OS_Span_2.textContent = "Mechanization";
     Agricultural_Mechanization_OS_Span_3.textContent = "Operations";
@@ -298,6 +320,7 @@ function Agricultural_Mechanization_OS_Load_Content_Ar() {
     HomePageTitle[0].innerHTML = "AERI AMOS Page";
     Main_Objectives_Section.innerHTML = Main_Objectives_Section_En;
     Achievements_Section.innerHTML = Achievements_Section_En
+    Research_Fields_Section.innerHTML = Research_Fields_Section_En;
 }
 
 if (localStorage.getItem("Permenant_Language") === "English") {
