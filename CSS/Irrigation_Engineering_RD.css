@@ -45,10 +45,11 @@
 
 body {
     margin: 0;
-    padding: clamp(1rem, 2vw, 3rem);
     /* font-family: "Open Sans", sans-serif; */
 }
-
+#IRR_Main_Section{
+    padding: clamp(1rem, 2vw, 3rem);
+}
 .Img {
     width: 100%;
     display: block;
@@ -62,7 +63,7 @@ body {
 }
 
 .wrapper_Ar {
-    font-family: Omnes-Arabic-HairLine;
+    font-family: Omnes-Arabic-HairLine-Bold;
     /* max-width: 80rem; */
     direction: rtl;
     margin: 0 auto;

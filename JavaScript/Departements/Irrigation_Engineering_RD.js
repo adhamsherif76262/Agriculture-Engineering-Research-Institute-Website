@@ -1,9 +1,9 @@
 var Irrigation_Engineering_RD_Page_Title = document.getElementById(
   "Irrigation_Engineering_RD_Page_Title"
 );
-// var Irrigation_Engineering_RD_H1 = document.getElementById(
-//   "Irrigation_Engineering_RD_H1"
-// );
+var Irrigation_Engineering_RD_H1 = document.getElementById(
+  "Irrigation_Engineering_RD_H1"
+);
 var Irrigation_Engineering_Research_D_Span_1 = document.getElementById(
   "Irrigation_Engineering_Research_D_Span_1"
 );
@@ -16,9 +16,10 @@ var Irrigation_Engineering_Research_D_Span_3 = document.getElementById(
 var IRR_Main_Section = document.getElementById("IRR_Main_Section");
 var IRR_Main_Section_Ar = `
     <div class="wrapper_Ar">
-        <h2>تشكيل الكوادر البحثية والهندسية في القسم</h2>
-        <p>يضم القسم عدد 60 من الكوادر البحثية المختلفة (رئيس بحوث – باحث أول – باحث – باحث مساعد – رئيس بحوث متفرغ) كما
+        <h2 style = "font-size : 35px;margin-bottom : 50px;margin-top : 25px;">تشكيل الكوادر البحثية والهندسية في القسم</h2>
+        <p style = "font-size : 25px;margin-top : 50px;margin-bottom : 50px">يضم القسم عدد 60 من الكوادر البحثية المختلفة (رئيس بحوث – باحث أول – باحث – باحث مساعد – رئيس بحوث متفرغ) كما
             يضم عدد 16 عضو كادر عام بالإضافة إلي عدد 1 مهندس مؤقت.</p>
+        <h1 id="Irrigation_Engineering_RD_H1" style = "font-size : 35px;margin-bottom : 50px">نشاط وانجازات قسم</h1>
         <ul>
             <li>
                 <img src="../../Images/IRR_1.png" alt="" class="One_Image Img">
@@ -80,10 +81,11 @@ var IRR_Main_Section_Ar = `
 `;
 var IRR_Main_Section_En = `
     <div class="wrapper_En">
-        <h2>Research and Engineering Personnel Composition in the Department</h2>
-        <p>The department includes 60 staff members at different levels (Head of Research – Senior Researcher –
+        <h2 style = "font-size : 35px;margin-bottom : 50px;margin-top : 25px;">Research and Engineering Personnel Composition in the Department</h2>
+        <p style = "font-size : 25px;margin-top : 50px;margin-bottom : 50px">The department includes 60 staff members at different levels (Head of Research – Senior Researcher –
             Researcher – Assistant Researcher – Full-time Head of Research), as well as 16 general staff members in
             addition to one temporary female engineer.</p>
+        <h1 id="Irrigation_Engineering_RD_H1" style = "font-size : 35px ;margin-bottom : 50px">Activities & Achievements Of The Department</h1>
         <ul>
             <li>
                 <img src="../../Images/IRR_1.png" alt="" class="One_Image Img">
@@ -160,7 +162,6 @@ function Irrigation_Engineering_RD_Load_Content_En() {
   Irrigation_Engineering_Research_D_Span_1.textContent = "Irrigation"
   Irrigation_Engineering_Research_D_Span_2.textContent = "Engineering";
   Irrigation_Engineering_Research_D_Span_3.textContent = "Research";
-  
   HomePageTitle[0].innerHTML = "AERI Irrigation Engineering Research Page";
   IRR_Main_Section.innerHTML = IRR_Main_Section_En;
 }
